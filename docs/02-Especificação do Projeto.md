@@ -1,103 +1,103 @@
-# Especificações do Projeto
+# 2. ESPECIFICAÇÃO DO PROJETO
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
+A equipe identificou os desafios e requisitos para o projeto por meio de uma abordagem centrada no usuário. Pesquisas qualitativas foram realizadas para compreender as necessidades e comportamentos dos potenciais usuários. Com base nessas informações, personas e histórias de usuários foram criadas para guiar o desenvolvimento do produto. Essa abordagem ajudou a equipe a garantir uma experiência satisfatória para os usuários e fidelização dos clientes.
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
+## 2.1 Personas
 
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+Agora serão apresentadas no quadro a seguir as personas levantadas durante o processo de entendimento do problema.
 
-## Personas
+Quadro 1 – Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+| Nome | Ocupação | Motivações | Frustações |
+|---|---|---|---|
+| Rafaella | Protocolista | Recebe um volume muito grande de processos a serem lançados de forma manual | Perde-se o controle ao ter que fazer o trabalho em word e excel. |
+| Gustavo | Protocolista | A tramitação é feita via livro protocolo em forma de caderno | Não consegue indexar processo de mais de 6 meses. |
+| Paulo | Gerente de cadastro em entidade de saneamento | Recebe um volume de requisições de CND de forma manual | Tem que anexar a CND impressa em malotes que ficam fora de ordem |
+| Sávio | Gerente de Departamento Pessoal | Toda solicitação de férias é via protocolo | As requisições chegam duplicadas e fora de ordem | 
+| Beatriz | Contribuinte | Sempre realiza várias solicitações na prefeitura | O processo manual exige que ela vá presencialmente verificar o andamento dos processos |			
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
-
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
-
-## Histórias de Usuários
-
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
-
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
-
-## Requisitos
-
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
-
-### Requisitos Funcionais
-
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
-
-### Requisitos não Funcionais
-
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
-
-## Restrições
-
-O projeto está restrito pelos itens apresentados na tabela a seguir.
-
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+Fonte: Elaborado pelos autores com dados extraídos das entrevistas
 
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
+## 2.2 História de Usuários
 
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+As seguintes histórias dos usuários foram registradas pelo entendimento do dia a dia das personas identificadas para o projeto.
 
-## Diagrama de Casos de Uso
+| Pessoa | gostaria de | para |
+| --- | --- | --- |
+| Rafaella | Poder consultar o histórico do processo | Informar os requisitantes sobre o andamento e prazos |
+| Gustavo | Poder fazer juntada de processos | Poder tramitar assuntos similares ao mesmo tempo, como corte de árvore da mesma rua |
+| Sávio | Poder consultar o processo pela internet | Evitar que os interessados telefonem ou vão de forma presencial na prefeitura |
+| Paulo | Poder anexar o PDF da CND direto no sistema | evitar ter que lidar com malotes físicos |
+| Beatriz | Poder obter dados do processo direto pela internet | Evitar o deslocamento à entidade, principalmente na época que o COVID-19 estava em alta |
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
+## 2.3 Requisitos do Projeto
 
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
+A definição do escopo funcional do projeto ocorre mediante a descrição dos requisitos funcionais, os quais especificam as formas de interação dos usuários, e dos requisitos não funcionais, que determinam os aspectos gerais a serem apresentados pelo sistema. A seguir, são apresentados tais requisitos.
+
+* Fornecer recursos que permitam o cadastro de processos e seus dados;
+* Permitir a categorização, agrupamento e tramitação dos processos;
+* Possibilitar a filtragem e ordenação dos processos, assim como definição de tempo de vida de arquivamento.
+
+### 2.3.1 Requisitos Funcionais
+
+A tabela a seguir apresenta os requisitos funcionais do projeto e sua prioridade.
+
+| Código | Descrição | Prioridade |
+| --- | --- | --- |
+| RF-1 | O sistema deverá cadastrar os setores da entidade, setores estes para onde os processos serão iniciados e tramitados. | Alta |
+| RF-2 | O sistema deverá cadastrar os usuários do sistema, definindo quem pode iniciar um processo do setor. | Alta |
+| RF-3 | O sistema deverá vincular um usuário a um ou mais setores. | Alta |
+| RF-4 | O sistema deverá cadastrar tipos de processos. | Alta |
+| RF-5 | O sistema deverá cadastrar interessados, que podem ser pessoas físicas ou jurídicas. | Alta |
+| RF-6 | O sistema deverá permitir cadastrar processos especificando tipo, interessado, setor de origem e descrição. | Alta |
+| RF-7 | O sistema deverá permitir cadastrar anexos aos processos. | Alta |
+| RF-8 | O sistema deverá permitir tramitar um processo para outros setores. | Alta |
+| RF-9 | O sistema deverá permitir excluir a última tramitação. | Alta |
+| RF-10 | O sistema não poderá funcionar sem autenticação. | Alta|
+| RF-11 | O sistema deverá apresentar um menu que permita acesso as principais áreas do sistema (cadastro de processos, interessados e tramitação). | Alta |
+| RF-12 | O sistema deverá permitir ao usuário buscar processos por filtros. | Alta |
+| RF-13 | O sistema deverá permitir a exportação da listagem de processos para o Excel. | Baixa | 
+| RF-14 | O sistema deverá criar um usuário automaticamente quando não houver nenhum usuário. | Alto |
+| RF-15 | O sistema deverá permitir a consulta do processo mediante CPF e código do processo, pela internet, sem autenticação. | Médio |
+| RF-16 | O sistema deverá ter uma opção, dentro do cadastro de tipo de processos, que permita que o trâmite seja realizado fora do fluxo pré-determinado. | Médio |
+
+
+### 2.3.2 Requisitos Não Funcionais
+
+A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá atender.
+
+| Código | Descrição |
+| --- | --- | 
+| RNF-1 | Garantir boas práticas de desenvolvimento evitando um SQL Injection. |
+| RNF-2 | O sistema poderá ser acessível via celular ou tablet (ser responsivo). |
+| RNF-3 | O sistema poderá ser acessível por vários usuários ao mesmo tempo. |
+
+
+### 2.3.3 Requisitos de negócios
+
+A tabela a seguir apresenta os requisitos de negócios que o projeto deverá atender.
+
+| Código | Descrição | Prioridade |
+| --- | --- | --- | 
+| RN-1 | Não se pode cadastrar mais de um interessado com o mesmo CPF ou CNPJ repetidamente. | Média |
+| RN-2 | O nome da pessoa deve ser obrigatório. | Alta |
+| RN-3 | Todos os CPFs e CNPJs das pessoas cadastradas devem ser validados.| Alta |
+| RN-4 | Cada pessoa deverá ter um código incremental único. | Alta | 
+| RN-5 | Cada setor deverá ter um nome único. | Alta | 	
+| RN-6 | Cada tipo e processo deverá ter um nome único. | Alta | 	
+| RN-7 | Cada processo deverá ter como obrigatório Requisitante, Tipo. | Alta | 	
+| RN-8 | O sistema deverá gerar um código incremental para cada processo. | Alta | 	
+| RN-9 | O sistema deverá cadastrar automaticamente a data e hora do processo. | Alta | 	
+| RN-10 | O sistema deverá respeitar o fluxo de tramitação exceto seja definido o contrário no cadastro de tipo de processo. | Alta | 	
+
+### 2.3.4 Restrições 
+
+As questões que limitam a execução do projeto são apresentadas na tabela a seguir.
+			
+| Código | Descrição | Prioridade |
+| --- | --- | --- |
+| RE-1 | A entrega de cada etapa deverá cumprir o prazo definido. | Alta | 
+| RE-2 | O sistema deverá ser desenvolvido utilizando-se linguagens de programação que não requeiram licença de software paga. | Baixa |
+| RE-3 | O sistema não poderá utilizar trechos de programas já existentes. | Alta |
