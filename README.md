@@ -1,23 +1,27 @@
-# TÍTULO DO PROJETO
+# CADASTRO DE PROCESOS
 
-`CURSO`
+`ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
 
-`DISCIPLINA`
+`Projeto: Desenvolvimento de uma Aplicação Interativa`
 
-`SEMESTRE`
+`Eixo 2 - Grupo 01`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O cadastro de processos é um sistema voltado para prefeituras e entes públicos com o objetivo de permitir cadastrar e tramitar e acompanhar processos de protocolo de forma prática.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+
+* Andrey Bibiano Jardim
+* Bárbara Gabriela Evangelista Paixão
+* Leonardo dos Santos
+* Leonardo Ferreira dos Santos
+* Sara Cristina Gilberto Pereira
+* Thiago Muniz Severino dos Santos
+
 
 ## Orientador
 
-* Nome completo do professor 1
+* Prof. Dr. José Wilson da Costa
 
 ## Instruções de utilização
 
