@@ -52,16 +52,14 @@ A tabela a seguir apresenta os requisitos funcionais do projeto e sua prioridade
 | RF-4 | O sistema deverá cadastrar tipos de processos. | Alta |
 | RF-5 | O sistema deverá cadastrar interessados, que podem ser pessoas físicas ou jurídicas. | Alta |
 | RF-6 | O sistema deverá permitir cadastrar processos especificando tipo, interessado, setor de origem e descrição. | Alta |
-| RF-7 | O sistema deverá permitir cadastrar anexos aos processos. | Alta |
+| RF-7 | O sistema deverá permitir cadastrar anexos aos processos. | Baixa |
 | RF-8 | O sistema deverá permitir tramitar um processo para outros setores. | Alta |
 | RF-9 | O sistema deverá permitir excluir a última tramitação. | Alta |
-| RF-10 | O sistema não poderá funcionar sem autenticação. | Alta|
-| RF-11 | O sistema deverá apresentar um menu que permita acesso as principais áreas do sistema (cadastro de processos, interessados e tramitação). | Alta |
-| RF-12 | O sistema deverá permitir ao usuário buscar processos por filtros. | Alta |
-| RF-13 | O sistema deverá permitir a exportação da listagem de processos para o Excel. | Baixa | 
-| RF-14 | O sistema deverá criar um usuário automaticamente quando não houver nenhum usuário. | Alto |
-| RF-15 | O sistema deverá permitir a consulta do processo mediante CPF e código do processo, pela internet, sem autenticação. | Médio |
-| RF-16 | O sistema deverá ter uma opção, dentro do cadastro de tipo de processos, que permita que o trâmite seja realizado fora do fluxo pré-determinado. | Médio |
+| RF-10 | O usuário deverá estar logado para acessa o sistema. | Alta|
+| RF-11 | O sistema deverá permitir ao usuário buscar processos por filtros. | Alta |
+| RF-12 | O sistema deverá permitir a exportação da listagem de processos para o Excel. | Baixa | 
+| RF-13 | O sistema deverá permitir a consulta do processo mediante CPF e código do processo, pela internet, sem autenticação. | Médio |
+| RF-14 | O sistema deverá ter uma opção, dentro do cadastro de tipo de processos, que permita que o trâmite seja realizado fora do fluxo pré-determinado. | Médio |
 
 
 ### 2.3.2 Requisitos Não Funcionais
