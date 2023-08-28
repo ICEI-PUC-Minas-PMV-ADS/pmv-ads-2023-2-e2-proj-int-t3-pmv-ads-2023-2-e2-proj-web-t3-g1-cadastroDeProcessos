@@ -11,7 +11,7 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 | --- | --- | --- |
 | Repositório de Código Fonte | GitHub | https://github.com/ICEI-PUC-Minas-PMV-ADS/ |
 | Projeto de Interface  | MarvelApp | https://marvelapp.com/project/ |
-| Gerenciamento de projeto | Trello | https://trello.com |
+| Gerenciamento de projeto | Trello | [https://trello.com](https://trello.com/b/GwpYiqWH/eixo-2-2023) |
 | Diagramação do Fluxo | Libreoffice - Draw |  |
 | Tratamento das Imagens | GIMP | Programa disponível em https://www.gimp.org |
 | Diagramas de Classe e ER | DIA | Programa disponível em http://dia-installer.de/ |
