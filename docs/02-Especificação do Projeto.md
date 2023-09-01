@@ -99,3 +99,13 @@ As questões que limitam a execução do projeto são apresentadas na tabela a s
 | RE-1 | A entrega de cada etapa deverá cumprir o prazo definido. | Alta | 
 | RE-2 | O sistema deverá ser desenvolvido utilizando-se linguagens de programação que não requeiram licença de software paga. | Baixa |
 | RE-3 | O sistema não poderá utilizar trechos de programas já existentes. | Alta |
+
+## 2.4 Diagrama de Caso de Uso
+
+<P align='center'>
+<img src='img/Caso_Uso.png'><BR>
+Figura 1: Diagrama de caso de uso
+</P>
+
+
+
