@@ -6,7 +6,7 @@
 
 `Eixo 2 - Grupo 01`
 
-O cadastro de processos é um sistema como foco para prefeituras e entes públicos. Seu o objetivo é possibilitar cadastrar, tramitar e acompanhar processos de protocolo de forma prática.
+O cadastro de processos é um sistema com o foco para prefeituras e entes públicos. Seu o objetivo é possibilitar cadastrar, tramitar e acompanhar processos de protocolo de forma prática.
 
 ## Integrantes
 
