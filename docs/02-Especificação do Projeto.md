@@ -103,7 +103,7 @@ As questões que limitam a execução do projeto são apresentadas na tabela a s
 ## 2.4 Diagrama de Caso de Uso
 
 <P align='center'>
-<img src='img/Caso_Uso.png'><BR>
+<img src='arquivos/Caso_De_Uso.png'><BR>
 Figura 1: Diagrama de caso de uso
 </P>
 
