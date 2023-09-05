@@ -10,7 +10,7 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 | Ambiente | Plataforma | Link de Acesso |
 | --- | --- | --- |
 | Repositório de Código Fonte | GitHub | https://github.com/ICEI-PUC-Minas-PMV-ADS/ |
-| Projeto de Interface  | MarvelApp | https://marvelapp.com/project/ |
+| Projeto de Interface  | MarvelApp | https://marvelapp.com/prototype/2jjeb9f6 |
 | Gerenciamento de projeto | GitHub | https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/501/views/1 |
 | Diagramação do Fluxo | Libreoffice - Draw |  |
 | Tratamento das Imagens | GIMP | Programa disponível em https://www.gimp.org |
