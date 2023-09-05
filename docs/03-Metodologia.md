@@ -14,6 +14,7 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 | Gerenciamento de projeto | GitHub | https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/501/views/1 |
 | Tratamento das Imagens | GIMP | Programa disponível em https://www.gimp.org |
 | Diagramas de Classe, ER e Fluxo | DIA | Programa disponível em http://dia-installer.de/ |
+| Diagramas de Banco de Dados | DBDesignerFork | Programa disponível em http://dia-installer.de/ |
 
 ## Gerenciamento do Projeto
 
