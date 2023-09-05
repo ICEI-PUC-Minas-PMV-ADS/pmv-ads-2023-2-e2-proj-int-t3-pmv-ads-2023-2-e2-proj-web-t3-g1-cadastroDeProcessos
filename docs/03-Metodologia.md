@@ -12,9 +12,8 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 | Repositório de Código Fonte | GitHub | https://github.com/ICEI-PUC-Minas-PMV-ADS/ |
 | Projeto de Interface  | MarvelApp | https://marvelapp.com/prototype/2jjeb9f6 |
 | Gerenciamento de projeto | GitHub | https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/501/views/1 |
-| Diagramação do Fluxo | Libreoffice - Draw |  |
 | Tratamento das Imagens | GIMP | Programa disponível em https://www.gimp.org |
-| Diagramas de Classe e ER | DIA | Programa disponível em http://dia-installer.de/ |
+| Diagramas de Classe, ER e Fluxo | DIA | Programa disponível em http://dia-installer.de/ |
 
 ## Gerenciamento do Projeto
 
@@ -24,11 +23,13 @@ A equipe está organizada da seguinte maneira:
 * Scrum Master: Leonardo Ferreira dos Santos
 * Product Owner: Andrey Bibiano Jardim
 * Equipe de Desenvolvimento
+    * Andrey Bibiano Jardim
     * Leonardo dos Santos
     * Sara Cristina Gilberto
     * Thiago Muniz Severino dos Santos
 * Equipe de Design
     * Bárbara Gabriela Evangelista Paixão
+    * Sara Cristina Gilberto
 
 Para organização e distribuição das tarefas do projeto, a equipe está utilizando algumas ferramentas com objetivo de realizar o gerenciamento de tarefas, tais como: GitHub e Trello estruturado com as seguintes listas: 
 
