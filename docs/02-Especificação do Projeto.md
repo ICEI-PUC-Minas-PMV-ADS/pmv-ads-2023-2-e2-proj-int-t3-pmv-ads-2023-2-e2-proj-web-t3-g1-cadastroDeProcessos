@@ -55,7 +55,7 @@ A tabela a seguir apresenta os requisitos funcionais do projeto e sua prioridade
 | RF-7 | O sistema deverá permitir cadastrar anexos aos processos. | Baixa |
 | RF-8 | O sistema deverá permitir tramitar um processo para outros setores. | Alta |
 | RF-9 | O sistema deverá permitir excluir a última tramitação. | Alta |
-| RF-10 | O usuário deverá estar logado para acessa o sistema. | Alta|
+| RF-10 | O usuário deverá estar logado para acessar o sistema. | Alta|
 | RF-11 | O sistema deverá permitir ao usuário buscar processos por filtros. | Alta |
 | RF-12 | O sistema deverá permitir a exportação da listagem de processos para o Excel. | Baixa | 
 | RF-13 | O sistema deverá permitir a consulta do processo mediante CPF e código do processo, pela internet, sem autenticação. | Médio |
