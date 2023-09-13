@@ -47,8 +47,8 @@ A tabela a seguir apresenta os requisitos funcionais do projeto e sua prioridade
 | Código | Descrição | Prioridade |
 | --- | --- | --- |
 | RF-1 | O sistema deverá cadastrar os setores da entidade, setores estes para onde os processos serão iniciados e tramitados. | Alta |
-| RF-2 | O sistema deverá cadastrar os usuários do sistema, definindo quem pode iniciar um processo do setor. | Alta |
-| RF-3 | O sistema deverá vincular um usuário a um ou mais setores. | Alta |
+| RF-2 | O sistema deverá cadastrar os usuários do sistema. | Alta |
+| RF-3 | O sistema deverá vincular um usuário a um ou mais setores, definindo quem pode iniciar um processo do setor. | Alta |
 | RF-4 | O sistema deverá cadastrar tipos de processos. | Alta |
 | RF-5 | O sistema deverá cadastrar interessados, que podem ser pessoas físicas ou jurídicas. | Alta |
 | RF-6 | O sistema deverá permitir cadastrar processos especificando tipo, interessado, setor de origem e descrição. | Alta |
