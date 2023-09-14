@@ -53,11 +53,11 @@ Os requisitos para realização dos testes de software são:
 - Objetivo: Verificar se o sistema é capaz de vincular um usuário a um ou mais setores, conforme especificado no requisito funcional.
 
 - Procedimentos:
-1)Acesse a tela de vinculação de usuários a setores no sistema.
-2)Selecione o usuário ao qual deseja vincular setores na lista de usuários disponíveis.
-3)Selecione um ou mais setores aos quais deseja vincular o usuário na lista de setores disponíveis.
-4)Informe se o usuario poderá iniciar um processo no setor.
-5)Clique no botão "Vincular" ou equivalente.
+1)Acesse a tela de vinculação de usuários a setores no sistema;
+2)Selecione o usuário ao qual deseja vincular setores na lista de usuários disponíveis;
+3)Selecione um ou mais setores aos quais deseja vincular o usuário na lista de setores disponíveis;
+4)Informe se o usuario poderá iniciar um processo no setor;
+5)Clique no botão "Vincular" ou equivalente;
 6)Verifique se o sistema exibe uma mensagem de confirmação informando que a vinculação foi bem-sucedida.
 
 - Resultado esperado:
