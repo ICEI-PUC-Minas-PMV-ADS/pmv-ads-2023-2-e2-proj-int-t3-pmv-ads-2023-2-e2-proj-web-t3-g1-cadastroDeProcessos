@@ -22,8 +22,8 @@ Os requisitos para realização dos testes de software são:
     - Preencha os campos obrigatórios:
 	   . Nome do setor: 
 	   . Descrição: 
-	- Clique no botão "Cadastrar" ou equivalente;
-	- Verifique se o sistema exibe uma mensagem de confirmação informando que o setor foi cadastrado com sucesso.
+    - Clique no botão "Cadastrar" ou equivalente;
+    - Verifique se o sistema exibe uma mensagem de confirmação informando que o setor foi cadastrado com sucesso.
 
  - Resultados esperado:
 	.O sistema deve permitir o cadastro de setores com sucesso.
