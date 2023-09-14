@@ -1,6 +1,6 @@
 # 8. Plano de Testes de Software
 
-O plano de teste aqui apresentado nos traz a relação de casos de testes a serem realizados.
+O plano de teste aqui apresentado apresenta a relação de casos de testes a serem realizados.
 
 ## Requisitos para realização dos testes
 
@@ -53,14 +53,14 @@ Os requisitos para realização dos testes de software são:
 - Objetivo: Verificar se o sistema é capaz de vincular um usuário a um ou mais setores, conforme especificado no requisito funcional.
 
 - Procedimentos:
-1)Acesse a tela de vinculação de usuários a setores no sistema.
-2)Selecione o usuário ao qual deseja vincular setores na lista de usuários disponíveis.
-3)Selecione um ou mais setores aos quais deseja vincular o usuário na lista de setores disponíveis.
-4)Informe se o usuario poderá iniciar um processo no setor.
-5)Clique no botão "Vincular" ou equivalente.
-6)Verifique se o sistema exibe uma mensagem de confirmação informando que a vinculação foi bem-sucedida.
+	-Acesse a tela de vinculação de usuários a setores no sistema.
+	-Selecione o usuário ao qual deseja vincular setores na lista de usuários disponíveis.
+	-Selecione um ou mais setores aos quais deseja vincular o usuário na lista de setores disponíveis.
+	-Informe se o usuario poderá iniciar um processo no setor.
+	-Clique no botão "Vincular" ou equivalente.
+	-Verifique se o sistema exibe uma mensagem de confirmação informando que a vinculação foi bem-sucedida.
 
-- Resultado esperado:
+- Resultado esperado
 	.O sistema deve permitir a vinculação de um usuário a um ou mais setores com sucesso.
 	.Após a vinculação, o usuário deve estar associado aos setores selecionados.
 	.O sistema deve exibir uma mensagem de confirmação após a vinculação.
@@ -509,6 +509,6 @@ Requisito associado: RF-8
 	-Verifique se o sistema segue as regras de tramitação especificadas para esse tipo de processo, que são diferentes do fluxo padrão.
 
 - Resultado esperado:
-.O sistema deve permitir a criação de tipos de processo com ou sem exceções ao fluxo de tramitação padrão.
-.O sistema deve seguir o fluxo de tramitação padrão para tipos de processo sem exceções.
-.O sistema deve seguir as regras de tramitação especificadas para tipos de processo com exceções.
+	.O sistema deve permitir a criação de tipos de processo com ou sem exceções ao fluxo de tramitação padrão.
+	.O sistema deve seguir o fluxo de tramitação padrão para tipos de processo sem exceções.
+	.O sistema deve seguir as regras de tramitação especificadas para tipos de processo com exceções.
