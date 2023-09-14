@@ -76,8 +76,8 @@ Os requisitos para realização dos testes de software são:
 	-Preencha os campos obrigatórios:
 	  Nome do tipo de processo: 
 	  Descrição: 
--Clique no botão "Cadastrar" ou equivalente.
--Verifique se o sistema exibe uma mensagem de confirmação informando que o tipo de processo foi cadastrado com sucesso.
+	-Clique no botão "Cadastrar" ou equivalente.
+	-Verifique se o sistema exibe uma mensagem de confirmação informando que o tipo de processo foi cadastrado com sucesso.
 
 - Resultado esperado:
 	.O sistema deve permitir o cadastro de tipos de processos com sucesso.
@@ -126,11 +126,11 @@ Os requisitos para realização dos testes de software são:
 	  Interessado: [Selecionar um interessado existente]
 	  Setor de Origem: [Selecionar um setor de origem existente]
 	  Descrição do Processo: [Descrição do Processo de Teste]
--Clique no botão "Cadastrar" ou equivalente.
--Verifique se o sistema exibe uma mensagem de confirmação informando que o processo foi cadastrado com sucesso.
+	-Clique no botão "Cadastrar" ou equivalente.
+	-Verifique se o sistema exibe uma mensagem de confirmação informando que o processo foi cadastrado com sucesso.
 
 - Resultado esperado:
-	.O sistema deve permitir o cadastro de processos com sucesso, especificando o tipo de processo, interessado, setor de origem e descrição.
+	.O sistema deve permitir o cadastro de processos com sucesso, especificando o tipo de processo, interessado, setor de  origem e descrição.
 	.Após o cadastro, o processo de teste deve estar disponível na lista de processos cadastrados.
 	.O sistema deve exibir uma mensagem de confirmação após o cadastro.
 
