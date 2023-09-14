@@ -26,9 +26,9 @@ Os requisitos para realização dos testes de software são:
     - Verifique se o sistema exibe uma mensagem de confirmação informando que o setor foi cadastrado com sucesso. 
 
  - Resultados esperado:
-	. O sistema deve permitir o cadastro de setores com sucesso. 
-	. Após o cadastro, o setor cadastrado deve estar disponível na lista de setores cadastrados. 
-	. O sistema deve exibir uma mensagem de confirmação após o cadastro. 
+	- O sistema deve permitir o cadastro de setores com sucesso. 
+	- Após o cadastro, o setor cadastrado deve estar disponível na lista de setores cadastrados. 
+	- O sistema deve exibir uma mensagem de confirmação após o cadastro. 
 
 ### CT2 - Cadastro de Usuários 
 
@@ -43,8 +43,8 @@ Os requisitos para realização dos testes de software são:
 	- Verifique se o sistema exibe uma mensagem de confirmação informando que o usuario foi cadastrado. 
 
 - Resultado esperado:
-	. O sistema deve permitir o cadastro de usuários com sucesso. 
-	. O sistema deve exibir uma mensagem de confirmação após a associação. 
+	- O sistema deve permitir o cadastro de usuários com sucesso. 
+	- O sistema deve exibir uma mensagem de confirmação após a associação. 
 
 ### CT3 - Vinculação de Usuário a Setores
 
@@ -61,9 +61,9 @@ Os requisitos para realização dos testes de software são:
 	- Verifique se o sistema exibe uma mensagem de confirmação informando que a vinculação foi bem-sucedida. 
 
 - Resultado esperado
-	. O sistema deve permitir a vinculação de um usuário a um ou mais setores com sucesso. 
-	. Após a vinculação, o usuário deve estar associado aos setores selecionados. 
-	. O sistema deve exibir uma mensagem de confirmação após a vinculação. 
+	- O sistema deve permitir a vinculação de um usuário a um ou mais setores com sucesso. 
+	- Após a vinculação, o usuário deve estar associado aos setores selecionados. 
+	- O sistema deve exibir uma mensagem de confirmação após a vinculação. 
 
 ### CT4 - Cadastro de Tipos de Processos
 
@@ -80,9 +80,9 @@ Os requisitos para realização dos testes de software são:
 	- Verifique se o sistema exibe uma mensagem de confirmação informando que o tipo de processo foi cadastrado com sucesso. 
 
 - Resultado esperado:
-	. O sistema deve permitir o cadastro de tipos de processos com sucesso. 
-	. Após o cadastro, o tipo de processo de teste deve estar disponível na lista de tipos de processos cadastrados. 
-	. O sistema deve exibir uma mensagem de confirmação após o cadastro. 
+	- O sistema deve permitir o cadastro de tipos de processos com sucesso. 
+	- Após o cadastro, o tipo de processo de teste deve estar disponível na lista de tipos de processos cadastrados. 
+	- O sistema deve exibir uma mensagem de confirmação após o cadastro. 
 
 ### CT-5 Cadastro de Interessados
 
@@ -109,9 +109,9 @@ Os requisitos para realização dos testes de software são:
 	- Verifique se o sistema exibe uma mensagem de confirmação informando que a pessoa jurídica foi cadastrada com sucesso. 
 
 - Resultado esperado:
-	. O sistema deve permitir o cadastro de interessados (pessoas físicas e jurídicas) com sucesso. 
-	. Após o cadastro, o interessado de teste deve estar disponível na lista de interessados cadastrados. 
-	. O sistema deve exibir uma mensagem de confirmação após o cadastro. 
+	- O sistema deve permitir o cadastro de interessados (pessoas físicas e jurídicas) com sucesso. 
+	- Após o cadastro, o interessado de teste deve estar disponível na lista de interessados cadastrados. 
+	- O sistema deve exibir uma mensagem de confirmação após o cadastro. 
 
 ### CT-6 Cadastro de Processos
 
@@ -130,9 +130,9 @@ Os requisitos para realização dos testes de software são:
 	- Verifique se o sistema exibe uma mensagem de confirmação informando que o processo foi cadastrado com sucesso. 
 
 - Resultado esperado:
-	. O sistema deve permitir o cadastro de processos com sucesso, especificando o tipo de processo, interessado, setor de  origem e descrição. 
-	. Após o cadastro, o processo de teste deve estar disponível na lista de processos cadastrados. 
-	. O sistema deve exibir uma mensagem de confirmação após o cadastro. 
+	- O sistema deve permitir o cadastro de processos com sucesso, especificando o tipo de processo, interessado, setor de  origem e descrição. 
+	- Após o cadastro, o processo de teste deve estar disponível na lista de processos cadastrados. 
+	- O sistema deve exibir uma mensagem de confirmação após o cadastro. 
 
 ### CT-7 Cadastro de Anexos aos Processos
 
@@ -149,9 +149,9 @@ Os requisitos para realização dos testes de software são:
 	- Verifique se o sistema exibe uma mensagem de confirmação informando que o anexo foi adicionado com sucesso ao processo. 
 
 - Resultado esperado:
-	. O sistema deve permitir o cadastro de anexos aos processos com sucesso. 
-	. Após o cadastro, o anexo deve estar associado ao processo escolhido. 
-	. O sistema deve exibir uma mensagem de confirmação após o cadastro do anexo. 
+	- O sistema deve permitir o cadastro de anexos aos processos com sucesso. 
+	- Após o cadastro, o anexo deve estar associado ao processo escolhido. 
+	- O sistema deve exibir uma mensagem de confirmação após o cadastro do anexo. 
 
 ### CT-8 Trâmite de Processo para Outros Setores
 
@@ -168,9 +168,9 @@ Requisito associado: RF-8
 	- Verifique se o sistema exibe uma mensagem de confirmação informando que o processo foi tramitado com sucesso para o novo setor. 
 
 - Resultado esperado:
-	. O sistema deve permitir o trâmite de um processo para outros setores com sucesso. 
-	. Após o trâmite, o processo deve estar localizado no setor de destino. 
-	. O sistema deve exibir uma mensagem de confirmação após o trâmite do processo. 
+	- O sistema deve permitir o trâmite de um processo para outros setores com sucesso. 
+	- Após o trâmite, o processo deve estar localizado no setor de destino. 
+	- O sistema deve exibir uma mensagem de confirmação após o trâmite do processo. 
 
 ### CT-9 Exclusão da Última Tramitação de um Processo
 
@@ -187,9 +187,9 @@ Requisito associado: RF-8
 	- Verifique se o sistema exibe uma mensagem de confirmação informando que a última tramitação foi excluída com sucesso. 
 
 - Resultado esperado:
-	. O sistema deve permitir a exclusão da última tramitação de um processo com sucesso. 
-	. Após a exclusão, a última tramitação deve ser removida do histórico de tramitações do processo. 
-	. O sistema deve exibir uma mensagem de confirmação após a exclusão da tramitação. 
+	- O sistema deve permitir a exclusão da última tramitação de um processo com sucesso. 
+	- Após a exclusão, a última tramitação deve ser removida do histórico de tramitações do processo. 
+	- O sistema deve exibir uma mensagem de confirmação após a exclusão da tramitação. 
 
 ### CT-10 Acesso ao Sistema com Login
 
@@ -203,8 +203,8 @@ Requisito associado: RF-8
 	- Verifique se o sistema redireciona o usuário para a página de login ou exige que o usuário faça login para continuar. 
 
 - Resultado esperado:
-	. O sistema deve exigir que o usuário faça login para acessar funcionalidades ou páginas restritas. 
-	. O sistema deve redirecionar o usuário para a página de login quando ele tentar acessar uma funcionalidade restrita sem estar logado. 
+	- O sistema deve exigir que o usuário faça login para acessar funcionalidades ou páginas restritas. 
+	- O sistema deve redirecionar o usuário para a página de login quando ele tentar acessar uma funcionalidade restrita sem estar logado. 
 
 ### CT-11  Busca de Processos por Filtros
 
@@ -219,8 +219,8 @@ Requisito associado: RF-8
 	- Verifique se o sistema apresenta uma lista de processos que correspondem aos filtros de busca especificados. 
 
 - Resultado esperado:
-	. O sistema deve permitir que o usuário busque processos com base em filtros de busca com sucesso. 
-	. Após a busca, o sistema deve exibir uma lista de processos que correspondem aos filtros de busca especificados. 
+	- O sistema deve permitir que o usuário busque processos com base em filtros de busca com sucesso. 
+	- Após a busca, o sistema deve exibir uma lista de processos que correspondem aos filtros de busca especificados. 
 
 ### CT-12 Exportação da Listagem de Processos para o Excel
 
@@ -236,9 +236,9 @@ Requisito associado: RF-8
 	- Abra o arquivo Excel e verifique se ele contém os dados corretos dos processos, incluindo informações como tipo de processo, interessado, data de criação, setor de origem, etc. 
 
 - Resultado esperado:
-	. O sistema deve permitir a exportação da listagem de processos para um arquivo Excel com sucesso. 
-	. O arquivo Excel gerado deve conter os dados corretos dos processos, seguindo o formato esperado. 
-	. O sistema gera e disponibiliza corretamente o arquivo Excel para download. 
+	- O sistema deve permitir a exportação da listagem de processos para um arquivo Excel com sucesso. 
+	- O arquivo Excel gerado deve conter os dados corretos dos processos, seguindo o formato esperado. 
+	- O sistema gera e disponibiliza corretamente o arquivo Excel para download. 
 
 ### CT-13 Consulta de Processo por CPF e Código Sem Autenticação
 
@@ -253,8 +253,8 @@ Requisito associado: RF-8
 	- Verifique se o sistema apresenta as informações do processo correspondente e suas movimentações. 
 
 - Resultado esperado:
-	. O sistema deve permitir que os usuários consultem processos por CPF e código do processo pela internet sem a necessidade de autenticação. 
-	. O sistema deve apresentar as informações corretas do processo correspondente à consulta. 
+	- O sistema deve permitir que os usuários consultem processos por CPF e código do processo pela internet sem a necessidade de autenticação. 
+	- O sistema deve apresentar as informações corretas do processo correspondente à consulta. 
 
 ### CT-14 Trâmite Fora do Fluxo Pré-Determinado
 
@@ -271,9 +271,9 @@ Requisito associado: RF-8
 	- Verifique se o sistema exibe uma mensagem de confirmação informando que o processo foi tramitado com sucesso para o novo setor fora do fluxo pré-determinado. 
 
 - Resultado esperado:
-	. O sistema deve permitir que o trâmite de um processo seja realizado fora do fluxo pré-determinado, conforme configurado na opção dentro do cadastro de tipos de processos. 
-	. Após o trâmite, o processo deve estar localizado no setor de destino fora do fluxo pré-determinado. 
-	. O sistema deve exibir uma mensagem de confirmação após o trâmite do processo. 
+	- O sistema deve permitir que o trâmite de um processo seja realizado fora do fluxo pré-determinado, conforme configurado na opção dentro do cadastro de tipos de processos. 
+	- Após o trâmite, o processo deve estar localizado no setor de destino fora do fluxo pré-determinado. 
+	- O sistema deve exibir uma mensagem de confirmação após o trâmite do processo. 
 
 ### CT-15 Acesso Responsivo via Celular ou Tablet
 
@@ -293,11 +293,11 @@ Requisito associado: RF-8
 	- Avalie o desempenho do sistema em dispositivos móveis, verificando se as páginas carregam rapidamente e se não há atrasos significativos. 
 
  - Resultado esperado:
-	. O sistema deve ser responsivo e se adaptar de forma adequada ao tamanho e à orientação da tela do dispositivo móvel. 
-	. Todos os elementos de interface devem ser visíveis, interagíveis e de tamanho adequado para dispositivos móveis. 
-	. Todas as funcionalidades do sistema devem funcionar corretamente em dispositivos móveis. 
-	. O sistema deve ter um desempenho aceitável em dispositivos móveis. 
-	. O sistema deve ser acessível em dispositivos móveis, seguindo as diretrizes de acessibilidade. 
+	- O sistema deve ser responsivo e se adaptar de forma adequada ao tamanho e à orientação da tela do dispositivo móvel. 
+	- Todos os elementos de interface devem ser visíveis, interagíveis e de tamanho adequado para dispositivos móveis. 
+	- Todas as funcionalidades do sistema devem funcionar corretamente em dispositivos móveis. 
+	- O sistema deve ter um desempenho aceitável em dispositivos móveis. 
+	- O sistema deve ser acessível em dispositivos móveis, seguindo as diretrizes de acessibilidade. 
 
 ### CT-16 Acesso Simultâneo por Múltiplos Usuários
 
@@ -318,9 +318,9 @@ Requisito associado: RF-8
 	- Avalie se o sistema é capaz de escalonar horizontalmente (adicionar mais recursos, como servidores, conforme necessário) para acomodar um maior número de usuários simultâneos. 
 
 - Resultado esperado:
-	. O sistema deve ser capaz de suportar o número máximo de usuários simultâneos. 
-	. O sistema deve manter a estabilidade e o desempenho adequados, mesmo sob carga máxima. 
-	. Não deve haver erros críticos, falhas ou problemas graves de desempenho durante o teste. 
+	- O sistema deve ser capaz de suportar o número máximo de usuários simultâneos. 
+	- O sistema deve manter a estabilidade e o desempenho adequados, mesmo sob carga máxima. 
+	- Não deve haver erros críticos, falhas ou problemas graves de desempenho durante o teste. 
 
 ### CT-17 Restrição de Cadastro de Interessados com mesmo CPF ou CNPJ
 
@@ -335,9 +335,9 @@ Requisito associado: RF-8
 	- Verifique se o sistema impede o cadastro e exibe uma mensagem de erro informando que o CPF ou CNPJ já está em uso. 
 
 - Resultado esperado:
-	. O sistema deve permitir o cadastro de um interessado com um CPF ou CNPJ não utilizado anteriormente. 
-	. O sistema deve impedir o cadastro de um interessado com o mesmo CPF ou CNPJ que já foi cadastrado anteriormente. 
-	. O sistema deve exibir mensagens de confirmação e erro apropriadas conforme necessário. 
+	- O sistema deve permitir o cadastro de um interessado com um CPF ou CNPJ não utilizado anteriormente. 
+	- O sistema deve impedir o cadastro de um interessado com o mesmo CPF ou CNPJ que já foi cadastrado anteriormente. 
+	- O sistema deve exibir mensagens de confirmação e erro apropriadas conforme necessário. 
 
 ### CT-18 Obrigatoriedade do Nome da Pessoa
 
@@ -355,8 +355,8 @@ Requisito associado: RF-8
 	- Verifique se o sistema permite o cadastro com sucesso e exibe uma mensagem de confirmação. 
 
 - Resultado esperado:
-	. O sistema deve impedir o cadastro de uma pessoa sem fornecer o nome e exibir uma mensagem de erro indicando que o campo de nome é obrigatório. 
-	. O sistema deve permitir o cadastro de uma pessoa quando o nome é fornecido corretamente e exibir uma mensagem de confirmação. 
+	- O sistema deve impedir o cadastro de uma pessoa sem fornecer o nome e exibir uma mensagem de erro indicando que o campo de nome é obrigatório. 
+	- O sistema deve permitir o cadastro de uma pessoa quando o nome é fornecido corretamente e exibir uma mensagem de confirmação. 
 
 ### CT-19 Validação de CPFs e CNPJs das Pessoas Cadastradas
 
@@ -372,8 +372,8 @@ Requisito associado: RF-8
 	- Tente concluir o cadastro novamente. 
 
 - Resultado esperado:
-	. O sistema deve permitir o cadastro apenas quando CPFs e CNPJs válidos são fornecidos e exibir uma mensagem de confirmação. 
-	. O sistema deve impedir o cadastro e exibir uma mensagem de erro quando CPFs e CNPJs inválidos são fornecidos. 
+	- O sistema deve permitir o cadastro apenas quando CPFs e CNPJs válidos são fornecidos e exibir uma mensagem de confirmação. 
+	- O sistema deve impedir o cadastro e exibir uma mensagem de erro quando CPFs e CNPJs inválidos são fornecidos. 
 
 ### CT-20 Código Incremental Único para Cada Interessado
 
@@ -391,8 +391,8 @@ Requisito associado: RF-8
 	- Verifique se o sistema atribui um código incremental único para o terceiro interessado, que seja diferente dos códigos dos dois interessados cadastradas anteriormente. 
 
 - Resultado esperado:
-	. O sistema deve atribuir um código incremental único para cada interessado cadastrado, garantindo que nenhum código seja repetido. 
-	. Cada código incremental deve ser exclusivo para a respectiva interessado cadastrado. 
+	- O sistema deve atribuir um código incremental único para cada interessado cadastrado, garantindo que nenhum código seja repetido. 
+	- Cada código incremental deve ser exclusivo para a respectiva interessado cadastrado. 
 
 ### CT-21 Nome Único para Cada Setor
 
@@ -410,8 +410,8 @@ Requisito associado: RF-8
 	- Verifique se o sistema permite a criação do terceiro setor com sucesso e exibe uma mensagem de confirmação. 
 
 - Resultado esperado:
-	. O sistema garante que cada setor tenha um nome único. 
-	. O sistema exibe mensagens de confirmação e erro apropriadas conforme necessário. 
+	- O sistema garante que cada setor tenha um nome único. 
+	- O sistema exibe mensagens de confirmação e erro apropriadas conforme necessário. 
 
 ### CT-22 Nome Único para Cada Tipo de Processo
 
@@ -429,8 +429,8 @@ Requisito associado: RF-8
 	- Verifique se o sistema permite a criação do terceiro tipo de processo com sucesso e exibe uma mensagem de confirmação. 
 
 - Resultados Esperados:
-	. O sistema deve permitir a criação de tipos de processo com nomes únicos. 
-	. O sistema deve impedir a criação de tipos de processo com nomes duplicados e exibir mensagens de erro apropriadas. 
+	- O sistema deve permitir a criação de tipos de processo com nomes únicos. 
+	- O sistema deve impedir a criação de tipos de processo com nomes duplicados e exibir mensagens de erro apropriadas. 
 
 ### CT-23  Requisitante e Tipo Obrigatórios para Cada Processo
 
@@ -447,9 +447,9 @@ Requisito associado: RF-8
 	- Verifique se o sistema permite a criação do processo com sucesso e exibe uma mensagem de confirmação. 
 
 - Resultados Esperados:
-	. O sistema deve impedir a criação de processos que não tenham um requisitante e um tipo de processo definidos. 
-	. O sistema deve exibir mensagens de erro indicando que o requisitante e o tipo de processo são campos obrigatórios quando não são fornecidos. 
-	. O sistema deve permitir a criação de processos quando requisitante e tipo de processo são fornecidos corretamente. 
+	- O sistema deve impedir a criação de processos que não tenham um requisitante e um tipo de processo definidos. 
+	- O sistema deve exibir mensagens de erro indicando que o requisitante e o tipo de processo são campos obrigatórios quando não são fornecidos. 
+	- O sistema deve permitir a criação de processos quando requisitante e tipo de processo são fornecidos corretamente. 
 
 ### CT-24 Geração de Código Incremental para Cada Processo
 
@@ -467,8 +467,8 @@ Requisito associado: RF-8
 	- Verifique se o sistema atribui um código incremental único para o terceiro processo, que seja diferente dos códigos dos processos cadastrados anteriormente. 
 
 - Resultado esperado:
-	. O sistema deve atribuir um código incremental único para cada processo cadastrado, garantindo que nenhum código seja repetido. 
-	. Cada código incremental deve ser exclusivo para o respectivo processo cadastrado. 
+	- O sistema deve atribuir um código incremental único para cada processo cadastrado, garantindo que nenhum código seja repetido. 
+	- Cada código incremental deve ser exclusivo para o respectivo processo cadastrado. 
 
 ### CT-25 O sistema deverá cadastrar automaticamente a data e hora do processo. 
 
@@ -487,8 +487,8 @@ Requisito associado: RF-8
 	- Verifique se o sistema registra automaticamente a data e hora de criação do terceiro processo. 
 
 - Resultado esperado:
-	. O sistema deve registrar automaticamente a data e hora de criação de cada processo no momento em que o processo é cadastrado. 
-	. A data e hora de criação registradas devem refletir o momento exato em que o processo foi criado. 
+	- O sistema deve registrar automaticamente a data e hora de criação de cada processo no momento em que o processo é cadastrado. 
+	- A data e hora de criação registradas devem refletir o momento exato em que o processo foi criado. 
 
 ### CT-26 Respeito ao Fluxo de Tramitação com Exceções no Cadastro de Tipo de Processo
 
@@ -509,6 +509,6 @@ Requisito associado: RF-8
 	- Verifique se o sistema segue as regras de tramitação especificadas para esse tipo de processo, que são diferentes do fluxo padrão. 
 
 - Resultado esperado:
-	. O sistema deve permitir a criação de tipos de processo com ou sem exceções ao fluxo de tramitação padrão. 
-	. O sistema deve seguir o fluxo de tramitação padrão para tipos de processo sem exceções. 
-	. O sistema deve seguir as regras de tramitação especificadas para tipos de processo com exceções. 
+	- O sistema deve permitir a criação de tipos de processo com ou sem exceções ao fluxo de tramitação padrão. 
+	- O sistema deve seguir o fluxo de tramitação padrão para tipos de processo sem exceções. 
+	- O sistema deve seguir as regras de tramitação especificadas para tipos de processo com exceções. 
