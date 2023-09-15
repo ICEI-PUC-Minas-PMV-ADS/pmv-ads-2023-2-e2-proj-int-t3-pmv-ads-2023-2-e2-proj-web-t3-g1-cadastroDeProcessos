@@ -1,20 +1,20 @@
-# Arquitetura da Solução
+# 5. Arquitetura da Solução
 
 Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
 
-## Diagrama de Classes
+## 5.1. Diagrama de Classes
 
 ![Diagrama de Classes](arquivos/Diagrama_Classe/Diagrama_de_Classes.png)
 
-## Modelo ER (Projeto Conceitual)
+## 5.2. Modelo ER (Projeto Conceitual)
 
 ![Diagrama Entidade Relacionamento](arquivos/ER/ER.png)
 
-## Projeto da Base de Dados
+## 5.3. Projeto da Base de Dados
 
 ![Projeto da Base de Dados](arquivos/Projeto_Base_Dados/PROJETO_BASE_DADOS.png)
 
-## Tecnologias Utilizadas
+## 5.4. Tecnologias Utilizadas
 
 Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
 
@@ -25,7 +25,7 @@ VSCODE
 
 Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
 
-## Hospedagem
+## 5.5. Hospedagem
 
 Explique como a hospedagem e o lançamento da plataforma foi feita.
 
