@@ -1,6 +1,6 @@
 # 8.  Plano de Testes de Software
 
-O plano de teste aqui apresentado apresenta a relação de casos de testes a serem realizados. 
+O plano de teste aqui apresentado expõe a relação de casos de testes a serem realizados. 
 
 ## Requisitos para realização dos testes
 
