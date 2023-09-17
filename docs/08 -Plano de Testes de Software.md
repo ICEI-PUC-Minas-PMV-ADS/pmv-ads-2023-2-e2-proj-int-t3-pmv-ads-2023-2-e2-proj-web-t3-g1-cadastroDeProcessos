@@ -275,54 +275,7 @@ Requisito associado: RF-8
 	- Após o trâmite, o processo deve estar localizado no setor de destino fora do fluxo pré-determinado. 
 	- O sistema deve exibir uma mensagem de confirmação após o trâmite do processo. 
 
-### CT-15 Acesso Responsivo via Celular ou Tablet
-
-- Requisito associado: RNF-2
-
-- Objetivo: Verificar se o sistema é responsivo e pode ser acessado de forma adequada em dispositivos móveis, como celulares e tablets. 
-
-- Procedimentos:
-	- Acesse o sistema por meio de um navegador em um dispositivo móvel, como um celular ou tablet. 
-	- Verifique se a página inicial do sistema é carregada corretamente e se todos os elementos estão visíveis e alinhados adequadamente na tela do dispositivo móvel. 
-	- Tente navegar pelas diferentes páginas e funcionalidades do sistema usando os controles de toque do dispositivo móvel, como toque, arraste e zoom. 
-	- Verifique se os elementos de interface, como botões, campos de entrada e menus, são de tamanho adequado para interação em telas sensíveis ao toque. 
-	- Gire o dispositivo entre os modos retrato e paisagem (se aplicável) e verifique se o layout do sistema se ajusta automaticamente à orientação da tela. 
-	- Teste a funcionalidade de rolagem para garantir que o conteúdo da página seja acessível e que não haja problemas de sobreposição ou recorte. 
-	- Tente realizar tarefas comuns no sistema, como pesquisa, preenchimento de formulários e interações com elementos interativos, para garantir que todas as funcionalidades estejam acessíveis e funcionem corretamente. 
-	- Verifique se todas as imagens e gráficos são exibidos de forma responsiva e se ajustam à largura da tela do dispositivo. 
-	- Avalie o desempenho do sistema em dispositivos móveis, verificando se as páginas carregam rapidamente e se não há atrasos significativos. 
-
- - Resultado esperado:
-	- O sistema deve ser responsivo e se adaptar de forma adequada ao tamanho e à orientação da tela do dispositivo móvel. 
-	- Todos os elementos de interface devem ser visíveis, interagíveis e de tamanho adequado para dispositivos móveis. 
-	- Todas as funcionalidades do sistema devem funcionar corretamente em dispositivos móveis. 
-	- O sistema deve ter um desempenho aceitável em dispositivos móveis. 
-	- O sistema deve ser acessível em dispositivos móveis, seguindo as diretrizes de acessibilidade. 
-
-### CT-16 Acesso Simultâneo por Múltiplos Usuários
-
-- Requisito associado: RNF-3
-
-- Objetivo: Verificar se o sistema suporta com sucesso o acesso simultâneo de vários usuários, mantendo a estabilidade e o desempenho adequados. 
-
-- Procedimentos:
-	- Configure um ambiente de teste que permita a simulação de acesso simultâneo por múltiplos usuários.  Isso pode ser feito com ferramentas de teste de carga ou por meio de scripts de automação que simulem interações de usuários reais. 
-	- Determine o número máximo de usuários simultâneos que o sistema deve suportar com base nos requisitos de desempenho. 
-	- Inicie a simulação de acesso simultâneo com o número máximo de usuários configurados. 
-	- Monitore o sistema durante o teste para identificar qualquer lentidão, erros ou problemas de desempenho.  Use ferramentas de monitoramento de desempenho, como CPU, memória e uso de rede. 
-	- Realize diversas ações e transações no sistema, incluindo a abertura de páginas, preenchimento de formulários, consultas de banco de dados, atualizações e outros cenários de uso comuns. 
-	- Verifique se o sistema mantém um desempenho aceitável e responde de maneira rápida e eficiente às solicitações de todos os usuários simultâneos. 
-	- Avalie a capacidade do sistema de gerenciar simultaneamente as transações de vários usuários, garantindo que não haja conflitos de dados ou erros de consistência. 
-	- Aumente gradualmente a carga de trabalho para testar os limites do sistema e verificar como ele lida com picos de tráfego. 
-	- Registre qualquer problema de desempenho, erros ou comportamento inesperado durante o teste. 
-	- Avalie se o sistema é capaz de escalonar horizontalmente (adicionar mais recursos, como servidores, conforme necessário) para acomodar um maior número de usuários simultâneos. 
-
-- Resultado esperado:
-	- O sistema deve ser capaz de suportar o número máximo de usuários simultâneos. 
-	- O sistema deve manter a estabilidade e o desempenho adequados, mesmo sob carga máxima. 
-	- Não deve haver erros críticos, falhas ou problemas graves de desempenho durante o teste. 
-
-### CT-17 Restrição de Cadastro de Interessados com mesmo CPF ou CNPJ
+### CT-15 Restrição de Cadastro de Interessados com mesmo CPF ou CNPJ
 
 - Requisito associado: RN-1
 
@@ -339,7 +292,7 @@ Requisito associado: RF-8
 	- O sistema deve impedir o cadastro de um interessado com o mesmo CPF ou CNPJ que já foi cadastrado anteriormente. 
 	- O sistema deve exibir mensagens de confirmação e erro apropriadas conforme necessário. 
 
-### CT-18 Obrigatoriedade do Nome da Pessoa
+### CT-16 Obrigatoriedade do Nome da Pessoa
 
 - Requisito associado: RN-2
 
@@ -358,7 +311,7 @@ Requisito associado: RF-8
 	- O sistema deve impedir o cadastro de uma pessoa sem fornecer o nome e exibir uma mensagem de erro indicando que o campo de nome é obrigatório. 
 	- O sistema deve permitir o cadastro de uma pessoa quando o nome é fornecido corretamente e exibir uma mensagem de confirmação. 
 
-### CT-19 Validação de CPFs e CNPJs das Pessoas Cadastradas
+### CT-17 Validação de CPFs e CNPJs das Pessoas Cadastradas
 
 - Requisito associado: RN-3
 
@@ -375,7 +328,7 @@ Requisito associado: RF-8
 	- O sistema deve permitir o cadastro apenas quando CPFs e CNPJs válidos são fornecidos e exibir uma mensagem de confirmação. 
 	- O sistema deve impedir o cadastro e exibir uma mensagem de erro quando CPFs e CNPJs inválidos são fornecidos. 
 
-### CT-20 Código Incremental Único para Cada Interessado
+### CT-18 Código Incremental Único para Cada Interessado
 
 - Requisito associado: RN-4
 
@@ -394,7 +347,7 @@ Requisito associado: RF-8
 	- O sistema deve atribuir um código incremental único para cada interessado cadastrado, garantindo que nenhum código seja repetido. 
 	- Cada código incremental deve ser exclusivo para a respectiva interessado cadastrado. 
 
-### CT-21 Nome Único para Cada Setor
+### CT-19 Nome Único para Cada Setor
 
 - Requisito associado: RN-5
 
@@ -413,7 +366,7 @@ Requisito associado: RF-8
 	- O sistema garante que cada setor tenha um nome único. 
 	- O sistema exibe mensagens de confirmação e erro apropriadas conforme necessário. 
 
-### CT-22 Nome Único para Cada Tipo de Processo
+### CT-20 Nome Único para Cada Tipo de Processo
 
 - Requisito associado: RN-6
 
@@ -432,7 +385,7 @@ Requisito associado: RF-8
 	- O sistema deve permitir a criação de tipos de processo com nomes únicos. 
 	- O sistema deve impedir a criação de tipos de processo com nomes duplicados e exibir mensagens de erro apropriadas. 
 
-### CT-23  Requisitante e Tipo Obrigatórios para Cada Processo
+### CT-21  Requisitante e Tipo Obrigatórios para Cada Processo
 
 - Requisito associado: RN-7
 
@@ -451,7 +404,7 @@ Requisito associado: RF-8
 	- O sistema deve exibir mensagens de erro indicando que o requisitante e o tipo de processo são campos obrigatórios quando não são fornecidos. 
 	- O sistema deve permitir a criação de processos quando requisitante e tipo de processo são fornecidos corretamente. 
 
-### CT-24 Geração de Código Incremental para Cada Processo
+### CT-22 Geração de Código Incremental para Cada Processo
 
 - Requisito associado: RN-8
 
@@ -470,7 +423,7 @@ Requisito associado: RF-8
 	- O sistema deve atribuir um código incremental único para cada processo cadastrado, garantindo que nenhum código seja repetido. 
 	- Cada código incremental deve ser exclusivo para o respectivo processo cadastrado. 
 
-### CT-25 O sistema deverá cadastrar automaticamente a data e hora do processo. 
+### CT-23 O sistema deverá cadastrar automaticamente a data e hora do processo. 
 
 - Requisito associado: RN-9
 
@@ -490,7 +443,7 @@ Requisito associado: RF-8
 	- O sistema deve registrar automaticamente a data e hora de criação de cada processo no momento em que o processo é cadastrado. 
 	- A data e hora de criação registradas devem refletir o momento exato em que o processo foi criado. 
 
-### CT-26 Respeito ao Fluxo de Tramitação com Exceções no Cadastro de Tipo de Processo
+### CT-24 Respeito ao Fluxo de Tramitação com Exceções no Cadastro de Tipo de Processo
 
 - Requisito associado: RN-10
 
