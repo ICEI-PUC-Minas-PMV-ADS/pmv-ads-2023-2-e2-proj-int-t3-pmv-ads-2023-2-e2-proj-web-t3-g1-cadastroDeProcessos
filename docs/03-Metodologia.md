@@ -20,7 +20,7 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 
 A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento.
 
-A equipe está organizada da seguinte maneira:
+A equipe está organizada da seguinte forma:
 * Scrum Master: Leonardo Ferreira dos Santos
 * Product Owner: Andrey Bibiano Jardim
 * Equipe de Desenvolvimento
