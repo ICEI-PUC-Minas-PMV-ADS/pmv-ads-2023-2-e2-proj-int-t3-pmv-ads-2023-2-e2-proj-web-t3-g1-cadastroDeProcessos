@@ -20,4 +20,23 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 ## 4.2. Wireframes
 
-Colocar o wireframe aqui...
+Tela - Inicial
+
+![Inicial](img/inicial.png)
+
+Tela - Busca de processos
+
+![Buscar processo](img/consulta.png)
+
+Tela - Resultado da busca
+
+![Resultado busca](img/resultado.png)
+
+Tela - Login
+
+![Login](img/login.png)
+
+Tela - DashBoard
+
+![Dashboard](img/dash.png)
+
