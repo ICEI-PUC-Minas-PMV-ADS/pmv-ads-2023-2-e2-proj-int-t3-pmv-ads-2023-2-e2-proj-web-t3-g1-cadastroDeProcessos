@@ -1,15 +1,36 @@
-# Plano de Testes de Usabilidade
+# 10. Plano de Testes de Usabilidade
 
 Os testes de usabilidade permitem avaliar a qualidade da interface com o usuário da aplicação interativa.
+Para criar testes de usabilidade baseados nos ensinamentos do autor Jacob Nielsen sobre interação do usuário com interfaces, podemos seguir os princípios de usabilidade fundamentais de Nielsen e projetar seus testes de acordo com esses princípios. Aqui estão alguns testes de usabilidade que podemos criar: 
 
-Um plano de teste de usabilidade deverá conter: o detalhamento dos objetivos (em função dos requisitos levantados/implementados), dos critérios que serão utilizados para a seleção dos participantes, dos procedimentos a serem adotados pelos condutores de teste (por exemplo: os testes serão presenciais ou remotos? o método será observação direta, medição ou avaliação?), das tarefas a serem executadas, dos dados a serem coletados (quantidade de cliques, número de erros, tempo etc.), a ordem de execução das tarefas e das etapas da sessão de teste, recursos demandados, métricas coletadas etc.
+1. ### Teste de Visibilidade de Estado do Sistema:
+   - Objetivo: Verificar se o sistema fornece feedback adequado ao usuário sobre o estado atual das ações ou processos em execução.
+   - Tarefa: Peça aos usuários para realizar uma ação que leve algum tempo para ser concluída (por exemplo, enviar um formulário). Durante a ação, avalie se o sistema fornece feedback claro sobre o progresso ou estado da ação.
 
-Para cada voluntário do teste, é fundamental coletar e apresentar todos os dados/métricas previamente definidos, mas não se esqueça: atendendo à LGPD (Lei Geral de Proteção de Dados), nenhum dado sensível, que permita identificar o voluntário, deverá ser apresentado).
+2. ### Teste de Correspondência entre o Sistema e o Mundo Real:**
+   - Objetivo: Verificar se os termos, ícones e ações no sistema correspondem ao que os usuários esperam com base em sua experiência do mundo real.
+   - Tarefa: Apresente aos usuários telas ou recursos do sistema e peça que identifiquem qualquer elemento que não faça sentido ou não corresponda às suas expectativas.
 
-As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
+3. ### Teste de Flexibilidade e Eficiência do Usuário:**
+   - Objetivo: Avaliar a capacidade do sistema de permitir que os usuários concluam tarefas de maneira eficiente e flexível.
+   - Tarefa: Peça aos usuários que realizem uma série de tarefas comuns no sistema e avalie sua eficiência ao fazer isso. Observe se o sistema oferece atalhos, funcionalidades de busca e outras maneiras de melhorar a eficiência.
 
-> **Links Úteis**:
-> - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
-> - [Teste de usabilidade: tudo o que você precisa saber! | by Jon Vieira | Aela.io | Medium](https://medium.com/aela/teste-de-usabilidade-o-que-voc%C3%AA-precisa-saber-39a36343d9a6/)
-> - [Planejando testes de usabilidade: o que (e o que não) fazer | iMasters](https://imasters.com.br/design-ux/planejando-testes-de-usabilidade-o-que-e-o-que-nao-fazer/)
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+4. ### Teste de Consistência e Padrões de Design:**
+   - Objetivo: Verificar se o sistema segue padrões de design consistentes em toda a interface.
+   - Tarefa: Apresente aos usuários diferentes partes da interface do sistema e peça que identifiquem inconsistências no design, como cores, estilos de botões ou disposição de elementos.
+
+5. ### Teste de Recuperação de Erros:**
+   - Objetivo: Avaliar a capacidade do sistema de ajudar os usuários a recuperar-se de erros ou problemas durante o uso.
+   - Tarefa: Criar cenários em que os usuários possam cometer erros comuns, como inserir informações incorretas em um formulário. Observe se o sistema fornece mensagens de erro claras e orientações sobre como corrigir os erros.
+
+6. ### Teste de Reconhecimento em Vez de Lembrança:**
+   - Objetivo: Verificar se o sistema ajuda os usuários a reconhecer informações e opções em vez de forçá-los a lembrar detalhes.
+   - Tarefa: Apresente aos usuários uma série de cenários e verifique se eles conseguem encontrar informações ou opções facilmente, sem a necessidade de lembrar onde estão.
+
+7. ### Teste de Prevenção de Erros:**
+   - Objetivo: Avaliar se o sistema impede proativamente que os usuários cometam erros graves.
+   - Tarefa: Criar situações em que os usuários possam estar prestes a cometer erros graves (por exemplo, excluir informações importantes). Avalie se o sistema fornece avisos ou salvaguardas para prevenir esses erros.
+
+8. ### Teste de Flexibilidade e Eficiência do Diagnóstico:**
+   - Objetivo: Avaliar a capacidade do sistema de ajudar os usuários a diagnosticar e corrigir problemas quando algo dá errado.
+   - Tarefa: Criar cenários em que os usuários enfrentem problemas comuns (por exemplo, dificuldades de login) e avalie se o sistema oferece ajuda clara e orientações para solucionar esses problemas.

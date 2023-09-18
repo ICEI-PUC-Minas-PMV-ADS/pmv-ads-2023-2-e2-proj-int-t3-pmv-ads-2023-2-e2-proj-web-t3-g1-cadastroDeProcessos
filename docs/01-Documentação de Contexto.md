@@ -1,4 +1,4 @@
-# Documentação do Contexto
+# 1. Documentação do Contexto
 
 Uma prefeitura trabalha com um fluxo de solicitações e encaminhamento de documentos, normalmente provida pelo setor de protocolo. Este setor não é apenas uma entidade isolada dentro da prefeitura, mas uma entidade que agrupa e transfere informações de e para todos os outros setores, como departamento pessoal, obras, finanças, saneamento, sendo responsável pela tramitação destas informações de forma organizada e assertiva. Cada processo pode ser originado tanto pelo público externo quanto interno.
 
