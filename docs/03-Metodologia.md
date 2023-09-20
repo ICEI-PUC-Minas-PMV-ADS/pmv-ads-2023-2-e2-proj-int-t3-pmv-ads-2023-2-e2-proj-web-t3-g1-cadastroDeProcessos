@@ -43,6 +43,6 @@ O quadro kanban do grupo desenvolvido na ferramenta de gerenciamento de projetos
 
 <P align='center'>
 <img src='img/metodologia/tela_kanban_grupo.png'><BR>
-Figura 1: Quadro Kanban / Trello em 17/04/2023
+Figura 1: Quadro Kanban em 20/09/2023
 </P>
 
