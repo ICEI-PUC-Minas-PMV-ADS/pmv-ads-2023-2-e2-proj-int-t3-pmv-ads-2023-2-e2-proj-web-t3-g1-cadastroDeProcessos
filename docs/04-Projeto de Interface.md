@@ -73,7 +73,7 @@ Tela - Cadastro/Edição de Processos
 
 Tela - Listagem Movimentação
 
-![Movimentação](img/movimentação.png)
+![Movimentação](img/movimentacao.png)
 
 Tela - Cadastro/Edição de Movimentação
 
