@@ -94,3 +94,15 @@ Tela - Listagem Fluxo
 Tela - Cadastro/Edição de Fluxo
 
 ![Cadastro Fluxo](img/cadFluxo.png)
+
+Tela - Confirmação Cadastro/Edição
+
+![Confrimação](img/confirmacao.png)
+
+Tela - Deseja Excluir
+
+![Excluir?](img/excluir.png)
+
+Tela - Confirmação Exclusão
+
+![Exclusão](img/exclusao.png)
