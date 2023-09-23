@@ -3,7 +3,7 @@
 Os testes de usabilidade permitem avaliar a qualidade da interface com o usuário da aplicação interativa.
 Para criar testes de usabilidade baseados nos ensinamentos do autor Jacob Nielsen sobre interação do usuário com interfaces, podemos seguir os princípios de usabilidade fundamentais de Nielsen e projetar seus testes de acordo com esses princípios, outro ponto importante é sobre o registro de testes e coletas de opiniões que vamos usar futuramente para evoluções do sistema. 
 
-### Registro de Testes e Coleta de Opiniões dos Usuários:
+### Registro de Testes e feeedback dos usuários:
 
 Os testes de usabilidade serão registrados por meio de filmagens e capturas de tela, que fornecerão resultados visuais e detalhados das interações dos usuários com o sistema. Além disso, os usuários serão convidados a preencher formulários que permitirão registrar suas opiniões e feedback sobre os itens questionados nos testes. Isso garantirá uma pesquisa abrangente em diversos pontos, propondo melhorias nas proximas versões.
 
