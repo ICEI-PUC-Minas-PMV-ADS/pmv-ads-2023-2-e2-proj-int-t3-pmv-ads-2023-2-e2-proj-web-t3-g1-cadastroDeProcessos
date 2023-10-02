@@ -10,7 +10,7 @@ namespace Processos.Models
         [Key]
         public int codigoTipoProcesso { get; set; }
 
-        [Required(ErrorMessage = "Obrigatório informar o nome do tipo de processo")]
+        [Required(ErrorMessage = "Informe o nome do tipo de processo")]
         [Display(Name = "Tipo de Processo")]
         public string nomeTipoProcesso { get; set; }
     }
