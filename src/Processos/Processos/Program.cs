@@ -1,6 +1,6 @@
 /*
  * 
- * Ferramentas consolte nuget 
+ * Ferramentas console nuget 
  * # add-migration orm-db
  * # update-database
  * */
