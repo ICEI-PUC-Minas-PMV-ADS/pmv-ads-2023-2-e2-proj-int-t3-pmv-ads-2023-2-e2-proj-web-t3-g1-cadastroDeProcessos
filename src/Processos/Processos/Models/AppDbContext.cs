@@ -21,5 +21,7 @@ namespace Processos.Models
 
         public DbSet<Fluxo> Fluxo { get; set; }
 
+     
+
     }
 }
