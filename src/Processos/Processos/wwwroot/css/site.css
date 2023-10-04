@@ -16,3 +16,35 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+
+
+#contenedorSpeedbutton {
+    display: none;
+
+   position: absolute;
+
+   left: 10%;
+   right: 10%;
+   top: 10%;
+   bottom: 10%;
+   background-color: #CCCCDD;
+   border: 1px solid red;
+    
+}
+
+#listaSpeedButton{
+
+   border: 1px solid #000;
+   border-collapse: collapse;
+
+}
+    
+#listaSpeedButton td {
+    border: 1px solid 555;
+}
+
+#contenedorSpeedbuttontitulo{
+    font-size: +2em;
+    font-weight: bold;
+}

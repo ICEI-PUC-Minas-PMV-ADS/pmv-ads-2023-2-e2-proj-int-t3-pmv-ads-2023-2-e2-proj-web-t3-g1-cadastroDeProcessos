@@ -13,15 +13,27 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="codigoInteressado" class="control-label"></label>
-                <input asp-for="codigoInteressado" class="form-control" />
+                <label asp-for="codigoInteressado" id="" class="control-label"></label>
+                <input asp-for="codigoInteressado" id="codigoInteressado" class="form-control" />
                 <span asp-validation-for="codigoInteressado" class="text-danger"></span>
+
+                <span id="exibicaoInteressado"></span>
+
+                <a href="javascript:speedbutton('INTERESSADO', 'codigoInteressado', 'codigoInteressado', 'nome', 'exibicaoInteressado')">localizar</a>
+
+
             </div>
             <div class="form-group">
                 <label asp-for="codigoTipoProcesso" class="control-label"></label>
-                <input asp-for="codigoTipoProcesso" class="form-control" />
+                <input asp-for="codigoTipoProcesso" id="codigoTipoProcesso" class="form-control" />
+                <span id="exibicaoTipoProcesso"></span>
                 <span asp-validation-for="codigoTipoProcesso" class="text-danger"></span>
+
+                <a href="javascript:speedbutton('TIPO_PROCESSO', 'codigoTipoProcesso', 'codigoTipoProcesso', 'nomeTipoProcesso', 'exibicaoTipoProcesso')">localizar</a>
+
             </div>
+
+
             <div class="form-group">
                 <label asp-for="cpfProtocolista" class="control-label"></label>
                 <input asp-for="cpfProtocolista" class="form-control" />
@@ -29,8 +41,14 @@
             </div>
             <div class="form-group">
                 <label asp-for="codigoSetor" class="control-label"></label>
-                <input asp-for="codigoSetor" class="form-control" />
+                <input asp-for="codigoSetor" id="codigoSetor" class="form-control" />
                 <span asp-validation-for="codigoSetor" class="text-danger"></span>
+
+                <span id="exibicaoSetor"></span>
+
+                <a href="javascript:speedbutton('SETOR', 'codigoSetor', 'codigoSetor', 'nome', 'exibicaoSetor')">localizar</a>
+
+
             </div>
             <div class="form-group">
                 <label asp-for="dataHora" class="control-label"></label>
