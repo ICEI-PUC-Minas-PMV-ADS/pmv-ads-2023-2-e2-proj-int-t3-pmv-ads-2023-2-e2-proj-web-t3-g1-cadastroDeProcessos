@@ -9,10 +9,30 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Speedbutton\**" />
     <Compile Remove="Views\Tipos_Processo_\**" />
+    <Compile Remove="wwwroot\NovaPasta\**" />
+    <Content Remove="Views\Speedbutton\**" />
     <Content Remove="Views\Tipos_Processo_\**" />
+    <Content Remove="wwwroot\NovaPasta\**" />
+    <EmbeddedResource Remove="Views\Speedbutton\**" />
     <EmbeddedResource Remove="Views\Tipos_Processo_\**" />
+    <EmbeddedResource Remove="wwwroot\NovaPasta\**" />
+    <None Remove="Views\Speedbutton\**" />
     <None Remove="Views\Tipos_Processo_\**" />
+    <None Remove="wwwroot\NovaPasta\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20231002195208_PM0001.cs" />
+    <Compile Remove="Migrations\20231002195208_PM0001.Designer.cs" />
+    <Compile Remove="Migrations\AppDbContextModelSnapshot.cs" />
+    <Compile Remove="Views\Home\Speedbutton.cs" />
+    <Compile Remove="Views\Home\Speedbutton.cshtml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Home\Speedbutton.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,6 +45,10 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.4" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
   </ItemGroup>
 
 </Project>

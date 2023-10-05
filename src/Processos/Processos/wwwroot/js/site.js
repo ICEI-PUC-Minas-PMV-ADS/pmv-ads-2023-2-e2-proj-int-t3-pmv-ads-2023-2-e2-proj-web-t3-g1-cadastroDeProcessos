@@ -65,14 +65,22 @@ function valor(o) {
 }
 
 
-function atualizarCampoExibicao() {
+function atualizarCampoExibicao(SQL, Destino) {
 
 
+	$.get("/api/sql/?SQL=" + SQL, function (data) {
+
+			$("#" + Destino).html(data);
+
+	});
+
+	
 
 }
 
 // <a href="        ('SETOR', 'codigoSetor', 'codigoSetorOrigem', 'nome',        'exibicaoCodigoSetorOrigem')">localizar</a>
 function speedbutton(tabela,   campoBusca,    campoDestino,        campoExibicao, contenedorCampoExibicao) {
+
 
 	$("#contenedorSpeedbutton").css("display", "block");
 
@@ -89,6 +97,9 @@ function selecionarSpeedbutton(campoBusca, valorCampoBusca, campoExibicao, valor
 	$("#" + campoBusca).val(valorCampoBusca);
 
 	$("#" + campoExibicao).html(valorCampoExibicao);
+
+
+	$('#buscaSpeedButton').val('');
 
 
 	$("#contenedorSpeedbutton").css("display", "none");

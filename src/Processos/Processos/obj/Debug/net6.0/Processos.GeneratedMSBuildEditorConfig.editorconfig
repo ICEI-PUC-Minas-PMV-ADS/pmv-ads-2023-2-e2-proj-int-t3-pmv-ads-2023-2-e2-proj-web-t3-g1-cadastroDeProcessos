@@ -16,12 +16,92 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Andrey\PUC\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos\src\Processos\Processos
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/Fluxo/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmx1eG9cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/Fluxo/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmx1eG9cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/Fluxo/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmx1eG9cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/Fluxo/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmx1eG9cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/Fluxo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmx1eG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/Interessado/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJlc3NhZG9cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/Interessado/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJlc3NhZG9cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/Interessado/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJlc3NhZG9cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/Interessado/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJlc3NhZG9cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/Interessado/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJlc3NhZG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/Processo/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvY2Vzc29cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/Processo/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvY2Vzc29cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/Processo/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvY2Vzc29cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/Processo/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvY2Vzc29cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/Processo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvY2Vzc29cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/Setor/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0b3JcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/Setor/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0b3JcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/Setor/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0b3JcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/Setor/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0b3JcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/Setor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0b3JcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/Shared/Error.cshtml]
@@ -50,6 +130,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/Tipo_Processo/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb19Qcm9jZXNzb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/Usuario/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/Usuario/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/Usuario/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/Usuario/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/Usuario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Andrey/PUC/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/src/Processos/Processos/Views/_ViewImports.cshtml]
