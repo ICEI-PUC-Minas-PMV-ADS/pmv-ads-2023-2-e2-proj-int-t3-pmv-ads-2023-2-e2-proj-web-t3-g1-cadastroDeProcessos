@@ -32,6 +32,7 @@ namespace Processos.Controllers
         public IActionResult Teste(String Tabela, String CampoBusca, String CampoExibicao, String CampoDestino, String ContenedorCampoExibicao, String Busca)
         {
             String html = "";
+            int quantidade = 0;
 
             Busca = Busca.Replace("'", "''");
            
@@ -53,7 +54,7 @@ namespace Processos.Controllers
                     using (SqlDataReader reader = command.ExecuteReader())
                     {
 
-                        html += "<TABLE id='listaSpeedButton'><TR><TH>" + CampoBusca + "</TH><TH>" + CampoExibicao + "</TH></TR>";
+                        html += "<TABLE class='table'><TR><TH>" + CampoBusca + "</TH><TH>" + CampoExibicao + "</TH></TR>";
 
                         while (reader.Read())
                         {
@@ -69,6 +70,7 @@ namespace Processos.Controllers
 
                             html += "<TR><TD>" + b + "</TD><TD>" + e + "</TD><TD><a href='javascript:selecionarSpeedbutton(\"" + CampoDestino + "\", \"" + b + "\", \"" + ContenedorCampoExibicao + "\", \"" + e + "\")'>[selecionar]</a></TD></TR>";
 
+                            quantidade++;
 
                         }
                     }
@@ -76,6 +78,12 @@ namespace Processos.Controllers
             }
 
             html += "</Table>";
+
+
+            if (quantidade == 0)
+            {
+                html = "<DIV id='registroNaoEncontrado'>Nenhum registro encontrado para o cadastro ou busca informada.</DIV>";
+            }
 
             // Fazer algo com o valor obtido
             return Content(html, "text/html");

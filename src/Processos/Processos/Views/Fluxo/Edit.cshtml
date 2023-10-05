@@ -7,6 +7,7 @@
 <h1>Editar um fluxo existente</h1>
 
 
+
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
@@ -14,11 +15,15 @@
             <input type="hidden" asp-for="codigoFluxo" />
 
             <div class="form-group">
+
+
                 <label asp-for="codigoSetorOrigem" class="control-label"></label>
 
-                <input asp-for="codigoSetorOrigem" id="codigoSetorOrigem" class="form-control" />
-                <span id="exibicaoCodigoSetorOrigem"></span>
-                <a href="javascript:speedbutton('SETOR', 'codigoSetor', 'codigoSetorOrigem', 'nome', 'exibicaoCodigoSetorOrigem')">localizar</a>
+                <input asp-for="codigoSetorOrigem" id="codigoSetorOrigem" class="form-control" style="display:none"/>
+               
+                <a class="fakeinput" href="javascript:speedbutton('SETOR', 'codigoSetor', 'codigoSetorOrigem', 'nome', 'exibicaoCodigoSetorOrigem')">
+                     <span id="exibicaoCodigoSetorOrigem"></span>
+                </a>
 
 
                 <span asp-validation-for="codigoSetorOrigem" class="text-danger"></span>
@@ -28,17 +33,30 @@
             <HR>
             <div class="form-group">
                 <label asp-for="codigoSetorDestino" class="control-label"></label>
-                <input asp-for="codigoSetorDestino" id="codigoSetorDestino" class="form-control" />
-                <span id="exibicaoCodigoSetorDestino"></span>
+                <input asp-for="codigoSetorDestino" id="codigoSetorDestino" class="form-control" style="display:none"  />
+             
+
+                <a class='fakeinput' href="javascript:speedbutton('SETOR', 'codigoSetor', 'codigoSetorDestino', 'nome', 'exibicaoCodigoSetorDestino')">
+
+                  <span id="exibicaoCodigoSetorDestino"></span>
+
+                    
+                </a>
+
                 <span asp-validation-for="codigoSetorDestino" class="text-danger"></span>
-                <a href="javascript:speedbutton('SETOR', 'codigoSetor', 'codigoSetorDestino', 'nome', 'exibicaoCodigoSetorDestino')">localizar</a>
+  
+                
             </div>
             <HR>
             <div class="form-group">
                 <label asp-for="codigoTipoProcesso" class="control-label"></label>
-                <input asp-for="codigoTipoProcesso" id="codigoTipoProcesso" class="form-control" />
-                <span id="exibicaoTipoProcesso"></span>
-                <a href="javascript:speedbutton('TIPO_PROCESSO', 'codigoTipoProcesso', 'codigoTipoProcesso', 'nomeTipoProcesso', 'exibicaoTipoProcesso')">localizar</a>
+                <input asp-for="codigoTipoProcesso" id="codigoTipoProcesso" class="form-control" style="display:none" />
+                
+                <a class='fakeinput ' href="javascript:speedbutton('TIPO_PROCESSO', 'codigoTipoProcesso', 'codigoTipoProcesso', 'nomeTipoProcesso', 'exibicaoTipoProcesso')">
+                 <span id="exibicaoTipoProcesso"></span>
+                   
+                </a>
+                
 
                 <span asp-validation-for="codigoTipoProcesso" class="text-danger"></span>
 
