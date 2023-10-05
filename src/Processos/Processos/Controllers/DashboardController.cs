@@ -36,7 +36,7 @@ namespace Processos.Controllers
                         if (reader.Read())
                         {
 
-                            html = "" + reader.GetValue(reader.GetOrdinal(0));
+                            html = "" + reader.GetValue(0);
 
                         }
                     }

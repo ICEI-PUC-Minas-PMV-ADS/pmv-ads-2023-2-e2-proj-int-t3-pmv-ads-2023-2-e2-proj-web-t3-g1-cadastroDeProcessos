@@ -63,11 +63,7 @@ namespace Processos.Controllers
                         while (reader.Read())
                         {
 
-                            html = "Dados do processo";
-
-
-
-
+                            html = "Dados da movimentação";
 
 
                         }
@@ -75,34 +71,13 @@ namespace Processos.Controllers
                 }
 
 
-
-
-
-
-
-
-
-
-
-
-
             }
 
 
-            if (Cab == "")
-            {
-                Cab = "<DIV id='registroNaoEncontrado'>Nenhum registro encontrado para o cadastro ou busca informada.</DIV>";
-            }
-
-            return Content(html + Cab + Dat, "text/html");
+            return Content(html, "text/html");
         }
 
 
-
-
-
     }
-
-
 
 }

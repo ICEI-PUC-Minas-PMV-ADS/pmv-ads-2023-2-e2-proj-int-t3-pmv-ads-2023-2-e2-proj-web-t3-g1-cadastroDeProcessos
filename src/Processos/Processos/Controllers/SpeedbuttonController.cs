@@ -44,7 +44,7 @@ namespace Processos.Controllers
 
                 string query = $"SELECT {CampoBusca}, {CampoExibicao} FROM {Tabela} WHERE {CampoExibicao} like '%{Busca}%'";
 
-                html += query; 
+                html += "<DIV id='debug'>" + query + "</div>"; 
 
 
                 using (SqlCommand command = new SqlCommand(query, connection))
