@@ -12,6 +12,6 @@ namespace Processos.Models
 
         [Required(ErrorMessage = "Informe o nome do tipo de processo")]
         [Display(Name = "Tipo de Processo")]
-        public string nomeTipoProcesso { get; set; }
+        public string? nomeTipoProcesso { get; set; }
     }
 }

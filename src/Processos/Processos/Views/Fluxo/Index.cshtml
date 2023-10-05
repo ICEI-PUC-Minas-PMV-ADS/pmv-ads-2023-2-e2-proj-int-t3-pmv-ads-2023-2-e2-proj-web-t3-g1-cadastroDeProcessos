@@ -1,47 +1,34 @@
 ﻿@model IEnumerable<Processos.Models.Fluxo>
 
-@{
-    ViewData["Title"] = "Index";
-}
-
-<h1>Index</h1>
+<h1>Listagem de Fluxos</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Adicionar um novo fluxo</a>
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.codigoSetorOrigem)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.codigoSetorDestino)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.codigoTipoProcesso)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.codigoSetorOrigem)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.codigoSetorDestino)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.codigoTipoProcesso)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.codigoFluxo">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.codigoFluxo">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.codigoFluxo">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+
+
+<DIV id='formBusca'>
+    <DIV><input type="text" id="Busca"></DIV>
+    <DIV id="contenedorBuscaLista"></DIV>
+</DIV>
+
+
+<SCRIPT>
+
+    $("#Busca").change(function () {
+        lista("Fluxo", "FLUXO")
+    })
+
+    $("#Busca").on("keypress", function (e) {
+        if (e.which == 13) {
+            lista("Fluxo", "FLUXO")
+        }
+    })
+
+    $(document).ready(function(){
+        lista("Fluxo", "FLUXO")
+    });
+
+    
+
+</SCRIPT>

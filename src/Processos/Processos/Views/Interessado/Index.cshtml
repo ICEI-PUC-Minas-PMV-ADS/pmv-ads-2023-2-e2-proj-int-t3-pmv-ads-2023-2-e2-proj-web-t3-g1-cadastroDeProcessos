@@ -1,101 +1,34 @@
 ﻿@model IEnumerable<Processos.Models.Interessado>
 
-@{
-    ViewData["Title"] = "Index";
-}
-
-<h1>Index</h1>
+<h1>Listagem de Interessados</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Adicionar um novo interessado</a>
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.cpfCnpjInteressado)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.nome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.telefone)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.logradouro)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.numero)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.complemento)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.bairro)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.cidade)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.uf)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.pais)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.cep)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.cpfCnpjInteressado)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.telefone)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.logradouro)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.numero)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.complemento)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.bairro)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.cidade)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.uf)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.pais)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.cep)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.codigoInteressado">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.codigoInteressado">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.codigoInteressado">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+
+
+<DIV id='formBusca'>
+    <DIV><input type="text" id="Busca"></DIV>
+    <DIV id="contenedorBuscaLista"></DIV>
+</DIV>
+
+
+<SCRIPT>
+
+    $("#Busca").change(function () {
+        lista("Interessado", "INTERESSADO")
+    })
+
+    $("#Busca").on("keypress", function (e) {
+        if (e.which == 13) {
+            lista("Interessado", "INTERESSADO")
+        }
+    })
+
+    $(document).ready(function () {
+        lista("Interessado", "INTERESSADO")
+    });
+
+
+
+</SCRIPT>

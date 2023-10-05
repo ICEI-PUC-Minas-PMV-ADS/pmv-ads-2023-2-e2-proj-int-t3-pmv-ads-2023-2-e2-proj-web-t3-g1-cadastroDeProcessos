@@ -10,13 +10,13 @@ namespace Processos.Models
         [Key]
 
         [Display(Name = "Código")]
-        public string codigoInteressado { get; set; }
+        public int codigoInteressado { get; set; }
 
 
         [Required(ErrorMessage = "Obrigatório informar o CPF/CNPJ do interessado")]
         [Display(Name = "CPF/CNPJ")]
 
-        public string cpfCnpjInteressado { get; set; }
+        public string? cpfCnpjInteressado { get; set; }
 
 
         [Required(ErrorMessage = "Obrigatório informar o nome ou razão social do interessado")]
@@ -24,33 +24,33 @@ namespace Processos.Models
         public string nome { get; set; }
 
         [Display(Name = "E-mail")]
-        public string email { get; set; }
+        public string? email { get; set; }
 
         [Display(Name = "Telefone")]
-        public string telefone { get; set; }
+        public string? telefone { get; set; }
 
         [Display(Name = "Logradouro")]
-        public string logradouro { get; set; }
+        public string? logradouro { get; set; }
 
         [Display(Name = "Número")]
-        public string numero { get; set; }
+        public string? numero { get; set; }
 
         [Display(Name = "Complemento")]
-        public string complemento { get; set; }
+        public string? complemento { get; set; }
 
         [Display(Name = "Bairro")]
-        public string bairro { get; set; }
+        public string? bairro { get; set; }
 
         [Display(Name = "Cidade")]
-        public string cidade { get; set; }
+        public string? cidade { get; set; }
 
         [Display(Name = "UF")]
-        public string uf { get; set; }
+        public string? uf { get; set; }
 
         [Display(Name = "País")]
-        public string pais { get; set; }
+        public string? pais { get; set; }
         [Display(Name = "CEP")]
-        public string cep { get; set; }
+        public string? cep { get; set; }
 
 
     }

@@ -94,3 +94,12 @@ function selecionarSpeedbutton(campoBusca, valorCampoBusca, campoExibicao, valor
 	$("#contenedorSpeedbutton").css("display", "none");
 
 }
+
+
+function lista(Rota, Tabela) {
+
+	$("#contenedorBuscaLista").load("/api/Lista/?Rota=" + Rota + "&Tabela=" + Tabela + "&Busca=%" + valor("Busca"));
+
+}
+
+

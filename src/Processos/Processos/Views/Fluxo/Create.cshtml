@@ -16,17 +16,41 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="codigoSetorOrigem" class="control-label"></label>
-                <input asp-for="codigoSetorOrigem" class="form-control" />
+                <input asp-for="codigoSetorOrigem" id="codigoSetorOrigem" class="form-control" />
+                <span id="exibicaoCodigoSetorOrigem"></span>
+
+                <a href="javascript:speedbutton('SETOR', 'codigoSetor', 'codigoSetorOrigem', 'nome', 'exibicaoCodigoSetorOrigem')">localizar</a>
+
+
+
                 <span asp-validation-for="codigoSetorOrigem" class="text-danger"></span>
             </div>
+
+
+
+
+
+
             <div class="form-group">
                 <label asp-for="codigoSetorDestino" class="control-label"></label>
-                <input asp-for="codigoSetorDestino" class="form-control" />
+                <input asp-for="codigoSetorDestino" id="codigoSetorDestino" class="form-control" />
+
+                <span id="exibicaoCodigoSetorDestino"></span>
+
+                <a href="javascript:speedbutton('SETOR', 'codigoSetor', 'codigoSetorDestino', 'nome', 'exibicaoCodigoSetorDestino')">localizar</a>
+
                 <span asp-validation-for="codigoSetorDestino" class="text-danger"></span>
+
+
             </div>
+
+
             <div class="form-group">
                 <label asp-for="codigoTipoProcesso" class="control-label"></label>
                 <input asp-for="codigoTipoProcesso" class="form-control" />
+                <span id="exibicaoTipoProcesso"></span>
+                <a href="javascript:speedbutton('TIPO_PROCESSO', 'codigoTipoProcesso', 'codigoTipoProcesso', 'nomeTipoProcesso', 'exibicaoTipoProcesso')">localizar</a>
+
                 <span asp-validation-for="codigoTipoProcesso" class="text-danger"></span>
             </div>
             <div class="form-group">

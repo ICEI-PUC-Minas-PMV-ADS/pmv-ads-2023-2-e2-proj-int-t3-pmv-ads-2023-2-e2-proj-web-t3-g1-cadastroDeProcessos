@@ -1,7 +1,7 @@
 /*
  * 
  * Ferramentas console nuget 
- * # add-migration orm-db
+ * # add-migration P0001
  * # update-database
  * */
 

@@ -48,3 +48,24 @@ body {
     font-size: +2em;
     font-weight: bold;
 }
+
+
+#debug{
+
+    background-color: #112;
+    color: #CCCCDD;
+    padding: 1em;
+    margin: 1em;
+    font-family: monospace;
+}
+
+
+#registroNaoEncontrado{
+    background-color: #FFD;
+    color: #000;
+    font-weight: bold;
+    border: 1px solid #FF0;
+    padding: 1em;
+   
+
+}

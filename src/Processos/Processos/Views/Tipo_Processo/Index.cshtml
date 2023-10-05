@@ -1,35 +1,33 @@
 ﻿@model IEnumerable<Processos.Models.Tipo_Processo>
 
-@{
-    ViewData["Title"] = "Tipos de Processo";
-}
-
-<h1>Tipos de Processo</h1>
+<h1>Listagem de Tipos de Processos</h1>
 
 <p>
-    <a asp-action="Create">Adicionar um novo</a>
+    <a asp-action="Create">Adicionar um novo tipo de processo</a>
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.nomeTipoProcesso)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.nomeTipoProcesso)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.codigoTipoProcesso">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.codigoTipoProcesso">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.codigoTipoProcesso">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+
+
+<DIV id='formBusca'>
+    <DIV><input type="text" id="Busca"></DIV>
+    <DIV id="contenedorBuscaLista"></DIV>
+</DIV>
+
+
+<SCRIPT>
+
+    $("#Busca").change(function () {
+        lista("Tipo_Processo", "TIPO_PROCESSO")
+    })
+
+    $("#Busca").on("keypress", function (e) {
+        if (e.which == 13) {
+            lista("Tipo_Processo", "TIPO_PROCESSO")
+        }
+    })
+
+    $(document).ready(function () {
+        lista("Tipo_Processo", "TIPO_PROCESSO")
+    });
+
+
+</SCRIPT>
