@@ -4,10 +4,9 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<h1>Editar um fluxo existente</h1>
 
-<h4>Fluxo</h4>
-<hr />
+
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
@@ -58,3 +57,16 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+
+
+<SCRIPT>
+
+    $(document).ready(function () {
+       
+        atualizarCampoExibicao("SELECT nome FROM SETOR WHERE codigoSetor=" + valor('codigoSetorOrigem'), "exibicaoCodigoSetorOrigem");
+        atualizarCampoExibicao("SELECT nome FROM SETOR WHERE codigoSetor=" + valor('codigoSetorDestino'), "exibicaoCodigoSetorDestino");
+        atualizarCampoExibicao("SELECT nomeTipoProcesso FROM TIPO_PROCESSO WHERE codigoTipoProcesso=" + valor('codigoTipoProcesso'), "exibicaoTipoProcesso");
+
+    });
+
+</SCRIPT>

@@ -9,7 +9,6 @@ namespace Processos.Models
 
         [Key]
 
-        [Display(Name = "Código")]
         public int codigoInteressado { get; set; }
 
 
