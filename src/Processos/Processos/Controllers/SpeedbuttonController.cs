@@ -23,6 +23,8 @@ namespace Processos.Controllers
 
         public readonly AppDbContext _context;
 
+        
+
         public SpeedbuttonController(AppDbContext context)
         {
             _context = context;
@@ -31,6 +33,8 @@ namespace Processos.Controllers
         [HttpGet]
         public IActionResult Teste(String Tabela, String CampoBusca, String CampoExibicao, String CampoDestino, String ContenedorCampoExibicao, String Busca)
         {
+
+            var builder = WebApplication.CreateBuilder();
             String html = "";
             int quantidade = 0;
 
@@ -38,7 +42,7 @@ namespace Processos.Controllers
            
             List<String> columnData = new List<String>();
 
-            using (SqlConnection connection = new SqlConnection("Server=127.0.0.1;Database=processos;User Id=sa; Password=123456; TrustServerCertificate=True"))
+            using (SqlConnection connection = new SqlConnection(builder.Configuration.GetConnectionString("DefaultConnection")))
             {
                 connection.Open();
 

@@ -8,6 +8,8 @@ namespace Processos.Controllers
     {
 
         private readonly AppDbContext _context;
+        private string codigoProcesso;
+
         public MovimentacaoController(AppDbContext context)
         {
             _context = context;
@@ -31,30 +33,21 @@ namespace Processos.Controllers
             {
                 _context.Movimentacao.Add(movimentacao);
                 await _context.SaveChangesAsync();
-                return RedirectToAction("Index");
+                return Redirect("/Processo/Edit/" + movimentacao.codigoProcesso);
             }
-            return View();
+
+            return Redirect("/Processo/Edit/" + movimentacao.codigoProcesso);
         }
 
 
-        public IActionResult Create()
+        public IActionResult Create([FromQuery] int codProcesso)
         {
-            return View();
-        }
-
-
-        public IActionResult Details(int? id)
-        {
-
-            var dados = _context.Movimentacao.Find(id);
-
-            if (dados == null)
-                return NotFound();
-
-
-
-            return View(dados);
-
+            Movimentacao m = new Movimentacao();
+            m.codigoProcesso = codProcesso;
+            m.dataHora = DateTime.Now;
+            m.cpfUsuarioTramite = "04689352666";
+            m.codigoSetorLocalizacao = 1;
+            return View(m);
         }
 
 
@@ -107,7 +100,9 @@ namespace Processos.Controllers
         {
             _context.Movimentacao.Update(movimentacao);
             _context.SaveChanges();
-            return RedirectToAction("Index");
+           
+            return Redirect("/Processo/Edit/" + movimentacao.codigoProcesso);
+
         }
 
 

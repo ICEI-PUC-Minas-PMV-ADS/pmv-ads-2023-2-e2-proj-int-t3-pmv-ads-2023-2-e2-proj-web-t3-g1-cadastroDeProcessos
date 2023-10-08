@@ -39,7 +39,12 @@ namespace Processos.Controllers
 
         public IActionResult Create()
         {
-            return View();
+
+            Processo p = new Processo();
+            p.dataHora = DateTime.Now;            
+            p.cpfProtocolista = "04689352666";
+
+            return View(p);
         }
 
 

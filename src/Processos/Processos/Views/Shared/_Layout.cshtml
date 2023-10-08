@@ -46,9 +46,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Processo" asp-action="Index">Processos</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Movimentacao" asp-action="Index">Movimentações</a>
-                        </li>
+       
 
                     </ul>
                 </div>
@@ -57,22 +55,25 @@
     </header>
 
 
-
+    <!-- 
+        Speedbutton recebe uma janela com vínculo
+    -->
     <DIV id="contenedorSpeedbutton">
-        <DIV id="contenedorSpeedbuttontitulo">Busca</DIV>
-
+        <DIV id="contenedorSpeedbuttontitulo">
+            <span style="width:90%">Busca</span>
+            <span style="float:right"><a href="javascript:fecharSpeedbutton()">[fechar]</a></span>
+        </DIV>
+    
         <DIV><input type="text" id="buscaSpeedButton"></DIV>
-
-        <DIV id="speedbutton"></DIV>
-        
+        <DIV id="speedbutton"></DIV>        
     </DIV>
+
 
     <SCRIPT>
 
         var ultimaURLSpeedButtonSemABusca = "";
 
         $("#buscaSpeedButton").change(function(){
-
                 $("#speedbutton").load(ultimaURLSpeedButtonSemABusca + valor("buscaSpeedButton"));
         })
 

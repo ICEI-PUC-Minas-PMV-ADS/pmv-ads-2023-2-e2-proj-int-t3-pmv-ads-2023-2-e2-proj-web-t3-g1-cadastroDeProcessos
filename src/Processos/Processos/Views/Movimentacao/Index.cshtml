@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Processos.Models.Movimentacao>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.codigoProcesso)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dataHora)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cpfUsuarioTramite)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.codigoSetorLocalizacao)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.codigoProcesso)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dataHora)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cpfUsuarioTramite)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.codigoSetorLocalizacao)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.codigoMovimentacao">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.codigoMovimentacao">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.codigoMovimentacao">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

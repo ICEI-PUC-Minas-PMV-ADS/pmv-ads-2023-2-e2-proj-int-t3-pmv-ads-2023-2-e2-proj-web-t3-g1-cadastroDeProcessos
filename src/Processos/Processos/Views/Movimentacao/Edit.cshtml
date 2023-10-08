@@ -1,0 +1,64 @@
+﻿@model Processos.Models.Movimentacao
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Movimentacao</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="codigoMovimentacao" />
+            
+            <div style='display:none' >
+                <label asp-for="codigoProcesso" class="control-label"></label>
+                <input asp-for="codigoProcesso" class="form-control" />
+                <span asp-validation-for="codigoProcesso" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="dataHora" class="control-label"></label>
+                <input asp-for="dataHora" class="form-control" />
+                <span asp-validation-for="dataHora" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="cpfUsuarioTramite" class="control-label"></label>
+                <input asp-for="cpfUsuarioTramite" class="form-control" />
+                <span asp-validation-for="cpfUsuarioTramite" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="codigoSetorLocalizacao" class="control-label"></label>
+                <input asp-for="codigoSetorLocalizacao" class="form-control" style="display:none" />
+                <a class='fakeinput' href="javascript:speedbutton('SETOR', 'codigoSetor', 'codigoSetorLocalizacao', 'nome', 'exibicaoSetor')">
+                    <span id="exibicaoSetor"></span>
+                </a>
+                <span asp-validation-for="codigoSetorLocalizacao" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+
+<SCRIPT>
+
+    $(document).ready(function () {
+
+        atualizarCampoExibicao("SELECT nome FROM SETOR WHERE codigoSetor=" + valor('codigoSetorLocalizacao'), "exibicaoSetor");
+
+    });
+
+</SCRIPT>

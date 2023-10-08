@@ -22,19 +22,17 @@ namespace Processos.Controllers
         public IActionResult Teste(String SQL)
         {
             String b = "";
+            var builder = WebApplication.CreateBuilder();
 
-
-            using (SqlConnection connection = new SqlConnection("Server=127.0.0.1;Database=processos;User Id=sa; Password=123456; TrustServerCertificate=True"))
+            using (SqlConnection connection = new SqlConnection(builder.Configuration.GetConnectionString("DefaultConnection")))
             {
                 connection.Open();
-
 
                 using (SqlCommand command = new SqlCommand(SQL, connection))
                 {
 
                     using (SqlDataReader reader = command.ExecuteReader())
                     {
-
                        
                         if (reader.Read())
                         {
