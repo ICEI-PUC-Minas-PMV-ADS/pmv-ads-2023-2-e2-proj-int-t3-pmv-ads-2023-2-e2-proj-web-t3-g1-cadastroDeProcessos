@@ -42,3 +42,15 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+
+<DIV id="contenedorSetoresUsuario"></DIV>
+
+<SCRIPT>
+
+    $(document).ready(function () {
+
+        atualizarSetoresUsuario(valor("cpfUsuario"));
+
+    });
+
+</SCRIPT>
