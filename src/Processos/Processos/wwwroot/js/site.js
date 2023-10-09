@@ -99,6 +99,12 @@ function speedbutton(tabela,   campoBusca,    campoDestino,        campoExibicao
 
 }
 
+
+function fecharSpeedbutton() {
+	$("#contenedorSpeedbutton").css("display", "none");
+}
+
+
 function selecionarSpeedbutton(campoBusca, valorCampoBusca, campoExibicao, valorCampoExibicao) {
 
 	//alert("Setando " + campoBusca + " como " + valorCampoBusca);
