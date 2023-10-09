@@ -52,7 +52,7 @@ body {
 
 
 #debug{
-
+    display:none; // Setar para block quando for depurar SQL
     background-color: #112;
     color: #CCCCDD;
     padding: 1em;

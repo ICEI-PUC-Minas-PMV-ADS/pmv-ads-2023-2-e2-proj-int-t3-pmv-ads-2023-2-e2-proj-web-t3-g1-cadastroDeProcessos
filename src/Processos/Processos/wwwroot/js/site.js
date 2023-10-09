@@ -11,6 +11,15 @@
 	return false;
 }
 
+function PegaValorCB(o) {
+
+	if (document.getElementById(o).checked) {
+		return "S";
+	} else {
+		return "N";
+	}
+
+}
 
 function valor(o) {
 
@@ -114,3 +123,26 @@ function lista(Rota, Tabela) {
 }
 
 
+function atualizarSetoresUsuario(cpfUsuario) {
+
+	$("#contenedorSetoresUsuario").load("/api/setoresusuario/?cpfUsuario=" + cpfUsuario);
+
+}
+
+function vincularUsuarioSetor(cpfUsuario, codigoSetor) {
+
+	if (valor("setor_" + codigoSetor) == "S") {
+
+		$.get("/api/setorusuariomanutencao/?cpfUsuario=" + cpfUsuario + "&codigoSetor=" + codigoSetor + "&Acao=Adicionar", function (data) {
+			atualizarSetoresUsuario(cpfusuario);
+		});
+
+	} else {
+
+		$.get("/api/setorusuariomanutencao/?cpfUsuario=" + cpfUsuario + "&codigoSetor=" + codigoSetor + "&Acao=Remover", function (data) {
+			atualizarSetoresUsuario(cpfusuario);
+		});
+
+	}
+
+}
