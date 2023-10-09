@@ -12,8 +12,8 @@ using Processos.Models;
 namespace Processos.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231002195208_PM0001")]
-    partial class PM0001
+    [Migration("20231009165404_P0001")]
+    partial class P0001
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,6 +24,29 @@ namespace Processos.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("Processos.Models.AnexoProcesso", b =>
+                {
+                    b.Property<int>("codigoAnexo")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("codigoAnexo"));
+
+                    b.Property<int>("codigoProcesso")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("dataHora")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("nomeAnexo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("codigoAnexo");
+
+                    b.ToTable("ANEXO_PROCESSO");
+                });
 
             modelBuilder.Entity("Processos.Models.Fluxo", b =>
                 {
@@ -49,23 +72,22 @@ namespace Processos.Migrations
 
             modelBuilder.Entity("Processos.Models.Interessado", b =>
                 {
-                    b.Property<string>("codigoInteressado")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("codigoInteressado")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("codigoInteressado"));
 
                     b.Property<string>("bairro")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("cep")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("cidade")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("complemento")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("cpfCnpjInteressado")
@@ -73,11 +95,9 @@ namespace Processos.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("email")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("logradouro")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("nome")
@@ -85,19 +105,15 @@ namespace Processos.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("numero")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("pais")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("telefone")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("uf")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("codigoInteressado");
@@ -183,6 +199,26 @@ namespace Processos.Migrations
                     b.HasKey("codigoSetor");
 
                     b.ToTable("SETOR");
+                });
+
+            modelBuilder.Entity("Processos.Models.SetoresUsuario", b =>
+                {
+                    b.Property<int>("sequencial")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("sequencial"));
+
+                    b.Property<int>("codigoSetor")
+                        .HasColumnType("int");
+
+                    b.Property<string>("cpfUsuario")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("sequencial");
+
+                    b.ToTable("USUARIO_TEM_SETOR");
                 });
 
             modelBuilder.Entity("Processos.Models.Tipo_Processo", b =>

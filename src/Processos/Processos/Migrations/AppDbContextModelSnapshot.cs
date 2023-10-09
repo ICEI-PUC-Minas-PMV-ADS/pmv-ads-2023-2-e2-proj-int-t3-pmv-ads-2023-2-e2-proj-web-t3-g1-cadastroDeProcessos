@@ -22,6 +22,29 @@ namespace Processos.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Processos.Models.AnexoProcesso", b =>
+                {
+                    b.Property<int>("codigoAnexo")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("codigoAnexo"));
+
+                    b.Property<int>("codigoProcesso")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("dataHora")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("nomeAnexo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("codigoAnexo");
+
+                    b.ToTable("ANEXO_PROCESSO");
+                });
+
             modelBuilder.Entity("Processos.Models.Fluxo", b =>
                 {
                     b.Property<int>("codigoFluxo")
@@ -173,6 +196,26 @@ namespace Processos.Migrations
                     b.HasKey("codigoSetor");
 
                     b.ToTable("SETOR");
+                });
+
+            modelBuilder.Entity("Processos.Models.SetoresUsuario", b =>
+                {
+                    b.Property<int>("sequencial")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("sequencial"));
+
+                    b.Property<int>("codigoSetor")
+                        .HasColumnType("int");
+
+                    b.Property<string>("cpfUsuario")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("sequencial");
+
+                    b.ToTable("USUARIO_TEM_SETOR");
                 });
 
             modelBuilder.Entity("Processos.Models.Tipo_Processo", b =>

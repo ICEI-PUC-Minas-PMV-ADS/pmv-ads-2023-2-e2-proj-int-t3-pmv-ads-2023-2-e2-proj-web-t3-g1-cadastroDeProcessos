@@ -21,7 +21,10 @@ namespace Processos.Models
 
         public DbSet<Fluxo> Fluxo { get; set; }
 
-     
+        public DbSet<SetoresUsuario> SetoresUsuario { get; set; }
+
+        public DbSet<AnexoProcesso> AnexoProcesso { get; set; }
+
 
     }
 }

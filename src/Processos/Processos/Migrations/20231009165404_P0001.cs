@@ -6,11 +6,26 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Processos.Migrations
 {
     /// <inheritdoc />
-    public partial class PM0001 : Migration
+    public partial class P0001 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "ANEXO_PROCESSO",
+                columns: table => new
+                {
+                    codigoAnexo = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    codigoProcesso = table.Column<int>(type: "int", nullable: false),
+                    dataHora = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    nomeAnexo = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ANEXO_PROCESSO", x => x.codigoAnexo);
+                });
+
             migrationBuilder.CreateTable(
                 name: "FLUXO",
                 columns: table => new
@@ -30,19 +45,20 @@ namespace Processos.Migrations
                 name: "INTERESSADO",
                 columns: table => new
                 {
-                    codigoInteressado = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    codigoInteressado = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     cpfCnpjInteressado = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    telefone = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    logradouro = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    numero = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    complemento = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    bairro = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    cidade = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    uf = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    pais = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    cep = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    email = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    telefone = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    logradouro = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    numero = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    complemento = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    bairro = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    cidade = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    uf = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    pais = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    cep = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -123,11 +139,28 @@ namespace Processos.Migrations
                 {
                     table.PrimaryKey("PK_USUARIO", x => x.cpfUsuario);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "USUARIO_TEM_SETOR",
+                columns: table => new
+                {
+                    sequencial = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    cpfUsuario = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    codigoSetor = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_USUARIO_TEM_SETOR", x => x.sequencial);
+                });
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "ANEXO_PROCESSO");
+
             migrationBuilder.DropTable(
                 name: "FLUXO");
 
@@ -148,6 +181,9 @@ namespace Processos.Migrations
 
             migrationBuilder.DropTable(
                 name: "USUARIO");
+
+            migrationBuilder.DropTable(
+                name: "USUARIO_TEM_SETOR");
         }
     }
 }
