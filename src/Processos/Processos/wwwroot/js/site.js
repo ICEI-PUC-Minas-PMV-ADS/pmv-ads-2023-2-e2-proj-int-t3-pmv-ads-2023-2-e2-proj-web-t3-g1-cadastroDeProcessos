@@ -152,3 +152,10 @@ function vincularUsuarioSetor(cpfUsuario, codigoSetor) {
 	}
 
 }
+
+
+function atualizarMovimentacoes(codigoProcesso) {
+
+	$("#contenedorMovimentacao").load("/api/listamovimentacao/?codigoProcesso=" + codigoProcesso);
+
+}
