@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Processos</title>
+    <title>Cadastro de Processos - @ViewData["Title"]</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Processos.styles.css" asp-append-version="true" />
@@ -12,52 +12,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
 </head>
 <body id ="page-top">
     <div id="wrapper">
-        <nav class="navbar align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 navbar-dark"
-             style="width: 150px; height: 651px">
+        <nav class="navbar align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 navbar-dark">
             <div class="container-fluid d-flex flex-column p-0">
                 <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0"
                    href="#">
-                    <div class="sidebar-brand-text mx-3"><img class="img-fluid" src="./logo.png"></div>
+                    <div class="side-bar-brand"><img class="img-fluid pt-3" src="~/lib/logo.png"></div>
                 </a>
-            </div>
-            <hr class="sidebar-divider my-0">
-                    <ul class="navbar-nav flex-grow-1">
-                <li class="nav-item">
-                    <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-tachometer-alt"></i><span>Processos</span></a>
-                        </li>
-         
-                        <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Usuario" asp-action="Index"><i class="fas fa-user"></i><span>Usuários</span></a>
-                        </li>
-
-                        <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Tipo_Processo" asp-action="Index"><i class="fas fa-folder-open"></i><span>Tipos de Processo</span></a>
-                        </li>
-
-                        <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Setor" asp-action="Index"><i class="fas fa-home"></i><span>Setores</span></a>
-                        </li>
-
-                        <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Fluxo" asp-action="Index"><i class="icon ion-ios-navigate-outline"></i><span>Fluxo</span></a>
-                        </li>
-
-                        <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Interessado" asp-action="Index"><i class="fas fa-user-circle"></i><span>Interessados</span></a>
-                        </li>
-
-                        <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Processo" asp-action="Index"><i class="fas fa-folder"></i><span>Processos</span></a>
-                        </li>
-                    </ul>
-            <div class="text-center d-none d-md-inline">
-                <button class="btn rounded-circle border-0"
-                        id="sidebarToggle" type="button"></button>
+                <hr class="sidebar-divider my-2" />
+                <ul id="accordionSidebar" class="navbar-nav text-light">
+                    <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Usuario" asp-action="Index"><i class="fas fa-user"></i><span>Usuários</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Tipo_Processo" asp-action="Index"><i class="fas fa-folder-open"></i><span>Tipos de Processo</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Setor" asp-action="Index"><i class="fas fa-home"></i><span>Setores</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Interessado" asp-action="Index"><i class="fas fa-user-circle"></i><span>Interessados</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Processo" asp-action="Index"><i class="fas fa-folder"></i><span>Processos</span></a>
+                    </li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button id="sidebarToggle" class="btn rounded-circle border-0" type="button"></button></div>
             </div>
         </nav>
         <div class="d-flex flex-column" id="content-wrapper">
@@ -65,92 +51,65 @@
                 <nav class="navbar navbar-expand bg-white shadow mb-4 topbar static-top navbar-light"
                      style="margin: -18px">
                     <div class="container-fluid">
-                        <h1 style="
-                  position: relative;
-                  padding-right: 0px;
-                  padding-left: 0px;
-                  margin-left: 0px;
-                  margin-bottom: 0px;
-                  margin-top: 21px;
-                  font-size: 20px;
-                ">
-                            Título da página
-                        </h1>
+                        <h4 class="mt-4 ms-2">
+                            @ViewData["Title"]
+                        </h4>
                     </div>
                 </nav>
                 <nav class="navbar navbar-expand-md navbar-light" style="width: 1200px;">
                     <div class="container-fluid">
                         <div><a class="navbar-brand d-none" href="#"> </a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button></div>
                         <div id="navcol-1" class="collapse navbar-collapse" style="width: 1020px;">
-                            <div class="btn-toolbar container-fluid justify-content-center ">
-                                <div class="btn-group" role="group" style="margin-right: 12px">
-                                    <button class="btn btn-primary"
+                            <div class="btn-toolbar container-fluid justify-content-center grid gap-1 ">
+                                <div class="btn-group" role="group" >
+                                    <button class="btn btn-outline-secondary "
                                             type="button"
-                                            style="margin-right: -7px; margin-left: -4px">
-
-                                         <i class="fa-solid fa-user-plus"></i> <a asp-action="Create" class="text-white">
+                                            >
+                                        <i class="fa-solid fa-user-plus"></i> <a asp-controller="Usuario" asp-action ="Create" class="text-dark">
                                             Usuário
                                         </a>
                                     </button>
                                 </div>
-                                <div class="btn-group" role="group" style="margin-right: 12px">
-                                    <button class="btn btn-primary"
+                                <div class="btn-group" role="group" >
+                                    <button class="btn btn-outline-secondary"
                                             type="button"
-                                            style="margin-right: -7px; margin-left: -4px">
-                                        <i class="fa-solid fa-folder-plus"></i><a asp-action="Create" class="text-white">
+                                           >
+                                        <i class="fa-solid fa-folder-plus"></i><a asp-controller="Tipo_Processo" asp-action ="Create" class="text-dark">
                                             Tipo Processo
                                         </a>
                                     </button>
                                 </div>
-                                <div class="btn-group" role="group" style="margin-right: 12px">
-                                    <button class="btn btn-primary"
+                                <div class="btn-group" role="group">
+                                    <button class="btn btn-outline-secondary"
                                             type="button"
-                                            style="margin-right: -7px; margin-left: -4px">
-                                        <i class="fa-solid fa-house-medical"></i><a asp-action="Create" class="text-white">
+                                            >
+                                        <i class="fa-solid fa-house-medical"></i><a asp-controller="Setor" asp-action ="Create" class="text-dark">
                                             Setor
                                         </a>
                                     </button>
                                 </div>
-                                <div class="btn-group" role="group" style="margin-right: 12px">
-                                    <button class="btn btn-primary"
+                                <div class="btn-group" role="group" >
+                                    <button class="btn btn-outline-secondary"
                                             type="button"
-                                            style="margin-right: -7px; margin-left: -4px">
-                                        <i class="fa-sharp fa-solid fa-folder-plus"></i> <a asp-action="Create" class="text-white">
+                                            >
+                                        <i class="fa-sharp fa-solid fa-folder-plus"></i> <a asp-controller="Processo" asp-action ="Create" class="text-dark">
                                             Processo
                                         </a>
                                     </button>
                                 </div>
-                                <div class="btn-group" role="group" style="margin-right: 12px">
-                                    <button class="btn btn-primary"
+                                <div class="btn-group" role="group" >
+                                    <button class="btn btn-outline-secondary"
                                             type="button"
-                                            style="margin-right: -7px; margin-left: -4px">
-                                        <i class="fa-solid fa-arrows-turn-right"></i><a asp-action="Create" class="text-white">
-                                            Movimentação
-                                        </a>
-                                    </button>
-                                </div>
-                                <div class="btn-group" role="group" style="margin-right: 12px">
-                                    <button class="btn btn-primary"
-                                            type="button"
-                                            style="margin-right: -7px; margin-left: -4px">
-                                        <i class="fa-solid fa-person-circle-plus"></i><a asp-action="Create" class="text-white">
+                                            >
+                                        <i class="fa-solid fa-person-circle-plus"></i><a asp-controller="Interessado" asp-action="Create" class="text-dark">
                                             Interessado
                                         </a>
                                     </button>
                                 </div>
-                                <div class="btn-group" role="group" style="margin-right: 12px">
-                                    <button class="btn btn-primary"
+                                <div class="btn-group" role="group">
+                                    <button class="btn btn-outline-secondary"
                                             type="button"
-                                            style="margin-right: -7px; margin-left: -4px">
-                                        <i class="fa-solid fa-arrow-turn-down"></i><a asp-action="Create" class="text-white">
-                                            Fluxo
-                                        </a>
-                                    </button>
-                                </div>
-                                <div class="btn-group" role="group" style="margin-right: 12px">
-                                    <button class="btn btn-primary"
-                                            type="button"
-                                            style="margin-right: -7px; margin-left: -4px">
+                                            >
                                         <i class="fa-solid fa-magnifying-glass"></i>
                                         Buscar Processo
                                     </button>
@@ -202,9 +161,9 @@
     </div>
             <footer class="bg-white sticky-footer">
                 <div class="container my-auto">
-                    <span class="fw-light"
-                          style="--bs-body-font-weight: normal; --bs-body-font-size: 0.5rem"> Copyright © HarmoniGov LTDA 2023 <a asp-area="" asp-controller="Home" asp-action="Privacy">Manual do Sistema</a>   </span>
-                    <div class="text-center my-auto copyright"></div>
+                    <div class="text-start my-auto copyright">
+                        <span class="fw-light"> Copyright © HarmoniGov LTDA 2023 <a asp-area="" asp-controller="Home" asp-action="Privacy">Manual do Sistema</a>   </span>
+                    </div>
                 </div>
             </footer>
         </div>

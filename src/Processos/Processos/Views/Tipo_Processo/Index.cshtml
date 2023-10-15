@@ -1,14 +1,15 @@
-﻿@model IEnumerable<Processos.Models.Tipo_Processo>
+﻿@{
+    ViewData["Title"] = "Listagem de Tipos de Processo";
+}
 
-<h1>Listagem de Tipos de Processos</h1>
+@model IEnumerable<Processos.Models.Tipo_Processo>
 
-<p>
-    <a asp-action="Create">Adicionar um novo tipo de processo</a>
-</p>
+
+
 
 
 <DIV id='formBusca'>
-    <DIV><input type="text" id="Busca"></DIV>
+    <DIV><input type="text" id="Busca" class="form-control form-control-sm" placeholder="Procurar"></DIV>
     <DIV id="contenedorBuscaLista"></DIV>
 </DIV>
 

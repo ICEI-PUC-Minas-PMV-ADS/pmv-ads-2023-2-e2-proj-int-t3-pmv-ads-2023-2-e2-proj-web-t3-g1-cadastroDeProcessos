@@ -1,12 +1,11 @@
 ﻿@model Processos.Models.Usuario
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Excluir";
 }
 
-<h1>Delete</h1>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>Você deseja excluir esse cadastro?</h3>
 <div>
     <h4>Usuario</h4>
     <hr />
@@ -34,6 +33,6 @@
     <form asp-action="Delete">
         <input type="hidden" asp-for="cpfUsuario" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+            <button class="btn btn-outline-secondary"><a asp-action="Index">Voltar</a></button>
     </form>
 </div>

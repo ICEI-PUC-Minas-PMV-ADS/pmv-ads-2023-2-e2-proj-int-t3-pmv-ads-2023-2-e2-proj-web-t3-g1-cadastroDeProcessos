@@ -1,14 +1,14 @@
-﻿@model IEnumerable<Processos.Models.Fluxo>
+﻿@{
+    ViewData["Title"] = "Listagem de Fluxo";
+}
 
-<h1>Listagem de Fluxos</h1>
+@model IEnumerable<Processos.Models.Fluxo>
 
-<p>
-    <a asp-action="Create">Adicionar um novo fluxo</a>
-</p>
+
 
 
 <DIV id='formBusca'>
-    <DIV><input type="text" id="Busca"></DIV>
+    <DIV><input type="text" id="Busca" class="form-control form-control-sm" placeholder="Procurar"></DIV>
     <DIV id="contenedorBuscaLista"></DIV>
 </DIV>
 

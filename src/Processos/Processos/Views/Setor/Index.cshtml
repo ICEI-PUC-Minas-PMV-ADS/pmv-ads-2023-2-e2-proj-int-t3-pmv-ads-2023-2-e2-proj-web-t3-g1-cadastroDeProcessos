@@ -1,14 +1,12 @@
-﻿@model IEnumerable<Processos.Models.Setor>
+﻿@{
+    ViewData["Title"] = "Listagem de Setores";
+}
 
-<h1>Listagem de Setores</h1>
-
-<p>
-    <a asp-action="Create">Adicionar um novo setor</a>
-</p>
+@model IEnumerable<Processos.Models.Setor>
 
 
 <DIV id='formBusca'>
-    <DIV><input type="text" id="Busca"></DIV>
+    <DIV><input type="text" id="Busca" class="form-control form-control-sm" placeholder="Procurar"></DIV>
     <DIV id="contenedorBuscaLista"></DIV>
 </DIV>
 
