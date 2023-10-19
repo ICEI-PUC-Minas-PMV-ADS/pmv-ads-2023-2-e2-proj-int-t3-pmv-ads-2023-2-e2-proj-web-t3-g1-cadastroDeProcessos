@@ -1,7 +1,7 @@
 ﻿@model Processos.Models.Interessado
 
 @{
-    ViewData["Title"] = "Apagar";
+    ViewData["Title"] = "Apagar interessado";
 }
 
 
@@ -88,6 +88,6 @@
     <form asp-action="Delete">
         <input type="hidden" asp-for="codigoInteressado" />
         <input type="submit" value="Apagar" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <button class="btn btn-outline-secondary"><a asp-asp-controller="Interessado" asp-action="Index">Voltar</a></button>
     </form>
 </div>

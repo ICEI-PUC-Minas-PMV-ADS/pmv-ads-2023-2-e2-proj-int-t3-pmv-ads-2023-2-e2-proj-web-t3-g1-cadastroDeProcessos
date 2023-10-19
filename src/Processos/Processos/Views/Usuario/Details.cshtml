@@ -1,10 +1,9 @@
 ﻿@model Processos.Models.Usuario
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalhes";
 }
 
-<h1>Details</h1>
 
 <div>
     <h4>Usuario</h4>
@@ -32,5 +31,6 @@
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.cpfUsuario">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <button class="btn btn-outline-secondary"><a asp-controller="Usuario" asp-action="Index">Voltar</a></button>
+
 </div>

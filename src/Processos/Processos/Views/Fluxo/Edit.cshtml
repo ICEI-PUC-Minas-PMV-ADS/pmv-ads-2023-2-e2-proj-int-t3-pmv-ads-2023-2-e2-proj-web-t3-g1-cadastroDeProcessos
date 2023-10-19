@@ -1,10 +1,8 @@
 ﻿@model Processos.Models.Fluxo
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Editar fluxo";
 }
-
-<h1>Editar um fluxo existente</h1>
 
 
 
@@ -63,15 +61,13 @@
             </div>
 
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Salvar" class="btn btn-primary" /> |
+                <button class="btn btn-light"><a asp-controller="Fluxo" asp-action="Index">Voltar</a></button>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

@@ -1,7 +1,7 @@
 ﻿@model Processos.Models.Usuario
 
 @{
-    ViewData["Title"] = "Excluir";
+    ViewData["Title"] = "Excluir usuário";
 }
 
 
@@ -32,7 +32,7 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="cpfUsuario" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-            <button class="btn btn-outline-secondary"><a asp-action="Index">Voltar</a></button>
+        <input type="submit" value="Apagar" class="btn btn-danger" /> |
+            <button class="btn btn-outline-secondary"><a asp-controller="Usuario" asp-action="Index">Voltar</a></button>
     </form>
 </div>

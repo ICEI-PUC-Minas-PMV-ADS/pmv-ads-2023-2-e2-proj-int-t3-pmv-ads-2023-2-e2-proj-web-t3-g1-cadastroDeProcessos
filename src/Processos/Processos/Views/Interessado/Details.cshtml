@@ -1,10 +1,9 @@
 ﻿@model Processos.Models.Interessado
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalhes";
 }
 
-<h1>Details</h1>
 
 <div>
     <h4>Interessado</h4>
@@ -85,6 +84,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.codigoInteressado">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model?.codigoInteressado">Editar</a> |
+    <button class="btn btn-outline-secondary"><a asp-controller="Interessado" asp-action="Index">Voltar</a></button>
 </div>

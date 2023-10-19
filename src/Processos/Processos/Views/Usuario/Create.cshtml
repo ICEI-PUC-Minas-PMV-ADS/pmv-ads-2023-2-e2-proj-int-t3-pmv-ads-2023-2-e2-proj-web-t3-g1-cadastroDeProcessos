@@ -32,17 +32,15 @@
                     <input class="form-check-input" asp-for="administrativo" /> @Html.DisplayNameFor(model => model.administrativo)
                 </label>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Cadastrar" class="btn btn-primary" />
+            <div class="form-group pt-1">
+                <input type="submit" value="Cadastrar" class="btn btn-primary" /> |
+                <button class="btn btn-outline-secondary "><a asp-controller="Usuario" asp-action="Index">Voltar</a></button>
             </div>
         </form>
     </div>
 </div>
 
-<div class="pt-1">
-    <button class="btn btn-outline-secondary"><a asp-action="Index">Voltar</a></button>
 
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

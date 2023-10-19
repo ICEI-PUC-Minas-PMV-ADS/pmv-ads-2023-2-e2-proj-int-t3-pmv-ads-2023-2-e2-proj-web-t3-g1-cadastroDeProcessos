@@ -1,7 +1,7 @@
 ﻿@model Processos.Models.Fluxo
 
 @{
-    ViewData["Title"] = "Apagar";
+    ViewData["Title"] = "Apagar fluxo";
 }
 
 
@@ -34,6 +34,6 @@
     <form asp-action="Delete">
         <input type="hidden" asp-for="codigoFluxo" />
         <input type="submit" value="Apagar" class="btn btn-danger" /> |
-            <button class="btn btn-outline-secondary"><a asp-action="Index">Voltar</a></button>
+            <button class="btn btn-outline-secondary"><a asp-controller="Fluxo" asp-action="Index">Voltar</a></button>
     </form>
 </div>

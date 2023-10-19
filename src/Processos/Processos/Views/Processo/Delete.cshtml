@@ -1,7 +1,7 @@
 ﻿@model Processos.Models.Processo
 
 @{
-    ViewData["Title"] = "Excluir";
+    ViewData["Title"] = "Excluir processo";
 }
 
 
@@ -57,7 +57,7 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="codigoProcesso" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <input type="submit" value="Deletar" class="btn btn-danger" /> |
         <button class="btn btn-outline-secondary"><a asp-action="Index">Voltar</a></button>
     </form>
 </div>

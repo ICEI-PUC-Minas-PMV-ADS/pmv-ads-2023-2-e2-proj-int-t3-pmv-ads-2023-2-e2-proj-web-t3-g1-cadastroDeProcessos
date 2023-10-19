@@ -1,10 +1,9 @@
 ﻿@model Processos.Models.Usuario
 
 @{
-    ViewData["Title"] = "Editar";
+    ViewData["Title"] = "Editar usuário";
 }
 
-<h1>Editar um usuário existente</h1>
 
 
 
@@ -28,16 +27,15 @@
                     <input class="form-check-input" asp-for="administrativo" /> @Html.DisplayNameFor(model => model.administrativo)
                 </label>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+            <div class="form-group pt-1">
+                <input type="submit" value="Salvar" class="btn btn-primary" /> |
+                <button class="btn btn-outline-secondary"><a asp-controller="Usuario" asp-action="Index">Voltar</a></button>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
