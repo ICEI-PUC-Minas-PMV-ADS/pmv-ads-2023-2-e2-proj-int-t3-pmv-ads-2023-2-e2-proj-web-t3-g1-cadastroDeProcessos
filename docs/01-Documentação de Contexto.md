@@ -6,7 +6,7 @@ Uma prefeitura trabalha com um fluxo de solicitações e encaminhamento de docum
 
 Mesmo tendo-se um fluxo bem definido, muitas vezes a organização depende de funcionários que conhecem muito bem a estrutura interna do município. Entretanto na medida que o fluxo interno torna-se maior e o volume de processos cresce ao longo do tempo, a prefeitura tende a perder o controle sobre os documentos, trâmites e mesmo perda de documentos.
 
-Por isso, é importante que as prefeituras mantenham um controle efetivo dos processos de forma sistematizada.
+Por isso, é importante que as prefeituras mantenham o controle efetivo dos processos de forma sistematizada.
 
 ## Objetivo e Solução
 
