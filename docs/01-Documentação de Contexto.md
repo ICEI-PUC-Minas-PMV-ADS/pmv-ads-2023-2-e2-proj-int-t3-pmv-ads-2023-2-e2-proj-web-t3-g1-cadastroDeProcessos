@@ -18,7 +18,7 @@ Propõe-se, então, um sistema onde se possa cadastrar todas as partes envolvida
 
 Uma pesquisa realizada em agosto de 2023 com prefeituras, além da vivência de seu integrantes observaram que, em sua maioria, as prefeituras ainda utilizam um protocolo manual, com livros escritos à mão, guias de remessa impressas no word e comprovantes de protocolização escritos de forma manual e, nem sempre, entregues aos requisitantes. Dentre algumas funcionalidades podemos ressaltar:
 
-* Fornecer recursos que permitam o cadastro do processo e seus cadastros-base;
+* Fornecer recursos que possibilite o cadastro do processo e seus cadastros-base;
 * Permitir a busca e impressão dos trâmites realizados;
 * Possibilitar o arquivamento dos processos e documentos anexos, estabelecendo-se o prazo máximo de arquivamento.
 
