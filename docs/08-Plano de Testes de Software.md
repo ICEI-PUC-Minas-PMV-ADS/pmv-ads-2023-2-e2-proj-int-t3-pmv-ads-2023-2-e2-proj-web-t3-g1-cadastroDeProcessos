@@ -22,7 +22,7 @@ Os requisitos para realização dos testes de software são:
     - Preencha os campos obrigatórios:
 	   .  Nome do setor: 
 	   .  Descrição: 
-    - Clique no botão "Cadastrar" ou equivalente;
+    - Clique no botão "Cadastrar";
     - Verifique se o sistema exibe uma mensagem de confirmação informando que o setor foi cadastrado com sucesso. 
 
  - Resultados esperado:
@@ -76,7 +76,7 @@ Os requisitos para realização dos testes de software são:
 	- Preencha os campos obrigatórios:
 	  Nome do tipo de processo: 
 	  Descrição: 
-	- Clique no botão "Cadastrar" ou equivalente. 
+	- Clique no botão "Cadastrar". 
 	- Verifique se o sistema exibe uma mensagem de confirmação informando que o tipo de processo foi cadastrado com sucesso. 
 
 - Resultado esperado:
@@ -96,7 +96,7 @@ Os requisitos para realização dos testes de software são:
 	- Preencha os campos obrigatórios:
 	  Nome: 
 	  CPF: 
-	- Clique no botão "Cadastrar" ou equivalente. 
+	- Clique no botão "Cadastrar". 
 	- Verifique se o sistema exibe uma mensagem de confirmação informando que a pessoa física foi cadastrada com sucesso. 
 
 - Procedimentos Pessoa Jurídica:
@@ -105,7 +105,7 @@ Os requisitos para realização dos testes de software são:
 	- Preencha os campos obrigatórios:
 	  Nome da Empresa: 
 	  CNPJ: 
-	- Clique no botão "Cadastrar" ou equivalente. 
+	- Clique no botão "Cadastrar". 
 	- Verifique se o sistema exibe uma mensagem de confirmação informando que a pessoa jurídica foi cadastrada com sucesso. 
 
 - Resultado esperado:
@@ -126,7 +126,7 @@ Os requisitos para realização dos testes de software são:
 	  Interessado: [Selecionar um interessado existente]
 	  Setor de Origem: [Selecionar um setor de origem existente]
 	  Descrição do Processo: [Descrição do Processo de Teste]
-	- Clique no botão "Cadastrar" ou equivalente. 
+	- Clique no botão "Cadastrar". 
 	- Verifique se o sistema exibe uma mensagem de confirmação informando que o processo foi cadastrado com sucesso. 
 
 - Resultado esperado:
