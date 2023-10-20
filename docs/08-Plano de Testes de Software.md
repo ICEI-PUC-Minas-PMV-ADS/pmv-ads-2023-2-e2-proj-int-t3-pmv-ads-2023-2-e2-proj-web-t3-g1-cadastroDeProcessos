@@ -292,30 +292,30 @@ Requisito associado: RF-8
 	- O sistema deve impedir o cadastro de um interessado com o mesmo CPF ou CNPJ que já foi cadastrado anteriormente. 
 	- O sistema deve exibir mensagens de confirmação e erro apropriadas conforme necessário. 
 
-### CT-16 Obrigatoriedade do Nome da Pessoa
+### CT-16 Obrigatoriedade do Nome do Interessado
 
 - Requisito associado: RN-2
 
-- Objetivo: Verificar se o sistema requer que o nome da pessoa seja fornecido durante o cadastro e se valida essa informação corretamente. 
+- Objetivo: Verificar se o sistema requer que o nome do interessado seja fornecido durante o cadastro e se valida essa informação corretamente. 
 
 - Procedimentos:
 	- Acesse a funcionalidade de cadastro de interessados no sistema. 
 	- Deixe o campo de nome em branco. 
-	- Tente concluir o cadastro sem fornecer o nome da pessoa. 
+	- Tente concluir o cadastro sem fornecer o nome do interessado. 
 	- Verifique se o sistema impede o cadastro e exibe uma mensagem de erro indicando que o campo de nome é obrigatório. 
-	- Preencha o campo de nome da pessoa com um nome válido. 
+	- Preencha o campo de nome do interessado com um nome válido. 
 	- Tente concluir o cadastro novamente com o nome preenchido. 
 	- Verifique se o sistema permite o cadastro com sucesso e exibe uma mensagem de confirmação. 
 
 - Resultado esperado:
-	- O sistema deve impedir o cadastro de uma pessoa sem fornecer o nome e exibir uma mensagem de erro indicando que o campo de nome é obrigatório. 
-	- O sistema deve permitir o cadastro de uma pessoa quando o nome é fornecido corretamente e exibir uma mensagem de confirmação. 
+	- O sistema deve impedir o cadastro de um interessado sem fornecer o nome e exibir uma mensagem de erro indicando que o campo de nome é obrigatório. 
+	- O sistema deve permitir o cadastro de um interessado quando o nome é fornecido corretamente e exibir uma mensagem de confirmação. 
 
-### CT-17 Validação de CPFs e CNPJs das Pessoas Cadastradas
+### CT-17 Validação de CPFs e CNPJs das Interessado Cadastrados
 
 - Requisito associado: RN-3
 
-- Objetivo: Verificar se o sistema valida corretamente os CPFs e CNPJs fornecidos durante o cadastro de pessoas. 
+- Objetivo: Verificar se o sistema valida corretamente os CPFs e CNPJs fornecidos durante o cadastro de interessados. 
 
 - Procedimentos:
 	- Acesse a funcionalidade de cadastro de interessados no sistema. 
@@ -335,8 +335,8 @@ Requisito associado: RF-8
 - Objetivo: Verificar se o sistema atribui um código incremental único para cada interessado cadastrado. 
 
 - Procedimentos:
-	- Acesse a funcionalidade de cadastro de pessoas no sistema. 
-	- Preencha os dados necessários para cadastrar uma nova pessoa, incluindo nome, CPF ou CNPJ e outros campos relevantes. 
+	- Acesse a funcionalidade de cadastro de interessado no sistema. 
+	- Preencha os dados necessários para cadastrar uma novo interessado, incluindo nome, CPF ou CNPJ e outros campos relevantes. 
 	- Conclua o cadastro da interessado. 
 	- Repita o processo de cadastro para um segunda interessado, fornecendo informações diferentes do primeiro interessado. 
 	- Verifique se o sistema atribui um código incremental único para o segundo interessado, que seja diferente do código do primeiro interessado. 
