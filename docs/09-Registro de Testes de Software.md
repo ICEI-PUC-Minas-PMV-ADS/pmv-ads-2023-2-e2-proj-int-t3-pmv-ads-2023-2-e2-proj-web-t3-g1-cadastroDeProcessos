@@ -140,19 +140,18 @@ Requisito associado: RF-8
 
 - O sistema ainda não trata nomes duplicados
   
-### CT-16 Obrigatoriedade do Nome da Pessoa
+### CT-16 Obrigatoriedade do Nome do Interessado
 
 - Requisito associado: RN-2
 
-- Objetivo: Verificar se o sistema requer que o nome da pessoa seja fornecido durante o cadastro e se valida essa informação corretamente. 
+- Objetivo: Verificar se o sistema requer que o nome do interessado seja fornecido durante o cadastro e se valida essa informação corretamente. 
 
 
-### CT-17 Validação de CPFs e CNPJs das Pessoas Cadastradas
+### CT-17 Validação de CPFs e CNPJs dos Interessados Cadastrados
 
 - Requisito associado: RN-3
 
-- Objetivo: Verificar se o sistema valida corretamente os CPFs e CNPJs fornecidos durante o cadastro de pessoas. 
-
+- Objetivo: Verificar se o sistema valida corretamente os CPFs e CNPJs fornecidos durante o cadastro de interessados. 
 
 
 ### CT-18 Código Incremental Único para Cada Interessado
