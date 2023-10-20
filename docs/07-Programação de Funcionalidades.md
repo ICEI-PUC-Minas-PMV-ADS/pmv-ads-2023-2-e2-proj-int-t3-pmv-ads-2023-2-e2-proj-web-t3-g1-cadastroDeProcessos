@@ -1,28 +1,25 @@
 # 7. Programação de Funcionalidades
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="5-Arquitetura da Solução.md"> Arquitetura da Solução</a>
 
-Implementação do sistema descrita por meio dos requisitos funcionais e/ou não funcionais. Deve relacionar os requisitos atendidos com os artefatos criados (código fonte), deverão apresentadas as instruções para acesso e verificação da implementação que deve estar funcional no ambiente de hospedagem.
+| Código | Descrição | Artefatos |
+| --- | --- | --- |
+| RF-1 | O sistema deverá cadastrar os setores da entidade, setores estes para onde os processos serão iniciados e tramitados. | Controllers/SetorController.cs, Models/Setor.cs, Views/Setor/* |
+| RF-2 | O sistema deverá cadastrar os usuários do sistema. | Controllers/UsuarioController.cs, Models/Usuario.cs, Views/Usuario/* |
+| RF-3 | O sistema deverá vincular um usuário a um ou mais setores, definindo quem pode iniciar um processo do setor. | Controllers/UsuarioController.cs, Models/Usuario.cs, Views/Usuario/*, Controllers/SetoresUsuariosController.cs, Controllers/SetorUsuarioManutencao.cs, js/Site.js |
+| RF-4 | O sistema deverá cadastrar tipos de processos. | Controllers/Tipo_ProcessoController.cs, Models/Tipo_Processo.cs, Views/Usuario/* |
+| RF-5 | O sistema deverá cadastrar interessados, que podem ser pessoas físicas ou jurídicas. | Controllers/Interessado.cs, Models/Interessado.cs, Views/Interessado/* |
+| RF-6 | O sistema deverá permitir cadastrar processos especificando tipo, interessado, setor de origem e descrição. | Controllers/ProcessoController.cs, Models/Processo.cs, Views/Processo/* |
+| RF-7 | O sistema deverá permitir cadastrar anexos aos processos. | Controllers/AnexoProcessoController.cs, Models/AnexoProcesso.cs, Views/AnexoProcesso/* |
+| RF-8 | O sistema deverá permitir tramitar um processo para outros setores. | Controllers/Movimentacao.cs, Models/Movimentacao.cs, Views/Movimentacao/* |
+| RF-9 | O sistema deverá permitir excluir a última tramitação. | Controllers/Movimentacao.cs, Models/Movimentacao.cs, Views/Movimentacao/* |
+| RF-10 | O usuário deverá estar logado para acessar o sistema. | Não está pronto|
+| RF-11 | O sistema deverá permitir ao usuário buscar processos por filtros. | Controllers/ProcessoController.cs, Models/Processo.cs, Views/Processo/* |
+| RF-12 | O sistema deverá permitir a exportação da listagem de processos para o Excel. | Controllers/ProcessoController.cs, Models/Processo.cs, Views/Processo/* | 
+| RF-13 | O sistema deverá permitir a consulta do processo mediante CPF e código do processo, pela internet, sem autenticação. | Controllers/ConsultaPublicaController.cs, Models/ConsultaPublica.cs, Views/ConsultaPublica/* |
+| RF-14 | O sistema deverá ter uma opção, dentro do cadastro de tipo de processos, que permita que o trâmite seja realizado fora do fluxo pré-determinado. | Controllers/Fluxo.cs, Models/Fluxo.cs, Views/Fluxo/* |
 
-Por exemplo: a tabela a seguir deverá ser preenchida considerando os artefatos desenvolvidos.
-
-|ID    | Descrição do Requisito  | Artefato(s) produzido(s) |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | tarefas.shtml / tarefas.cs / controllertarefas.cs | 
-|RF-002| Emitir um relatório de tarefas no mês   | relatorio.shtml |
 
 # Instruções de acesso
-
-Não deixe de informar o link onde a aplicação estiver disponível para acesso (por exemplo: https://adota-pet.herokuapp.com/src/index.html).
-
-Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
-
-O link e o usuário/senha descritos acima são apenas exemplos de como tais informações deverão ser apresentadas.
-
-> **Links Úteis**:
->
-> - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
-> - [JSON Tutorial](https://www.w3resource.com/JSON)
-> - [JSON Data Set Sample](https://opensource.adobe.com/Spry/samples/data_region/JSONDataSetSample.html)
-> - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
-> - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
+1. Clonar o repositório do github
+2. Abrir o projeto pelo dotnet 6
+3. Iniciar o projeto. O sistema será aberto em um navegador.
