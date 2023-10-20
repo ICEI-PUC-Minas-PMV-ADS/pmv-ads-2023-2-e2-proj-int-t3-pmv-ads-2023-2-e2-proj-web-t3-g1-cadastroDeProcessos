@@ -146,6 +146,7 @@ Requisito associado: RF-8
 
 - Objetivo: Verificar se o sistema requer que o nome da pessoa seja fornecido durante o cadastro e se valida essa informação corretamente. 
 
+
 ### CT-17 Validação de CPFs e CNPJs das Pessoas Cadastradas
 
 - Requisito associado: RN-3
@@ -198,19 +199,7 @@ Requisito associado: RF-8
 
 - Objetivo: Verificar se o sistema registra automaticamente a data e hora de criação de cada processo. 
 
-- Procedimentos:
-	- Acesse a funcionalidade de cadastro de processos no sistema. 
-	- Preencha os campos necessários para cadastrar um novo processo, incluindo requisitante, tipo de processo e outros campos relevantes. 
-	- Conclua o cadastro do processo. 
-	- Verifique se o sistema registra automaticamente a data e hora de criação do processo. 
-	- Repita o processo de cadastro para um segundo processo, fornecendo informações diferentes do primeiro processo. 
-	- Verifique se o sistema registra automaticamente a data e hora de criação do segundo processo. 
-	- Repita o processo de cadastro para um terceiro processo, fornecendo informações diferentes dos dois processos anteriores. 
-	- Verifique se o sistema registra automaticamente a data e hora de criação do terceiro processo. 
 
-- Resultado esperado:
-	- O sistema deve registrar automaticamente a data e hora de criação de cada processo no momento em que o processo é cadastrado. 
-	- A data e hora de criação registradas devem refletir o momento exato em que o processo foi criado. 
 
 ### CT-24 Respeito ao Fluxo de Tramitação com Exceções no Cadastro de Tipo de Processo
 
@@ -218,19 +207,4 @@ Requisito associado: RF-8
 
 - Objetivo: Verificar se o sistema respeita o fluxo de tramitação padrão, a menos que seja definido de outra forma no cadastro de tipo de processo. 
 
-- Procedimentos:
-	- Acesse a funcionalidade de cadastro de tipos de processo no sistema. 
-	- Crie um novo tipo de processo que siga o fluxo de tramitação padrão (sem exceções). 
-	- Verifique se o sistema permite a criação do tipo de processo com sucesso e exibe uma mensagem de confirmação. 
-	- Crie um segundo tipo de processo que defina exceções ao fluxo de tramitação padrão, especificando regras de tramitação diferentes. 
-	- Verifique se o sistema permite a criação do segundo tipo de processo com sucesso e exibe uma mensagem de confirmação. 
-	- Acesse a funcionalidade de cadastro de processos no sistema. 
-	- Crie um novo processo usando o primeiro tipo de processo criado no Passo 2 (sem exceções). 
-	- Verifique se o sistema segue o fluxo de tramitação padrão para esse tipo de processo. 
-	- Crie um segundo processo usando o segundo tipo de processo criado no Passo 4 (com exceções). 
-	- Verifique se o sistema segue as regras de tramitação especificadas para esse tipo de processo, que são diferentes do fluxo padrão. 
 
-- Resultado esperado:
-	- O sistema deve permitir a criação de tipos de processo com ou sem exceções ao fluxo de tramitação padrão. 
-	- O sistema deve seguir o fluxo de tramitação padrão para tipos de processo sem exceções. 
-	- O sistema deve seguir as regras de tramitação especificadas para tipos de processo com exceções. 
