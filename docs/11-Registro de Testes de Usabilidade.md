@@ -5,6 +5,8 @@
 
 A avaliação da usabilidade é uma etapa essencial no desenvolvimento de qualquer sistema, site ou aplicativo, pois visa garantir que os usuários tenham uma experiência satisfatória e eficiente. Recentemente, conduzimos uma série de testes de usabilidade que se concentraram em três áreas críticas: CRUD (Create, Read, Update, Delete), navegação e layout. Vamos explorar as descobertas e lições valiosas que surgiram desses testes.
 
+Além da avaliação direta dos participantes por meio de vídeo, também aplicamos uma pesquisa por meio de um formulário para obter um entendimento abrangente da experiência do usuário. Isso nos permitiu coletar dados quantitativos e qualitativos que complementaram as observações visuais dos testes. As respostas coletadas no formulário forneceram insights adicionais sobre a usabilidade, permitindo-nos identificar padrões e tendências nos comentários dos participantes. Essa abordagem combinada, com vídeo e formulário, nos permitiu uma análise mais completa e precisa da experiência do usuário, capacitando-nos a tomar decisões informadas para aprimorar o sistema com base nas necessidades e percepções dos usuários. Como resultado, estamos comprometidos em implementar melhorias significativas para oferecer uma experiência ainda mais agradável e eficiente.
+
 ### Operações CRUD Eficientes:
 
 Nossos testes abordaram a eficácia das operações CRUD, que são fundamentais em muitos sistemas. Os resultados revelaram que:
