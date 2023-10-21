@@ -23,7 +23,8 @@ Tela edição
 
 Tela de exclusão
 
-![Uploading excluir.png…]()
+![excluir](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/126068378/e7224d8f-d39c-4141-8f58-95a5585932d0)
+
 
 
 Todas as telas possuem responsividade para telas menores.
