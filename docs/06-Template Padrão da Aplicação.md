@@ -36,6 +36,15 @@ Tela de cadastro
 
 ![responsivo](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/126068378/942dd420-4f38-4b3b-bfc8-33fdc875e86f)
 
+Tela de esclusão
+
+![responsivo3](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/126068378/f1d91f99-0616-4c89-8d48-add04934019d)
+
+
+Tela de edição
+
+![responsivo2](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/126068378/98b1ee05-fb58-4843-b141-d383767f943d)
+
 
 > **Links Úteis**:
 >
