@@ -7,6 +7,8 @@ A avaliação da usabilidade é uma etapa essencial no desenvolvimento de qualqu
 
 Além da avaliação direta dos participantes por meio de vídeo, também aplicamos uma pesquisa por meio de um formulário para obter um entendimento abrangente da experiência do usuário. Isso nos permitiu coletar dados quantitativos e qualitativos que complementaram as observações visuais dos testes. As respostas coletadas no formulário forneceram insights adicionais sobre a usabilidade, permitindo-nos identificar padrões e tendências nos comentários dos participantes. Essa abordagem combinada, com vídeo e formulário, nos permitiu uma análise mais completa e precisa da experiência do usuário, capacitando-nos a tomar decisões informadas para aprimorar o sistema com base nas necessidades e percepções dos usuários. Como resultado, estamos comprometidos em implementar melhorias significativas para oferecer uma experiência ainda mais agradável e eficiente.
 
+As evidências detalhadas dos testes de usabilidade, incluindo gravações em vídeo e o modelo do formulário, foram devidamente arquivadas para referência e análise. As evidências estão na pasta de documentos (Registro_Teste_usabilidade). Esses registros são fundamentais para documentar o processo de avaliação e guiar futuras melhorias com base nas observações dos participantes.
+
 ### Operações CRUD Eficientes:
 
 Nossos testes abordaram a eficácia das operações CRUD, que são fundamentais em muitos sistemas. Os resultados revelaram que:
