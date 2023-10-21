@@ -146,6 +146,8 @@ Requisito associado: RF-8
 
 - Objetivo: Verificar se o sistema requer que o nome do interessado seja fornecido durante o cadastro e se valida essa informação corretamente. 
 
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/88147811/3c4a3b17-a487-45d6-9292-dbe869674045)
+
 
 ### CT-17 Validação de CPFs e CNPJs dos Interessados Cadastrados
 
@@ -177,7 +179,7 @@ Requisito associado: RF-8
 
 
 
-### CT-21  Requisitante e Tipo Obrigatórios para Cada Processo
+### CT-21 Requisitante e Tipo Obrigatórios para Cada Processo
 
 - Requisito associado: RN-7
 
