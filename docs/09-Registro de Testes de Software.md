@@ -100,7 +100,7 @@ Requisito associado: RF-8
 - Objetivo: Verificar se o sistema exige que os usuários estejam logados para acessar suas funcionalidades. 
 
 - A autenticação ainda não estará disponível na etapa 3.
-- 
+
 ### CT-11  Busca de Processos por Filtros
 
 - Requisito associado: RF-11
@@ -162,6 +162,7 @@ Requisito associado: RF-8
 
 - Objetivo: Verificar se o sistema atribui um código incremental único para cada interessado cadastrado. 
 
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/88147811/fb326f33-f4e7-4e6c-a35a-9469756c1c3f)
 
 
 ### CT-19 Nome Único para Cada Setor
@@ -191,7 +192,10 @@ Requisito associado: RF-8
 
 - Requisito associado: RN-8
 
-- Objetivo:
+- Objetivo: Garantir que cada processo receberá um código único no sistema.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/88147811/69c3ff52-57d5-4a85-a518-a43e4d51644a)
+
 
 
 ### CT-23 O sistema deverá cadastrar automaticamente a data e hora do processo. 
@@ -199,6 +203,8 @@ Requisito associado: RF-8
 - Requisito associado: RN-9
 
 - Objetivo: Verificar se o sistema registra automaticamente a data e hora de criação de cada processo. 
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/88147811/73bfae98-3b7e-422d-a88f-ca62f599ef80)
 
 
 
