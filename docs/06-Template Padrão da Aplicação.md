@@ -1,7 +1,5 @@
 # 6. Template Padrão da Aplicação
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>
-
 O template foi criado pensando em um desing minimalista e de fácil utilização, onde temos um dashboard com informações gerais para o setor administrativo e todos os módulos são compostos pelos seguintes layouts:
 
 Dashboard
