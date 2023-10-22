@@ -11,6 +11,7 @@
 	return false;
 }
 
+
 function PegaValorCB(o) {
 
 	if (document.getElementById(o).checked) {
@@ -157,5 +158,10 @@ function vincularUsuarioSetor(cpfUsuario, codigoSetor) {
 function atualizarMovimentacoes(codigoProcesso) {
 
 	$("#contenedorMovimentacao").load("/api/listamovimentacao/?codigoProcesso=" + codigoProcesso);
+
+}
+
+
+function login() {
 
 }

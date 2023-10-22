@@ -28,8 +28,8 @@ body {
    right: 10%;
    top: 10%;
    bottom: 10%;
-   background-color: #CCCCDD;
-   border: 1px solid red;
+   background-color: #FFF;
+   border: 1px solid #000;
    z-index: 1000;
     
 }
