@@ -75,6 +75,19 @@ function valor(o) {
 }
 
 
+
+function dashboardsetores(SQL, Destino) {
+
+
+	$.get("/api/processosetor/?SQL=" + SQL, function (data) {
+
+		$("#" + Destino).html(data);
+
+	});
+
+
+
+}
 function atualizarCampoExibicao(SQL, Destino) {
 
 

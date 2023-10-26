@@ -147,6 +147,7 @@ namespace Processos.Controllers
             String html = "";
             String Cab = "";
             String Dat = "";
+            int cc = 0;
 
             using (SqlConnection connection = new SqlConnection(builder.Configuration.GetConnectionString("DefaultConnection")))
             {
@@ -184,12 +185,14 @@ namespace Processos.Controllers
 
                             Dat += "<TR>";
 
+                            cc = 0;
                             for (int i = 0; i < reader.FieldCount; i++)
                             {
                                 Dat += "<TD>" + reader.GetValue(i) + "</TD>";
+                                cc++;
                             }
 
-                            Dat += "<TD><a href = '/" + Rota + "/Edit/" + reader.GetValue(reader.GetOrdinal("PK")) + "'><img src='/img/Editar.png'></a><a href='/" + Rota + "/Delete/" + reader.GetValue(reader.GetOrdinal("PK")) + "'><img src='/img/Excluir.png'></a></TH>";
+                            Dat += "<TD style='text-align:center; width:100px'><a href = '/" + Rota + "/Edit/" + reader.GetValue(reader.GetOrdinal("PK")) + "'><img src='/img/Editar.png'></a><a href='/" + Rota + "/Delete/" + reader.GetValue(reader.GetOrdinal("PK")) + "'><img src='/img/Excluir.png'></a></TH>";
 
                             Dat += "</TR>";
 
@@ -202,6 +205,15 @@ namespace Processos.Controllers
             if(Cab == "")
             {
                 Cab = "<DIV id='registroNaoEncontrado'>Nenhum registro encontrado para o cadastro ou busca informada.</DIV>";
+            }
+            else
+            {
+             
+
+                Dat = Dat + "<TR><TD colspan='" + cc + "'>&nbsp;</TD><TD  style='text-align:center; width:100px'><img src='/img/Excel.png'></TD></TR>";
+
+                Dat = Dat + "</TABLE>";
+
             }
 
             return Content(html + Cab + Dat, "text/html");

@@ -17,21 +17,24 @@ body {
   margin-bottom: 60px;
 }
 
+#Busca {
+    margin-bottom: 1em;
+}
 
+#Busca:focus {
+    background-color: #FFFFCC;
+}
 
 #contenedorSpeedbutton {
-   display: none;
-
-   position: absolute;
-
-   left: 10%;
-   right: 10%;
-   top: 10%;
-   bottom: 10%;
-   background-color: #FFF;
-   border: 1px solid #000;
-   z-index: 1000;
-    
+    display: none;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 10%;
+    bottom: 10%;
+    background-color: #FFF;
+    border: 1px solid #000;
+    z-index: 1000;
 }
 
 #listaSpeedButton{
