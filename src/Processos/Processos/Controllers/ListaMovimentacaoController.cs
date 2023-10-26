@@ -43,18 +43,18 @@ namespace Processos.Controllers
                     using (SqlDataReader reader = command.ExecuteReader())
                     {
 
-                        html += "<TABLE class='table'><TR><TH>Código</TH><TH>Movimento</TH><TH>Data Hora</TH><TH>CPF</TH><TH>Setor</TH></TR>";
+                        html += "<TABLE class='table'><TR><TH>Código</TH><TH>Movimento</TH><TH>Data Hora</TH><TH>CPF</TH><TH>Setor</TH><TH>&nbsp;</TH></TR>";
 
                         while (reader.Read())
                         {
 
                             quantidade++;
 
-                            html += "<TR><TD>" + reader.GetValue(reader.GetOrdinal("codigoMovimentacao")) + "</TD><TD>" + quantidade + "</TD><TD>" + reader.GetValue(reader.GetOrdinal("dataHora")) + "</TD><TD>" + reader.GetValue(reader.GetOrdinal("cpfUsuarioTramite")) + "</TD><TD>" + reader.GetValue(reader.GetOrdinal("nomeSetor")) + "</TD><TD>";
+                            html += "<TR><TD>" + reader.GetValue(reader.GetOrdinal("codigoMovimentacao")) + "</TD><TD>" + quantidade + "</TD><TD>" + reader.GetValue(reader.GetOrdinal("dataHora")) + "</TD><TD>" + reader.GetValue(reader.GetOrdinal("cpfUsuarioTramite")) + "</TD><TD>" + reader.GetValue(reader.GetOrdinal("nomeSetor")) + "</TD><TD style='text-align:right'>";
 
 
                         
-                            html += "<a href='/Movimentacao/Edit/" + reader.GetValue(reader.GetOrdinal("codigoMovimentacao")) + "'>[editar]</a>";
+                            html += "<a href='/Movimentacao/Edit/" + reader.GetValue(reader.GetOrdinal("codigoMovimentacao")) + "'><img src='/img/Editar.png'></a>";
                             
                             html += "</TD></TR>";
 
@@ -65,7 +65,7 @@ namespace Processos.Controllers
                 }
             }
 
-            html += $"<TR><TD colspan='6' style='text-align:right'><a href='/Movimentacao/Create/?codProcesso={codigoProcesso}'>[adicionar movimentacao]</a></TD></TR>";
+            html += $"<TR><TD colspan='6' style='text-align:right'><a href='/Movimentacao/Create/?codProcesso={codigoProcesso}'><img src='/img/Adicionar.png'></a></TD></TR>";
             html += "</Table>";
 
 

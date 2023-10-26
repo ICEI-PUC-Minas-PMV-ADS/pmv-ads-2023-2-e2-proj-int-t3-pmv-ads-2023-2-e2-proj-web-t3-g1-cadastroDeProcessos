@@ -58,7 +58,7 @@ namespace Processos.Controllers
                     using (SqlDataReader reader = command.ExecuteReader())
                     {
 
-                        html += "<TABLE class='table'><TR><TH>" + CampoBusca + "</TH><TH>" + CampoExibicao + "</TH></TR>";
+                        html += "<TABLE class='table'><TR><TH>" + CampoBusca + "</TH><TH>" + CampoExibicao + "</TH><TH>&nbsp;</TH></TR>";
 
                         while (reader.Read())
                         {
@@ -72,7 +72,7 @@ namespace Processos.Controllers
                             String b = "" + reader.GetValue(reader.GetOrdinal(CampoBusca));
                             String e = "" + reader.GetValue(reader.GetOrdinal(CampoExibicao));
 
-                            html += "<TR><TD>" + b + "</TD><TD>" + e + "</TD><TD><a href='javascript:selecionarSpeedbutton(\"" + CampoDestino + "\", \"" + b + "\", \"" + ContenedorCampoExibicao + "\", \"" + e + "\")'>[selecionar]</a></TD></TR>";
+                            html += "<TR><TD>" + b + "</TD><TD>" + e + "</TD><TD><a href='javascript:selecionarSpeedbutton(\"" + CampoDestino + "\", \"" + b + "\", \"" + ContenedorCampoExibicao + "\", \"" + e + "\")'><img src='/img/Editar.png'></a></TD></TR>";
 
                             quantidade++;
 

@@ -189,7 +189,7 @@ namespace Processos.Controllers
                                 Dat += "<TD>" + reader.GetValue(i) + "</TD>";
                             }
 
-                            Dat += "<TD><a href = '/" + Rota + "/Edit/" + reader.GetValue(reader.GetOrdinal("PK")) + "'>[Editar]</a><a href='/" + Rota + "/Delete/" + reader.GetValue(reader.GetOrdinal("PK")) + "'>[Excluir]</a></TH>";
+                            Dat += "<TD><a href = '/" + Rota + "/Edit/" + reader.GetValue(reader.GetOrdinal("PK")) + "'><img src='/img/Editar.png'></a><a href='/" + Rota + "/Delete/" + reader.GetValue(reader.GetOrdinal("PK")) + "'><img src='/img/Excluir.png'></a></TH>";
 
                             Dat += "</TR>";
 
