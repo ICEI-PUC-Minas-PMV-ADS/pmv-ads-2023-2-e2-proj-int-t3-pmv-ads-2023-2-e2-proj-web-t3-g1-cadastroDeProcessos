@@ -15,6 +15,8 @@ function foco(o) {
 	document.getElementById(o).focus();
 }
 
+
+
 function PegaValorCB(o) {
 
 	if (document.getElementById(o).checked) {
@@ -177,6 +179,12 @@ function atualizarMovimentacoes(codigoProcesso) {
 
 }
 
+
+function carregarFluxoProcesso(codigoTipoProcesso) {
+
+	$("#contenedorFluxoProcesso").load("/api/fluxoProcesso/?codigoTipoProcesso=" + codigoTipoProcesso);
+
+}
 
 function entrar() {
 

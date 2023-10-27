@@ -26,6 +26,21 @@
 
 
 
+<DIV id="contenedorFluxoProcesso"></DIV>
+
+
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
 }
+
+
+
+<script>
+
+
+    $(document).ready(function () { carregarFluxoProcesso(valor("codigoTipoProcesso")) });
+
+</script>
+
+

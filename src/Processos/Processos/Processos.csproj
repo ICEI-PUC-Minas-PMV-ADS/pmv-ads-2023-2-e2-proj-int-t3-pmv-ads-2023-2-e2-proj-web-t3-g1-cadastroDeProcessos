@@ -24,15 +24,21 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\Login.cs" />
     <Compile Remove="Migrations\20231002195208_PM0001.cs" />
     <Compile Remove="Migrations\20231002195208_PM0001.Designer.cs" />
     <Compile Remove="Migrations\AppDbContextModelSnapshot.cs" />
     <Compile Remove="Views\Home\Speedbutton.cs" />
     <Compile Remove="Views\Home\Speedbutton.cshtml.cs" />
+    <Compile Remove="Views\Shared\Cabecalho.cshtml.cs" />
+    <Compile Remove="Views\Shared\ConsultaPublica.cshtml.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="Views\Home\Privacy.cshtml" />
     <Content Remove="Views\Home\Speedbutton.cshtml" />
+    <Content Remove="Views\Login.cshtml" />
+    <Content Remove="wwwroot\img\Novo Documento de Texto.txt" />
   </ItemGroup>
 
   <ItemGroup>

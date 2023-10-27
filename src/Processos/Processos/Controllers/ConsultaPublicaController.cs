@@ -15,7 +15,7 @@ namespace Processos.Controllers
         public String quadroMovimentacao(String codigoProcesso)
         {
 
-            String b = "";
+            String b = "<TABLE id='movproc'>";
 
             var builder = WebApplication.CreateBuilder();
 
@@ -34,17 +34,17 @@ namespace Processos.Controllers
                         while (reader.Read())
                         {
 
-                            b += "Data/Hora: " + reader.GetValue(reader.GetOrdinal("dataHora"));
+                            b += "<TR><TD>Data/Hora: " + reader.GetValue(reader.GetOrdinal("dataHora")) + "</TD>";
 
-                            b += "Setor: " + reader.GetValue(reader.GetOrdinal("nome"));
+                            b += "<TR><TD>Setor: " + reader.GetValue(reader.GetOrdinal("nome")) + "</TD>";
 
-                            b += "<HR>";
+                            b += "<TR><TD colspan='2'>&nbsp;</TD></TR>";
                         }
                     }
                 }
             }
 
-            return b;
+            return b + "</table>";
 
         }
 
@@ -78,10 +78,12 @@ namespace Processos.Controllers
                             sl.Add($"Interessado: " + reader.GetValue(reader.GetOrdinal("nomeInteressado")));
                             sl.Add($"Tipo de Processo: " + reader.GetValue(reader.GetOrdinal("nomeTipoProcesso")));
 
-                            b = "";
+                            b = "<DIV id='contenedorProcesso'>";
                             foreach (string str in sl){
-                                b += str;
+                                b += "<DIV>" + str + "</DIV>";
                             }
+
+                            b += "</div>";
 
                             b += quadroMovimentacao(codigoProcesso);
 

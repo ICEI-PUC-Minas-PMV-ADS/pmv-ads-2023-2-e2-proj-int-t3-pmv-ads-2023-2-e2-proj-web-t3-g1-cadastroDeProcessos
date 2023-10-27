@@ -48,6 +48,10 @@
                     </li>
 
                     <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Fluxo" asp-action="Index"><i class="fas fa-folder"></i><span>Fluxo</span></a>
+                    </li>
+
+                    <li class="nav-item">
                         <a class="nav-link" href="javascript:sair()"><i class="fas fa-folder"></i><span>Sair do Sistema</span></a>
                     </li>
 
@@ -117,14 +121,17 @@
                                         </a>
                                     </button>
                                 </div>
+
+
                                 <div class="btn-group" role="group">
                                     <button class="btn btn-outline-secondary"
-                                            type="button"
-                                            >
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                        Buscar Processo
+                                            type="button">
+                                        <i class="fa-solid fa-person-circle-plus"></i><a asp-controller="Fluxo" asp-action="Create" class="text-dark">
+                                            Fluxo
+                                        </a>
                                     </button>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -137,7 +144,7 @@
     <DIV id="contenedorSpeedbutton">
         <DIV id="contenedorSpeedbuttontitulo">
             <span style="width:90%">Busca</span>
-            <span style="float:right"><a href="javascript:fecharSpeedbutton()">[fechar]</a></span>
+            <span style="float:right"><a href="javascript:fecharSpeedbutton()"><img STYLE='height: 2em' src="/img/Fechar.png"></a></span>
         </DIV>
     
         <DIV><input type="text" id="buscaSpeedButton"></DIV>
@@ -167,13 +174,15 @@
         <main role="main" class="pb-3">
 
             @RenderBody()
+
         </main>
     </div>
+
     </div>
             <footer class="bg-white sticky-footer">
                 <div class="container my-auto">
                     <div class="text-start my-auto copyright">
-                        <span class="fw-light"> (c) 2023 - Controle de Processos</span>
+                        <div class="fw-light" style="text-align:center"> (cc) Eixo 2 / 2023 - Grupo 1 - PUC Minas <BR />Controle de Processos</div>
                     </div>
                 </div>
             </footer>

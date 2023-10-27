@@ -91,3 +91,23 @@ body {
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+
+
+
+/*
+    Capa do processo (consulta publica)
+*/
+#contenedorProcesso{
+    border: 1px solid #000;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+/*
+    Lista da movimentacao do processo (consulta publica)
+*/
+#movproc {
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 1px solid #000;
+    width: 80%;
+}
