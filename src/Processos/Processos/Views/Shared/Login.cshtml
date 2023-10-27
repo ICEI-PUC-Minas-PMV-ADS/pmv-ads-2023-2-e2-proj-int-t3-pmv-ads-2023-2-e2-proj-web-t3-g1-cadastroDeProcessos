@@ -1,13 +1,41 @@
 ﻿@{
-    IgnoreBody();
+
+	IgnoreBody();
+
 }
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Processos - @ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Processos.styles.css" asp-append-version="true" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+       <script src="~/js/site.js" asp-append-version="true"></script>
+
+</head>
 
 
+<!--
+    Vai mostrar o login ou senha inválidos
+-->
+<DIV id="lsi"></DIV>
 
-<input type="text" id="cpf" />
-<input type="password" id="senha" />
+<h3>Login</h3>
+<table>
+	<TR><td>CPF</td><td><input type="text" id="cpfUsuario"></TD></TR>
+	<TR><td>Senha</td><td><input type="password" id="senha"></TD></TR>
+	<TR><td colspan="2"><a href="javascript:entrar()">Entrar</a></TD></TR>
+</table>
 
 
-
-<a href="/">Sistema</a>
+<a href="/Consulta_Publica.cshtml">Consulta pública</a>

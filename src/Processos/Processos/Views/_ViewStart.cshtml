@@ -1,4 +1,35 @@
 ﻿@{
-    Layout = "_Layout";
-   // Layout = "Login";
+
+
+    var controller = this.Context.Request.RouteValues["controller"]?.ToString();
+
+
+    var f = new Processos.Funcoes(Html.ViewContext.HttpContext);
+
+    if (f.LoginDaSessao() == null)
+    {
+        Layout = "~/Views/Shared/Login.cshtml";
+    }
+    else
+    {
+
+        
+
+        switch (controller)
+        {
+            case "Product":
+
+                break;
+
+            default:
+                Layout = "~/Views/Shared/_Layout.cshtml";
+                break;
+        }
+
+
+        
+    }
+
+   
+  
 }

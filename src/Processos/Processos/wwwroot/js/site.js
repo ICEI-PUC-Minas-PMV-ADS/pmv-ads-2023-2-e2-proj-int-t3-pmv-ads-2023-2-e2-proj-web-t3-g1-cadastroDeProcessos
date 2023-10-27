@@ -175,6 +175,26 @@ function atualizarMovimentacoes(codigoProcesso) {
 }
 
 
-function login() {
+function entrar() {
+	$.get("/api/login/?cpfUsuario=" + valor("cpfUsuario") + "&senha=" + valor("senha"), function (data) {
+
+		if (data.startsWith("001 - ")) {
+			document.location = "/";
+		} else {
+
+			$("#lsi").html("Par login / senha inválidos");
+
+		}
+
+
+	});
+
+}
+
+function sair() {
+
+	$.get("/api/sair/", function (data) {
+		document.location = "/";
+	});
 
 }
