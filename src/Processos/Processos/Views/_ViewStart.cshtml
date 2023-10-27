@@ -1,20 +1,44 @@
 ﻿@{
 
+    /*
+    * 
+    * Controla a rota inicial
+    * 
+    */
 
+    // Em qual controlador estou? Posso precisar de saber
     var controller = this.Context.Request.RouteValues["controller"]?.ToString();
 
+    // site.com.br/?Meio=XXXX, onde XXXX é qq coisa
+    string meio = this.Context.Request.Query["Meio"];
 
+    // Instancia as funcoes
     var f = new Processos.Funcoes(Html.ViewContext.HttpContext);
 
+    // Tô logado = login diferente de nulo
     if (f.LoginDaSessao() == null)
     {
-        Layout = "~/Views/Shared/Login.cshtml";
+
+        switch (meio)
+        {
+
+            case "cp":
+                Layout = "~/Views/Shared/ConsultaPublica.cshtml";
+                break;
+
+            default:
+                Layout = "~/Views/Shared/Login.cshtml";
+
+                break;
+        }
+
+       
+
     }
     else
     {
 
-        
-
+        // Por via de regra todo controlador vai ter o mesmo leiaute, mas pode ser q não.
         switch (controller)
         {
             case "Product":

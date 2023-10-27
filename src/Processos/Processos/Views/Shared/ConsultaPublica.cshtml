@@ -30,12 +30,13 @@
 -->
 <DIV id="lsi"></DIV>
 
-<h3>Login</h3>
+<h3>Consulta Pública</h3>
 <table>
-	<TR><td>CPF</td><td><input type="text" id="cpfUsuario"></TD></TR>
-	<TR><td>Senha</td><td><input type="password" id="senha"></TD></TR>
-	<TR><td colspan="2"><a href="javascript:entrar()">Entrar</a></TD></TR>
+	<TR><td>CPF do interessado</td><td><input type="text" id="cpfCnpjInteressado"></TD></TR>
+	<TR><td>Número do Processo</td><td><input type="text" id="codigoProcesso"></TD></TR>
+	<TR><td colspan="2"><a href="javascript:consultarProcesso()">Consultar</a></TD></TR>
 </table>
 
+<DIV id="contenedorConsultaPublica"></DIV>
 
-<a href="/?Meio=cp">Consulta pública</a>
+<a href="/">Voltar para entrada no sistema</a>

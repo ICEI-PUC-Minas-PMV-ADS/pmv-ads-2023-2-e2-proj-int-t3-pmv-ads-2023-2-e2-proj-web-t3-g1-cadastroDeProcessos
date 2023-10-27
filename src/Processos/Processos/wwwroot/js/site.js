@@ -11,6 +11,9 @@
 	return false;
 }
 
+function foco(o) {
+	document.getElementById(o).focus();
+}
 
 function PegaValorCB(o) {
 
@@ -176,6 +179,23 @@ function atualizarMovimentacoes(codigoProcesso) {
 
 
 function entrar() {
+
+	if (valor("cpfUsuario") == "") {
+
+		foco("cpfUsuario");
+		return;
+
+	}
+
+	if (valor("senha") == "") {
+
+		foco("senha");
+		return;
+
+	}
+
+
+
 	$.get("/api/login/?cpfUsuario=" + valor("cpfUsuario") + "&senha=" + valor("senha"), function (data) {
 
 		if (data.startsWith("001 - ")) {
@@ -196,5 +216,13 @@ function sair() {
 	$.get("/api/sair/", function (data) {
 		document.location = "/";
 	});
+
+}
+
+
+function consultarProcesso() {
+
+	$("#contenedorConsultaPublica").load("/api/consultapublica/?cpfCnpjInteressado=" + valor("cpfCnpjInteressado") + "&codigoProcesso=" + valor("codigoProcesso"));
+
 
 }
