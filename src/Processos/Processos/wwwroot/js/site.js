@@ -234,3 +234,7 @@ function consultarProcesso() {
 
 
 }
+
+function verificaSePodeMovimentar() {
+
+}
