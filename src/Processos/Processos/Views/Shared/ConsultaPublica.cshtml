@@ -24,19 +24,43 @@
 
 </head>
 
+<body class="bg-gradient-primary">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-9 col-lg-12 col-xl-8">
+                <div class="card shadow-lg o-hidden border-0 my-5  ">
+                    <div class="card-body p-0"  >
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="p-5">
+                                    <div class="text-center">
+                                        <h4 class="text-dark mb-4">Consulta Pública</h4>
+                                    </div>
+                                    <form class="user">
+                                        <div class="mb-3"><input class="form-control form-control-user" type="text" id="cpfCnpjInteressado"  placeholder="CPF Interessado" ></div>
+                                        <div class="mb-3"><input class="form-control form-control-user"  type="text" id="codigoProcesso" placeholder="Código do Processo"></div>
+                                        <div class="mb-3">
+                                        </div>
+                                        <a class="btn btn-primary d-block btn-user w-100" href="javascript:consultarProcesso()" type="submit">Consultar</a>
+                                        <hr>
+                                        <a class="mb-3" href="/">Voltar para entrada no sistema</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
 
 <!--
     Vai mostrar o login ou senha inválidos
 -->
-<DIV id="lsi"></DIV>
 
-<h3>Consulta Pública</h3>
-<table>
-	<TR><td>CPF do interessado</td><td><input type="text" id="cpfCnpjInteressado"></TD></TR>
-	<TR><td>Número do Processo</td><td><input type="text" id="codigoProcesso"></TD></TR>
-	<TR><td colspan="2"><a href="javascript:consultarProcesso()">Consultar</a></TD></TR>
-</table>
 
-<DIV id="contenedorConsultaPublica"></DIV>
-
-<a href="/">Voltar para entrada no sistema</a>
