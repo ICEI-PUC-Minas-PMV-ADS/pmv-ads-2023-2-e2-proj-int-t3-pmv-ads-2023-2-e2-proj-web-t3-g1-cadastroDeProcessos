@@ -18,9 +18,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-       <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
 
 </head>
 
@@ -36,14 +37,23 @@
                                     <div class="text-center">
                                         <h4 class="text-dark mb-4">Consulta Pública</h4>
                                     </div>
+                                    <p>Informe o CPF junto com o código do processo conforme o seu comprovante de protocolização e clique no botão "Consultar".</p>
                                     <form class="user">
-                                        <div class="mb-3"><input class="form-control form-control-user" type="text" id="cpfCnpjInteressado"  placeholder="CPF Interessado" ></div>
+                                        <div class="mb-3"><input class="form-control form-control-user" type="text" id="cpfCnpjInteressado"  placeholder="CPF do Interessado" ></div>
                                         <div class="mb-3"><input class="form-control form-control-user"  type="text" id="codigoProcesso" placeholder="Código do Processo"></div>
                                         <div class="mb-3">
                                         </div>
                                         <a class="btn btn-primary d-block btn-user w-100" href="javascript:consultarProcesso()" type="submit">Consultar</a>
                                         <hr>
-                                        <a class="mb-3" href="/">Voltar para entrada no sistema</a>
+
+                                        <DIV id="contenedorConsultaPublica"></DIV>
+
+                                        <a class="btn btn-primary d-block btn-facebook btn-user w-100" role="button" href="/">
+                                            Entrar no sistema
+                                        </a>
+
+                                        
+
                                     </form>
                                 </div>
                             </div>
@@ -53,14 +63,10 @@
             </div>
         </div>
     </div>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.min.js"></script>
+
 </body>
 
 </html>
 
-<!--
-    Vai mostrar o login ou senha inválidos
--->
 
 
