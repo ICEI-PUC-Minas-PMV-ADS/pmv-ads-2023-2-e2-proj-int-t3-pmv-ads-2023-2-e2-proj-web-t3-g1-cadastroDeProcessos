@@ -74,7 +74,11 @@
             </div>
             <div class="form-group">
                 <label asp-for="assunto" class="control-label"></label>
-                <input asp-for="assunto" class="form-control" />
+                
+               <!--<input asp-for="assunto" class="form-control" /> -->
+
+                <textarea asp-for="assunto" class="form-control" /></textarea>
+
                 <span asp-validation-for="assunto" class="text-danger"></span>
             </div>
             <div class="form-group pt-1">
@@ -90,6 +94,15 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+
+
+<h4 class="mt-4 ms-2">
+    Arquivos anexos deste processo
+</h4>
+
+<DIV id="contenedorAnexos"></DIV>
+
+
 
 <h4 class="mt-4 ms-2">
     Movimentações deste processo
@@ -108,6 +121,8 @@
         atualizarCampoExibicao("SELECT nomeTipoProcesso FROM TIPO_PROCESSO WHERE codigoTipoProcesso=" + valor('codigoTipoProcesso'), "exibicaoTipoProcesso");
 
         atualizarMovimentacoes(valor("codigoProcesso"));
+
+        atualizarAnexos(valor("codigoProcesso"));
 
     });
 
