@@ -111,3 +111,17 @@ body {
     border: 1px solid #000;
     width: 80%;
 }
+
+
+#lsi {
+    border: 1px solid #F55;
+    background-color: #ffdede;
+    color: #F00;
+    font-weight: bold;
+    display: none;
+    padding: .4em;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    margin-bottom: 1em;
+}

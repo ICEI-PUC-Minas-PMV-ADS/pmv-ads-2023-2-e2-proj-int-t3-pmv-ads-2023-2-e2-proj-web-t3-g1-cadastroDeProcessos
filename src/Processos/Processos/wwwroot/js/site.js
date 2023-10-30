@@ -72,8 +72,6 @@ function valor(o) {
 		if (Tipo == "SPAN")
 			return "";
 
-
-
 		alert("Objeto " + o + " não encontrado!" + Tipo);
 
 	}
@@ -211,6 +209,7 @@ function entrar() {
 		} else {
 
 			$("#lsi").html("Par login / senha inválidos");
+			$("#lsi").css("display", "block");
 
 		}
 
