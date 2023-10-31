@@ -42,9 +42,11 @@ namespace Processos.Controllers
         public IActionResult Create()
         {
 
+            Funcoes f = new Funcoes(HttpContext);
+
             Processo p = new Processo();
             p.dataHora = DateTime.Now;            
-            p.cpfProtocolista = "04689352666";
+            p.cpfProtocolista = f.LoginDaSessao();
 
             return View(p);
         }

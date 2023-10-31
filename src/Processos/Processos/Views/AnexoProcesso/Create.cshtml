@@ -1,0 +1,78 @@
+﻿@model Processos.Models.AnexoProcesso
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+<h4>Enviar um novo anexo ao processo</h4>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+
+
+            <div class="form-group">
+                <label asp-for="codigoProcesso" class="control-label"></label>
+                <input asp-for="codigoProcesso" class="form-control" />
+                <span asp-validation-for="codigoProcesso" class="text-danger"></span>
+            </div>
+
+            
+            <div class="form-group" >
+                <label asp-for="dataHora" class="control-label"></label>
+                <input asp-for="dataHora" class="form-control" />
+                <span asp-validation-for="dataHora" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group" >
+                <label asp-for="nomeAnexo" class="control-label"></label>
+                <input asp-for="nomeAnexo" class="form-control" />
+                <span asp-validation-for="nomeAnexo" class="text-danger"></span>
+            </div>
+
+
+
+            <input type="file" name="file" id="file" />
+
+            <div class="form-group pt-1">
+                <input type="submit" value="Enviar Anexo" class="btn btn-primary" />
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+
+<script>
+    // Get references to the input elements
+    const fileInput = document.getElementById('file');
+    const fileNameInput = document.getElementById('nomeAnexo');
+
+    // Add an event listener to the file input field
+    fileInput.addEventListener('change', function () {
+      // Check if a file is selected
+      if (fileInput.files.length > 0) {
+        // Get the file name
+        const selectedFile = fileInput.files[0];
+        const fileName = selectedFile.name;
+
+        // Set the file name to the other input field
+        fileNameInput.value = fileName;
+      } else {
+        // If no file is selected, clear the other input field
+        fileNameInput.value = '';
+      }
+    });
+</script>

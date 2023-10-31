@@ -42,11 +42,14 @@ namespace Processos.Controllers
 
         public IActionResult Create([FromQuery] int codProcesso)
         {
+                        
+
+            Funcoes f = new Funcoes(HttpContext);
+
             Movimentacao m = new Movimentacao();
             m.codigoProcesso = codProcesso;
             m.dataHora = DateTime.Now;
-            m.cpfUsuarioTramite = "04689352666";
-            m.codigoSetorLocalizacao = 1;
+            m.cpfUsuarioTramite = f.LoginDaSessao();
             return View(m);
         }
 
