@@ -178,6 +178,11 @@ function atualizarMovimentacoes(codigoProcesso) {
 }
 
 
+function atualizarAnexos(codigoProcesso) {
+	$("#contenedorAnexos").load("/api/listaanexos/?codigoProcesso=" + codigoProcesso);
+
+}
+
 function carregarFluxoProcesso(codigoTipoProcesso) {
 
 	$("#contenedorFluxoProcesso").load("/api/fluxoProcesso/?codigoTipoProcesso=" + codigoTipoProcesso);

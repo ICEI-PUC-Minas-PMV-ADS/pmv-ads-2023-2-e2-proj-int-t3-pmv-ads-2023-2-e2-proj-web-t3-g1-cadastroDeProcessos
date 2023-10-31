@@ -1,7 +1,7 @@
 ﻿@model Processos.Models.AnexoProcesso
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Enviar um novo anexo ao processo";
 }
 
 
@@ -13,22 +13,21 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
 
-
-            <div class="form-group">
+            <div class="form-group" style="display:none">
                 <label asp-for="codigoProcesso" class="control-label"></label>
                 <input asp-for="codigoProcesso" class="form-control" />
                 <span asp-validation-for="codigoProcesso" class="text-danger"></span>
             </div>
 
             
-            <div class="form-group" >
+            <div class="form-group" style="display:none">
                 <label asp-for="dataHora" class="control-label"></label>
                 <input asp-for="dataHora" class="form-control" />
                 <span asp-validation-for="dataHora" class="text-danger"></span>
             </div>
 
 
-            <div class="form-group" >
+            <div class="form-group" style="display:none">
                 <label asp-for="nomeAnexo" class="control-label"></label>
                 <input asp-for="nomeAnexo" class="form-control" />
                 <span asp-validation-for="nomeAnexo" class="text-danger"></span>
