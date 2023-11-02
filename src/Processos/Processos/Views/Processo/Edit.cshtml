@@ -49,6 +49,7 @@
                 <span asp-validation-for="cpfProtocolista" class="text-danger"></span>
             </div>
 
+
             <div class="form-group">
                 <label asp-for="codigoSetor" class="control-label"></label>
                 <input asp-for="codigoSetor" id="codigoSetor" class="form-control" style='display:none' />
@@ -58,10 +59,21 @@
                 </a>
 
                 <span asp-validation-for="codigoSetor" class="text-danger"></span>
-                
+            </div>
+
+            <div class="form-group">
+                <label asp-for="situacaoProcesso" class="control-label"></label>
+
+                <SELECT asp-for="situacaoProcesso" class="form-control">
+                    <option value="1">Em andamento</option>
+                    <option value="2">Finalizado</option>
+                </SELECT>
 
 
             </div>
+
+
+
             <div class="form-group">
                 <label asp-for="dataHora" class="control-label"></label>
                 <input asp-for="dataHora" class="form-control" />
@@ -72,15 +84,14 @@
                 <input asp-for="resumo" class="form-control" />
                 <span asp-validation-for="resumo" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="assunto" class="control-label"></label>
-                
-               <!--<input asp-for="assunto" class="form-control" /> -->
-
-                <textarea asp-for="assunto" class="form-control" /></textarea>
-
+                <textarea asp-for="assunto" id='assunto' name="assunto" class="form-control" ></textarea>
                 <span asp-validation-for="assunto" class="text-danger"></span>
             </div>
+
+
             <div class="form-group pt-1">
                 <input type="submit" value="Salvar" class="btn btn-primary" /> |
                 <button class="btn btn-outline-secondary"><a asp-controller="Processo" asp-action="Index"></a>Voltar</button>

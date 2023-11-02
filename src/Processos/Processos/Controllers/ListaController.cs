@@ -96,11 +96,14 @@ namespace Processos.Controllers
                 SQL = "SELECT [S] FROM PROCESSO p INNER JOIN TIPO_PROCESSO tp on tp.codigoTipoProcesso = p.codigoTipoProcesso INNER JOIN INTERESSADO i on i.codigoInteressado = p.codigoInteressado inner join SETOR s on s.codigoSetor = p.codigoSetor WHERE ";
 
                 s.Add("p.codigoProcesso as PK");
-                s.Add("i.nome as 'Nome'");
-                s.Add("tp.nomeTipoProcesso as 'Tipo'");
-                s.Add("s.nome as 'Setor'");
                 s.Add("p.dataHora as 'Data/Hora'");
+                s.Add("i.nome as 'Interessado'");
+                s.Add("tp.nomeTipoProcesso as 'Tipo'");
+                s.Add("s.nome as 'Setor'");                
                 s.Add("p.resumo as 'Resumo'");
+
+                s.Add(" CASE WHEN situacaoProcesso = 1 THEN 'Em andamento' ELSE 'Finalizado' END AS 'Situação'");
+
 
 
                 b.Add($"p.codigoProcesso like '%{Busca}%'");

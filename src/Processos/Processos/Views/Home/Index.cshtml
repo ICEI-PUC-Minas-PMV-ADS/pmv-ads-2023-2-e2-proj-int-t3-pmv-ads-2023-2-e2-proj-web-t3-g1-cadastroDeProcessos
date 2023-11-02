@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewData["Title"] = "Painel";
+    ViewData["Title"] = "Sistema de Controle de Processos";
 }
 
 <div class="text-center">
@@ -41,7 +41,7 @@
                     <div class="card-body">
                         <div class="row align-items-center no-gutters">
                             <div class="col me-2">
-                                <div class="text-uppercase text-info fw-bold text-xs mb-1"><span>Processos Arquivados</span></div>
+                                <div class="text-uppercase text-info fw-bold text-xs mb-1"><span>Processos Finalizados</span></div>
                                 <div class="text-dark fw-bold h5 mb-0"><span id="procfim">[PROCFIM]</span></div>
                             
                             </div>
@@ -52,21 +52,34 @@
             </div>
         </div>        
 
-        <div class="row">
-        
+        <div class="row">        
             <div class="">
                 <div class="card shadow mb-4">
                     <div class="card-header d-flex justify-content-between align-items-center">
-                        <h6 class="text-primary fw-bold m-0">Processos localizados por setor</h6>
-
+                        <h6 class="text-primary fw-bold m-0">Processos iniciados por setor</h6>
                     </div>
                     <div class="card-body">
-                        <div class="chart-area" id="processosetor">[PROCESSOSSETOR]</div>
+                        <div class="chart-area" id="processosiniciadossetor" style="height:auto">[PROCESSOSINICIADOSSETOR]</div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="row">
+            <div class="">
+                <div class="card shadow mb-4">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h6 class="text-primary fw-bold m-0">Processos localizados por setor</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="chart-area" id="processossetor" style="height:auto">[PROCESSOSSETOR]</div>
+                    </div>
                 </div>
+            </div>
+        </div>
+
+
+    </div>
 
     </div>
 
@@ -77,12 +90,14 @@
 
     $(document).ready(function () {
 
-        atualizarCampoExibicao("SELECT COUNT(*) FROM PROCESSO", "procabrt");
-
+        atualizarCampoExibicao("SELECT COUNT(*) FROM PROCESSO WHERE situacaoProcesso = 1", "procabrt");
+        atualizarCampoExibicao("SELECT COUNT(*) FROM PROCESSO WHERE situacaoProcesso = 2", "procfim");
         atualizarCampoExibicao("SELECT COUNT(*) FROM MOVIMENTACAO ", "procand");
 
 
-        dashboardsetores("SELECT s.nome, (select concat(count(*), ' ') FROM MOVIMENTACAO m WHERE m.codigoSetorLocalizacao = s.codigoSetor AND m.codigoMovimentacao = (select max(codigoMovimentacao) FROM MOVIMENTACAO m2 WHERE m2.codigoProcesso = m.codigoProcesso))  FROM SETOR s", "processosetor");
+        dashboardsetores("SELECT s.nome, (select concat(count(*), ' ')) FROM PROCESSO p  INNER JOIN SETOR s on  p.codigoSetor = s.codigoSetor  GROUP BY s.nome", "processosiniciadossetor");
+
+        dashboardsetores("SELECT s.nome, (select concat(count(*), ' ') FROM MOVIMENTACAO m WHERE m.codigoSetorLocalizacao = s.codigoSetor AND m.codigoMovimentacao = (select max(codigoMovimentacao) FROM MOVIMENTACAO m2 WHERE m2.codigoProcesso = m.codigoProcesso))  FROM SETOR s", "processossetor");
 
 
 

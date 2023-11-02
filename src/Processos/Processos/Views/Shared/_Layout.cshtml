@@ -15,6 +15,8 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </head>
 
@@ -26,7 +28,7 @@
             <div class="container-fluid d-flex flex-column p-0">
                 <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0"
                    href="/">
-                    <div class="side-bar-brand"><img class="img-fluid pt-3" src="~/lib/logo.png"></div>
+                    <div class="side-bar-brand"><img class="img-fluid pt-3" src="~/lib/logo2.png"></div>
                 </a>
                 <hr class="sidebar-divider my-2" />
                 <ul id="accordionSidebar" class="navbar-nav text-light">
@@ -82,7 +84,7 @@
                                     <button class="btn btn-outline-secondary "
                                             type="button"
                                             >
-                                        <i class="fa-solid fa-user-plus"></i> <a asp-controller="Usuario" asp-action ="Create" class="text-dark">
+                                        <i class="fa-solid fa-user-plus"></i> <a style='text-decoration:none' asp-controller="Usuario" asp-action ="Create" class="text-dark">
                                             Usuário
                                         </a>
                                     </button>
@@ -91,7 +93,7 @@
                                     <button class="btn btn-outline-secondary"
                                             type="button"
                                            >
-                                        <i class="fa-solid fa-folder-plus"></i><a asp-controller="Tipo_Processo" asp-action ="Create" class="text-dark">
+                                        <i class="fa-solid fa-folder-plus"></i><a style='text-decoration:none' asp-controller="Tipo_Processo" asp-action="Create" class="text-dark">
                                             Tipo Processo
                                         </a>
                                     </button>
@@ -100,7 +102,7 @@
                                     <button class="btn btn-outline-secondary"
                                             type="button"
                                             >
-                                        <i class="fa-solid fa-house-medical"></i><a asp-controller="Setor" asp-action ="Create" class="text-dark">
+                                        <i class="fa-solid fa-house-medical"></i><a style='text-decoration:none' asp-controller="Setor" asp-action="Create" class="text-dark">
                                             Setor
                                         </a>
                                     </button>
@@ -109,7 +111,7 @@
                                     <button class="btn btn-outline-secondary"
                                             type="button"
                                             >
-                                        <i class="fa-sharp fa-solid fa-folder-plus"></i> <a asp-controller="Processo" asp-action ="Create" class="text-dark">
+                                        <i class="fa-sharp fa-solid fa-folder-plus"></i> <a style='text-decoration:none' asp-controller="Processo" asp-action="Create" class="text-dark">
                                             Processo
                                         </a>
                                     </button>
@@ -118,7 +120,7 @@
                                     <button class="btn btn-outline-secondary"
                                             type="button"
                                             >
-                                        <i class="fa-solid fa-person-circle-plus"></i><a asp-controller="Interessado" asp-action="Create" class="text-dark">
+                                        <i class="fa-solid fa-person-circle-plus"></i><a style='text-decoration:none' asp-controller="Interessado" asp-action="Create" class="text-dark">
                                             Interessado
                                         </a>
                                     </button>
@@ -128,7 +130,7 @@
                                     <div class="btn-group" role="group" id="adm_fluxocre">
                                     <button class="btn btn-outline-secondary"
                                             type="button">
-                                        <i class="fa-solid fa-person-circle-plus"></i><a asp-controller="Fluxo" asp-action="Create" class="text-dark">
+                                        <i class="fa-solid fa-person-circle-plus"></i><a style='text-decoration:none' asp-controller="Fluxo" asp-action="Create" class="text-dark">
                                             Fluxo
                                         </a>
                                     </button>
@@ -192,8 +194,7 @@
             <i class="fas fa-angle-up"></i>
         </a>
     </div>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
 
     @await RenderSectionAsync("Scripts", required: false)
 
