@@ -38,9 +38,12 @@ O cadastro de processos é um sistema com o foco para prefeituras e entes públi
 <li><a href="docs/10-Plano de Testes de Usabilidade.md" >Plano de Testes de Usabilidade</a></li>
 <li><a href="docs/11-Registro de Testes de Usabilidade.md"> Registro de Testes de Usabilidade</a></li>
 <li><a href="docs/12-Apresentação do Projeto.md"> Apresentação do Projeto</a></li>
+<li><a href="docs/13-Referências.md"> Referências Bibliográficas</a></li>
+  
 </ol>
 
 # Apresentação
 <ol>
 <li><a href="presentation/2min.mp4"> Etapa 1 - Vídeo de 2 minutos</a></li>
 </ol>
+
