@@ -18,8 +18,6 @@ W3Schools. HTML5 Web Storage. Disponível em: https://www.w3schools.com/html/htm
 
 W3Schools. CSS Tutorial. Disponível em: https://www.w3schools.com/css/default.asp. Acesso em: 30 Out. 2023.
 
-PHP. PHP: Hypertext Preprocessor. Disponível em: https://www.php.net/. Acesso em: 30 Out. 2023.
-
 OpenShot. OpenShot Video Editor. Disponível em: https://www.openshot.org/pt/. Acesso em: 30 Out. 2023.
 
 ABNT - Associação Brasileira de Normas Técnicas. Disponível em: https://www.abnt.org.br/. Acesso em: 30 Out. 2023.
