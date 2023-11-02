@@ -242,3 +242,5 @@ function consultarProcesso() {
 function verificaSePodeMovimentar() {
 
 }
+
+		

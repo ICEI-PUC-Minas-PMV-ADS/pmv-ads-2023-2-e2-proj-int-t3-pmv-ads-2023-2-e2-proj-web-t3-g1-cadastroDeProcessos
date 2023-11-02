@@ -17,7 +17,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
-builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+String scon = builder.Configuration.GetConnectionString("DefaultConnection");
+
+Console.WriteLine(scon);
+
+builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(scon));
 
 // Especifica o caminho a sert utilizado
 String wwwroot = new ConfigurationBuilder().AddJsonFile("appsettings.json", optional: false, reloadOnChange: false).Build().GetValue<string>("AppSettings:documentroot");

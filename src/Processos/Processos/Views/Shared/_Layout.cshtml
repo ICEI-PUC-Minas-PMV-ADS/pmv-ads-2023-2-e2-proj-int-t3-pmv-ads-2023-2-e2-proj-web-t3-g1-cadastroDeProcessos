@@ -31,13 +31,14 @@
                 <hr class="sidebar-divider my-2" />
                 <ul id="accordionSidebar" class="navbar-nav text-light">
                     <li class="nav-item"><a class="nav-link" href='/'><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
-                    <li class="nav-item">
+                  
+                    <li class="nav-item" id="adm_user">
                         <a class="nav-link" asp-area="" asp-controller="Usuario" asp-action="Index"><i class="fas fa-user"></i><span>Usuários</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="adm_tipo">
                         <a class="nav-link" asp-area="" asp-controller="Tipo_Processo" asp-action="Index"><i class="fas fa-folder "></i><span>Tipos de Processo</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="adm_setor">
                         <a class="nav-link" asp-area="" asp-controller="Setor" asp-action="Index"><i class="fas fa-home"></i><span>Setores</span></a>
                     </li>
                     <li class="nav-item">
@@ -47,14 +48,13 @@
                         <a class="nav-link" asp-area="" asp-controller="Processo" asp-action="Index"><i class="fas fa-folder-open"></i><span>Processos</span></a>
                     </li>
 
-                    <li class="nav-item">
+                    <li class="nav-item" id="adm_fluxo">
                         <a class="nav-link" asp-area="" asp-controller="Fluxo" asp-action="Index"><i class="fas  fa-book"></i><span>Fluxo</span></a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link" href="javascript:sair()"><i class="fas fa-window-close"></i><span>Sair do Sistema</span></a>
                     </li>
-
 
 
                 </ul>
@@ -76,7 +76,9 @@
                         <div><a class="navbar-brand d-none" href="#"> </a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button></div>
                         <div id="navcol-1" class="collapse navbar-collapse" style="width: 1020px;">
                             <div class="btn-toolbar container-fluid justify-content-center grid gap-1 ">
-                                <div class="btn-group" role="group" >
+                                
+                                
+                                <div class="btn-group" role="group" id="adm_usercr">
                                     <button class="btn btn-outline-secondary "
                                             type="button"
                                             >
@@ -85,7 +87,7 @@
                                         </a>
                                     </button>
                                 </div>
-                                <div class="btn-group" role="group" >
+                                    <div class="btn-group" role="group" id="adm_tipocr">
                                     <button class="btn btn-outline-secondary"
                                             type="button"
                                            >
@@ -94,7 +96,7 @@
                                         </a>
                                     </button>
                                 </div>
-                                <div class="btn-group" role="group">
+                                    <div class="btn-group" role="group" id="adm_setorcr">
                                     <button class="btn btn-outline-secondary"
                                             type="button"
                                             >
@@ -123,7 +125,7 @@
                                 </div>
 
 
-                                <div class="btn-group" role="group">
+                                    <div class="btn-group" role="group" id="adm_fluxocre">
                                     <button class="btn btn-outline-secondary"
                                             type="button">
                                         <i class="fa-solid fa-person-circle-plus"></i><a asp-controller="Fluxo" asp-action="Create" class="text-dark">
@@ -194,5 +196,35 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
+
+    <SCRIPT>
+        
+        $("#adm").css("display", "none");
+
+        $(document).ready(function(){
+                                
+                                $.get("/api/vsa/", function (data) {
+                                     if(data != "001 - "){
+                    
+                                         $('div[id^="adm_"]').css("display", "none");
+                                         $('li[id^="adm_"]').css("display", "none");
+
+                                     }else{
+
+                                         $('div[id^="adm_"]').css("display", "block");
+                                         $('li[id^="adm_"]').css("display", "block");
+
+                                        
+                                     }
+                                });
+
+        });
+    </SCRIPT>
+
+
 </body>
+
+
+
+
 </html>
