@@ -154,6 +154,7 @@ namespace Processos.Controllers
 
             using (SqlConnection connection = new SqlConnection(builder.Configuration.GetConnectionString("DefaultConnection")))
             {
+
                 connection.Open();
 
                 string query = GeradorSQL(Tabela, Busca);
@@ -165,8 +166,6 @@ namespace Processos.Controllers
 
                     using (SqlDataReader reader = command.ExecuteReader())
                     {
-
-
 
 
                         while (reader.Read())
