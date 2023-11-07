@@ -34,12 +34,11 @@ namespace Processos.Controllers
                         {
 
                             String filename = "" + reader.GetValue(reader.GetOrdinal("nomeAnexo"));
-
-                            string uploadPath = Path.Combine("/tudo/uploads", codigoAnexo);
+                                                        
+                            String uploadPath = new ConfigurationBuilder().AddJsonFile("appsettings.json", optional: false, reloadOnChange: false).Build().GetValue<string>("AppSettings:uploadPath") + "/" + codigoAnexo;
 
                             if (System.IO.File.Exists(uploadPath))
                             {
-                                // Return the file for download with a specified content type.
                                 return File(System.IO.File.OpenRead(uploadPath), "application/octet-stream", filename);
                             }
 

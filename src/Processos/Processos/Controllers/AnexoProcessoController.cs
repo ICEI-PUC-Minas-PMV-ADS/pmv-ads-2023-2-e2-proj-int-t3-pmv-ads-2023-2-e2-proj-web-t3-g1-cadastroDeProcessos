@@ -36,12 +36,11 @@ namespace Processos.Controllers
 
                 if (file.Length > 0)
                 {
-
-                    // Que gambiarra meu Deus!!!!
-                    string uploadPath = Path.Combine("/tudo", "uploads");                                        
+                    
+                    String uploadPath = new ConfigurationBuilder().AddJsonFile("appsettings.json", optional: false, reloadOnChange: false).Build().GetValue<string>("AppSettings:uploadPath");
+                                        
                     string filePath = Path.Combine(uploadPath, ap.codigoAnexo.ToString());
                                         
-
                     using (var fileStream = new FileStream(filePath, FileMode.Create))
                     {
                         // Copy the uploaded file to the stream.
