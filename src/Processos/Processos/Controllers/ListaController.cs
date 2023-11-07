@@ -167,7 +167,6 @@ namespace Processos.Controllers
                     using (SqlDataReader reader = command.ExecuteReader())
                     {
 
-
                         while (reader.Read())
                         {
 
@@ -178,7 +177,14 @@ namespace Processos.Controllers
 
                                 for (int i = 0; i < reader.FieldCount; i++)
                                 {
-                                    Cab += "<TH>" + reader.GetName(i) + "</TH>";
+									
+									String c = reader.GetName(i);
+									
+									if(c == "PK"){
+										c = "Código";
+									}
+									
+                                    Cab += "<TH>" + c + "</TH>";
                                 }
 
                                 Cab += "<TH>&nbsp;</TH></TR></THEAD>";

@@ -51,6 +51,9 @@ body {
 #contenedorSpeedbuttontitulo{
     font-size: +2em;
     font-weight: bold;
+    background-color: #3B4B79;
+    color: #FFF;
+    padding: .3%;
 }
 
 #debug{
@@ -124,4 +127,11 @@ body {
     -moz-border-radius: 15px;
     border-radius: 15px;
     margin-bottom: 1em;
+}
+
+#buscaSpeedButton{
+
+	margin: 1%;
+	width: 98%;
+
 }
