@@ -12,6 +12,8 @@ namespace Processos.Controllers
     public class ConsultaPublicaController : ControllerBase
     {
 
+        private int nm = 1;
+
         public String quadroMovimentacao(String codigoProcesso)
         {
 
@@ -34,11 +36,14 @@ namespace Processos.Controllers
                         while (reader.Read())
                         {
 
-                            b += "<TR><TD>Data/Hora: " + reader.GetValue(reader.GetOrdinal("dataHora")) + "</TD>";
+                            b += "<TR><TD>Movimentação #" + nm +  "<BR>Data/Hora: " + reader.GetValue(reader.GetOrdinal("dataHora")) + "<BR>";
 
-                            b += "<TR><TD>Setor: " + reader.GetValue(reader.GetOrdinal("nome")) + "</TD>";
+                            b += "Setor: " + reader.GetValue(reader.GetOrdinal("nome")) + "</TD>";
 
-                            b += "<TR><TD colspan='2'>&nbsp;</TD></TR>";
+       
+
+
+                            nm++;
                         }
                     }
                 }
@@ -73,12 +78,12 @@ namespace Processos.Controllers
                         if (reader.Read())
                         {
 
-                            sl.Add($"Processo: {codigoProcesso}");
+                            sl.Add($"Processo Código {codigoProcesso}");
                             sl.Add($"Data/Hora: " + reader.GetValue(reader.GetOrdinal("dataHora")));
                             sl.Add($"Interessado: " + reader.GetValue(reader.GetOrdinal("nomeInteressado")));
                             sl.Add($"Tipo de Processo: " + reader.GetValue(reader.GetOrdinal("nomeTipoProcesso")));
 
-                            b = "<DIV id='contenedorProcesso'>";
+                            b = "<DIV id='contenedorProcesso'>*** INFORMACOES SOBRE PROCESSO ***<BR>";
                             foreach (string str in sl){
                                 b += "<DIV>" + str + "</DIV>";
                             }
