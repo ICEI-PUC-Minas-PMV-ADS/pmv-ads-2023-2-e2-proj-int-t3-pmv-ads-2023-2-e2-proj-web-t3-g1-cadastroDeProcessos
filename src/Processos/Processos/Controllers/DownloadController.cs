@@ -35,7 +35,7 @@ namespace Processos.Controllers
 
                             String filename = "" + reader.GetValue(reader.GetOrdinal("nomeAnexo"));
 
-                            string uploadPath = Path.Combine("c:/upl/uploads/", codigoAnexo);
+                            string uploadPath = Path.Combine("/tudo/uploads", codigoAnexo);
 
                             if (System.IO.File.Exists(uploadPath))
                             {

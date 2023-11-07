@@ -38,7 +38,7 @@ namespace Processos.Controllers
                 {
 
                     // Que gambiarra meu Deus!!!!
-                    string uploadPath = Path.Combine("c:/upl/", "uploads");                                        
+                    string uploadPath = Path.Combine("/tudo", "uploads");                                        
                     string filePath = Path.Combine(uploadPath, ap.codigoAnexo.ToString());
                                         
 
