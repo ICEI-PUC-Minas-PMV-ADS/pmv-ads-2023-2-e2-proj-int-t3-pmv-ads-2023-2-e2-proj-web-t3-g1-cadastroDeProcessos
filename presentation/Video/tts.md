@@ -23,5 +23,3 @@ O sistema também permite que você realise a tramitação do processo entre os 
 Em cada cadastro você pode realisar buscas pelos campos do cadastro de forma inteligente. Você também pode exportar a listagem de pessoas para o Ekcéu.
 
 O interessado também poderá consultar seu processo na tela de consulta de processos, tendo em mãos o número do processo e seu CPF. Mas atenção, o CPF deve estar preenchido no cadastro de interessados.
-
-
