@@ -14,6 +14,15 @@ namespace Processos.Controllers
     public class ListaController : ControllerBase
     {
 
+        private readonly IWebHostEnvironment _webHostEnvironment;
+
+
+        public ListaController(IWebHostEnvironment webHostEnvironment)
+        {
+            _webHostEnvironment = webHostEnvironment;
+        }
+
+
         public String GeradorSQL(String Tabela, String Busca)
         {
 
@@ -152,6 +161,8 @@ namespace Processos.Controllers
             String Dat = "";
             int cc = 0;
 
+            String csv = "";
+
             using (SqlConnection connection = new SqlConnection(builder.Configuration.GetConnectionString("DefaultConnection")))
             {
 
@@ -185,7 +196,12 @@ namespace Processos.Controllers
 									}
 									
                                     Cab += "<TH>" + c + "</TH>";
+
+                                    csv += "\"" + c + "\";";
+
                                 }
+
+                                csv += "\r\n";
 
                                 Cab += "<TH>&nbsp;</TH></TR></THEAD>";
 
@@ -197,8 +213,12 @@ namespace Processos.Controllers
                             for (int i = 0; i < reader.FieldCount; i++)
                             {
                                 Dat += "<TD>" + reader.GetValue(i) + "</TD>";
+
+                                csv += "\"" + reader.GetValue(i) + "\";";
+
                                 cc++;
                             }
+                            csv += "\r\n";
 
                             Dat += "<TD style='text-align:center; width:100px'><a href = '/" + Rota + "/Edit/" + reader.GetValue(reader.GetOrdinal("PK")) + "'><img src='/img/Editar.png'></a><a href='/" + Rota + "/Delete/" + reader.GetValue(reader.GetOrdinal("PK")) + "'><img src='/img/Excluir.png'></a></TH>";
 
@@ -209,16 +229,44 @@ namespace Processos.Controllers
                 }
             }
 
-
             if(Cab == "")
             {
                 Cab = "<DIV id='registroNaoEncontrado'>Nenhum registro encontrado para o cadastro ou busca informada.</DIV>";
             }
             else
             {
-             
 
-                Dat = Dat + "<TR><TD colspan='" + cc + "'>&nbsp;</TD><TD  style='text-align:center; width:100px'><img src='/img/Excel.png'></TD></TR>";
+                DateTime currentDateTime = DateTime.Now;
+
+                // Format the date and time as a string in a specific format.
+                string formattedDateTime = currentDateTime.ToString("yyyyMMddHHmmss") + ".csv";
+
+                //  String tmpdir = new ConfigurationBuilder().AddJsonFile("appsettings.json", optional: false, reloadOnChange: false).Build().GetValue<string>("AppSettings:tmpdir") + formattedDateTime;
+
+                String tmpdir = _webHostEnvironment.WebRootPath + "/Dados/" + formattedDateTime; 
+
+                using (var fileStream = new FileStream(tmpdir, FileMode.Create))
+                {
+
+                    try
+                    {
+
+                        using (StreamWriter outputFile = new StreamWriter(fileStream))
+                        {
+                            outputFile.Write(csv);
+                        }
+                        
+                                                
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("An error occurred: " + ex.Message);
+                    }
+
+                }
+
+
+                Dat = Dat + "<TR><TD colspan='" + cc + "'>&nbsp;</TD><TD style='text-align:center; width:100px'><a href='/Dados/" + formattedDateTime + "' target='_blank'><img src='/img/Excel.png'></a></TD></TR>";
 
                 Dat = Dat + "</TABLE>";
 
