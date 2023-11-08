@@ -1,27 +1,182 @@
 <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
 
-<img src='3.png' id='i3'>
-<img src='4.png' id='i4'>
-<img src='5.png' id='i5'>
+<img src='Fundo.jpg' id='fundo'>
+
 <img src='6.png' id='i6'>
+<img src='5.png' id='i5'>
+<img src='4.png' id='i4'>
+<img src='3.png' id='i3'>
 <img src='2.png' id='i2'>
 <img src='1.png' id='i1'>
+				
+
+
+<img src='Logo_Sem.png' id='logo'>
+<img src='Titulo.png' id='titulo'>
 
 
 <STYLE>
 	
-	#i1, #i2, #i3, #i4, #i5, #i6{
-		
-		position: absolute;
-		top: 100px;
-		left: 100px;
-		
-		width: 200px;
+	body{
+		margin: 0px;
+	}
+	
+	#fundo{
+		width: 1000px;
+		z-index: -1px;
+	}
 
-		animation-duration: 2s;
+	@keyframes kf1{
+		
+		100%{			
+			width: 70px;
+			top: 90px;
+			left: 410px;			
+		}
 		
 	}
 	
+	@keyframes kf2{
+
+		100%{			
+			width: 70px;
+			top: 90px;
+			left: 555px;			
+		}
+		
+	}
+
+	@keyframes kf3{
+
+		
+		100%{			
+			width: 70px;
+			top: 165px;
+			left: 350px;			
+		}
+		
+	}
 	
+	@keyframes kf4{
+
+		100%{			
+			width: 70px;
+			top: 165px;
+			left: 620px;			
+		}
+		
+	}		
+	
+	@keyframes kf5{
+
+		
+		100%{			
+			width: 70px;
+			top: 260px;
+			left: 600px;			
+		}
+		
+	}	
+	
+	@keyframes kf6{
+
+		100%{			
+			width: 70px;
+			top: 260px;
+			left: 370px;			
+		}
+		
+	}	
+
+	@keyframes logo{
+	
+		100%{
+			opacity: 1;			
+		}
+		
+	}
+
+
+	#i1, #i2, #i3, #i4, #i5, #i6{		
+		position: absolute;	
+		width: 350px;
+		top: 150px; 
+		left: 330px;
+	}
+	
+	@keyframes d{
+		display: none;
+	}
+	
+
+	#i1{
+		animation: kf1 1s forwards 1s;		
+	}	
+	
+	#i2{
+		animation: kf2 1s forwards 1.3s; 		
+	}	
+
+	#i3{
+		animation: kf3 1s forwards 2s;		
+	}	
+
+	#i4{
+		animation: kf4 1s forwards 2.3s;		
+	}	
+
+	#i5{
+		animation: kf5 1s forwards 3s;		
+	}	
+
+	#i6{
+		animation: kf6 1s forwards 3.3s;		
+	}	
+	
+	#logo{
+		width: 1000px;
+		animation: logo 1s forwards 4.3s;
+		opacity: 0;
+		z-index: 1000px;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#titulo{
+		position: absolute;
+		left: 280px;
+		top: 100px;
+		opacity: 0;
+	}
 	
 </STYLE>	
+
+
+	<SCRIPT>
+		window.setTimeout(function(){
+			
+				$("#i1").animate({opacity: "0"});
+				$("#i2").animate({opacity: "0"});
+				$("#i3").animate({opacity: "0"});
+				$("#i4").animate({opacity: "0"});
+				$("#i5").animate({opacity: "0"});
+				$("#i6").animate({opacity: "0"});
+						
+			}, 4300);
+			
+			
+		window.setTimeout(function(){			
+				$("#logo").animate({left: "200px", width: "650px"}, 1000);						
+			}, 5000);
+						
+		window.setTimeout(function(){			
+				$("#titulo").animate({opacity: "1"});
+			}, 5500);
+			
+			
+	</SCRIPT>	
+		
+	
