@@ -20,5 +20,5 @@ O projeto foi desenvolvido utilizando-se o MVC DOTNET 6 da Microsoft, com o uso 
 
 ## 5.5. Hospedagem
 
-A plataforma é hospedada na Azure.
+A plataforma foi hospedada na Azure, mas para fins de pesquisa, também foi levantado um ambiente linux com o mesmo sistema.
 
