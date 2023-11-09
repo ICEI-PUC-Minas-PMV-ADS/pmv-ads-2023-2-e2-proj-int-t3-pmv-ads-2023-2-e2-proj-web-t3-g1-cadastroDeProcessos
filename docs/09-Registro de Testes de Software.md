@@ -91,7 +91,8 @@ Requisito associado: RF-8
 
 - Objetivo: Verificar se o sistema é capaz de permitir a exclusão da última tramitação de um processo de forma correta e eficiente. 
 
-- A exclusão ainda não estará disponivel na etapa 3.
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/88147811/4fa7e722-12cf-49dc-8d0b-37b5fd65a5d0)
+
 
 
 ### CT-10 Acesso ao Sistema com Login
