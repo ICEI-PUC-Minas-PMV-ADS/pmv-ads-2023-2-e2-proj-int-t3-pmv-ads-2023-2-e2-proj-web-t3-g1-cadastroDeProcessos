@@ -99,7 +99,8 @@ Requisito associado: RF-8
 
 - Objetivo: Verificar se o sistema exige que os usuários estejam logados para acessar suas funcionalidades. 
 
-- A autenticação ainda não estará disponível na etapa 3.
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/88147811/dd9f04bd-4017-49ba-be3e-67962ec9bacd)
+
 
 ### CT-11  Busca de Processos por Filtros
 
@@ -116,7 +117,8 @@ Requisito associado: RF-8
 
 - Objetivo: Verificar se o sistema é capaz de permitir a exportação da listagem de processos para um arquivo Excel de forma correta e eficiente. 
 
-- A exportação para excel ainda não está disponível.
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/88147811/9d7fe123-eda2-40de-8509-7b59b0600ab5)
+
 
 ### CT-13 Consulta de Processo por CPF e Código Sem Autenticação
 
@@ -124,7 +126,8 @@ Requisito associado: RF-8
 
 - Objetivo: Verificar se o sistema permite que os usuários consultem processos por CPF e código do processo pela internet sem a necessidade de autenticação. 
 
-- A consulta pública ainda não está disponível.
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/88147811/f118fd65-04ba-41b7-bd86-6f1c2f98d91d)
+
 
 ### CT-14 Trâmite Fora do Fluxo Pré-Determinado
 
