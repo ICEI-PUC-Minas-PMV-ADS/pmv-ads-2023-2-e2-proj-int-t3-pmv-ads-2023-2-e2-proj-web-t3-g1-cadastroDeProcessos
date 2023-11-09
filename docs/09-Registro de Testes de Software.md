@@ -69,7 +69,8 @@
 - Requisito associado: RF-7
 
 - Objetivo: Verificar se o sistema é capaz de permitir o cadastro de anexos aos processos de forma correta e eficiente. 
-- A parte de anexos ainda não está disponível na etapa 3.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/88147811/417bf547-badb-45ea-ab71-8ab77eac5e0b)
 
 ### CT-8 Trâmite de Processo para Outros Setores
 
