@@ -16,7 +16,6 @@ function foco(o) {
 }
 
 
-
 function PegaValorCB(o) {
 
 	if (document.getElementById(o).checked) {
@@ -145,7 +144,6 @@ function lista(Rota, Tabela) {
 
 }
 
-
 function atualizarSetoresUsuario(cpfUsuario) {
 
 	$("#contenedorSetoresUsuario").load("/api/setoresusuario/?cpfUsuario=" + cpfUsuario);
@@ -232,15 +230,20 @@ function sair() {
 }
 
 
+function excluirMovimentacao(codigoMovimentacao, codigoProcesso){
+		
+	$.get("/api/excluirmovimentacao/?codigoMovimentacao=" + codigoMovimentacao, function (data) {
+		
+		$("#contenedorMovimentacao").load("/api/listamovimentacao/?codigoProcesso=" + codigoProcesso);
+		
+	});
+	
+}
+
+
+
 function consultarProcesso() {
 
 	$("#contenedorConsultaPublica").load("/api/consultapublica/?cpfCnpjInteressado=" + valor("cpfCnpjInteressado") + "&codigoProcesso=" + valor("codigoProcesso"));
 
-
 }
-
-function verificaSePodeMovimentar() {
-
-}
-
-		

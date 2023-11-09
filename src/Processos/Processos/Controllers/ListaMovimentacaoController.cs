@@ -54,7 +54,7 @@ namespace Processos.Controllers
 
 
                         
-                            html += "<a href='/Movimentacao/Edit/" + reader.GetValue(reader.GetOrdinal("codigoMovimentacao")) + "'></a><img src='/img/Editar.png'> <a href='javascript:excluirMovimentacao(" + reader.GetValue(reader.GetOrdinal("codigoMovimentacao")) + ")'><!-- [EXCL" + quantidade + "] --></a>";
+                            html += "<a href='/Movimentacao/Edit/" + reader.GetValue(reader.GetOrdinal("codigoMovimentacao")) + "'></a><img src='/img/Editar.png'> <a href='javascript:excluirMovimentacao(" + reader.GetValue(reader.GetOrdinal("codigoMovimentacao")) + $", {codigoProcesso})'><!-- [EXCL" + quantidade + "] --></a>";
                             
                             html += "</TD></TR>";
 
