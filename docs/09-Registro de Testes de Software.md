@@ -190,6 +190,9 @@ Requisito associado: RF-8
 
 - Objetivo: Verificar se o sistema impede a criação de processos que não tenham um requisitante e um tipo de processo definidos. 
 
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/88147811/4d6d1496-33f0-440b-bb82-4b5d5e735b14)
+
+- O teste falhou, pois o componente padrão do MVC foi alterado.
 
 
 ### CT-22 Geração de Código Incremental para Cada Processo
@@ -218,4 +221,7 @@ Requisito associado: RF-8
 
 - Objetivo: Verificar se o sistema respeita o fluxo de tramitação padrão, a menos que seja definido de outra forma no cadastro de tipo de processo. 
 
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/88147811/fe990550-9d8d-430b-a298-1d8cff828ed6)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/88147811/7d4bca3d-4372-4686-ad31-3ee08bb07c04)
 
