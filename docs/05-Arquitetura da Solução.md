@@ -16,7 +16,9 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ## 5.4. Tecnologias Utilizadas
 
-O projeto foi desenvolvido utilizando-se o MVC DOTNET 6 da Microsoft, com o uso de javascript e CSS.
+O projeto foi desenvolvido utilizando-se o MVC DOTNET 6 da Microsoft
+A interface foi desenvolvida com o uso de CSS e o framework bootstrap.
+As consultas dinâmicas (AJAX) foram feitas em javascript e JQUERY, sempre utilizando-se das APIs.
 
 ## 5.5. Hospedagem
 
