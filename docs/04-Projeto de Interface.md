@@ -19,90 +19,161 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 ## 4.2. Wireframes
 
-Tela - Inicial
+### 4.2.1 Tela - Inicial
 
 ![Inicial](img/inicial.png)
 
-Tela - Busca de processos
+Após o desenvolvimento, o resultado foi alterado.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/88147811/92e63d23-3ace-4f45-b280-f0ba494a73d1)
+
+
+### 4.2.2 Tela - Consulta Pública de Processos
 
 ![Buscar processo](img/consulta.png)
 
-Tela - Resultado da busca
+Após o desenvolvimento, o resultado foi alterado.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/88147811/36559545-4884-46fc-8160-d6d80bbf53be)
+
+
+### 4.2.3 Tela - Resultado da busca
 
 ![Resultado busca](img/resultado.png)
 
-Tela - Login
+Após o desenvolvimento, o resultado foi alterado.
 
-![Login](img/login.png)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/88147811/6676d1e5-657f-4a95-8889-c4dcabbabdd1)
 
-Tela - DashBoard
+
+### 4.2.5 Tela - DashBoard
 
 ![Dashboard](img/dash.png)
 
-Tela - Listagem Usuários
+Após o desenvolvimento, o resultado foi alterado.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/88147811/1473685c-18ab-449e-a54f-63cf81bee3fb)
+
+
+### 4.2.6 Tela - Listagem Usuários
 
 ![Usuários](img/usuarios.png)
 
-Tela - Cadastro/Edição Usuários
+Após o desenvolvimento, o resultado foi alterado.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/88147811/d10552da-e9a2-4a91-8c48-737931a110f3)
+
+
+### 4.2.7 Tela - Cadastro/Edição Usuários
 
 ![Cadastro Usuários](img/cadUsuario.png)
 
-Tela - Listagem Tipo de Processo
+Após o desenvolvimento, o resultado foi alterado.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/88147811/1d4e811b-2abb-4ded-bf59-c0d4bbe5f286)
+
+
+### 4.2.8 Tela - Listagem Tipo de Processo
 
 ![Tipo de Processo](img/tipo.png)
 
-Tela - Cadastro/Edição de Tipo de Processo
+Após o desenvolvimento, o resultado foi alterado.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/88147811/e85f3baf-3232-4aca-8a71-02cb71331c2e)
+
+
+### 4.2.9 Tela - Cadastro/Edição de Tipo de Processo
 
 ![Cadastro Tipo de Processos](img/cadTipo.png)
 
-Tela - Listagem Setor
+Após o desenvolvimento, o resultado foi alterado.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/88147811/cd1dc2a7-cd8f-4cdf-a676-4807936977a2)
+
+
+### 4.2.10 Tela - Listagem Setor
 
 ![Setor](img/setor.png)
 
-Tela - Cadastro/Edição de Setor
+Após o desenvolvimento, o resultado foi alterado.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/88147811/921066a4-fa17-4078-8e2e-bc2ee9d8865d)
+
+
+### 4.2.11 Tela - Cadastro/Edição de Setor
 
 ![Cadastro Setor](img/cadSetor.png)
 
-Tela - Listagem Processos
+Após o desenvolvimento, o resultado foi alterado.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/88147811/1be2d199-76af-432f-848d-e8ad32448f5b)
+
+### 4.2.12 Tela - Listagem Processos
 
 ![Processos](img/processos.png)
 
-Tela - Cadastro/Edição de Processos
+Após o desenvolvimento, o resultado foi alterado.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/88147811/3b33f594-1629-49c0-b59a-4253bf57e98b)
+
+
+
+### 4.2.13 Tela - Cadastro/Edição de Processos
 
 ![Cadastro Processos](img/cadProcesso.png)
 
-Tela - Listagem Movimentação
+Após o desenvolvimento, o resultado foi alterado.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/88147811/dd94cb32-f316-4f60-857b-0bd4bf929246)
+
+
+### 4.2.14 Tela - Listagem Movimentação
 
 ![Movimentação](img/movimentacao.png)
 
-Tela - Cadastro/Edição de Movimentação
+Após o desenvolvimento, o resultado foi alterado.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/88147811/0248a6bb-9612-47cc-a12b-4198a1dcae68)
+
+
+### 4.2.15 Tela - Cadastro/Edição de Movimentação
 
 ![Cadastro Movimentação](img/cadMovimentacao.png)
 
-Tela - Listagem Interessado
+Após o desenvolvimento, o resultado foi alterado.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/88147811/a71e8a4d-fb1f-4a66-ac31-96a3a72c8c1e)
+
+
+### 4.2.16 Tela - Listagem Interessado
 
 ![Interessado](img/interessado.png)
 
-Tela - Cadastro/Edição de Interessado
+Após o desenvolvimento, o resultado foi alterado.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/88147811/8b990569-6a2f-4266-8041-67f9ee038095)
+
+
+### 4.2.17 Tela - Cadastro/Edição de Interessado
 
 ![Cadastro Interessado](img/cadInteressado.png)
 
-Tela - Listagem Fluxo
+Após o desenvolvimento, o resultado foi alterado.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/88147811/9e9e08b0-394f-48b6-9102-5f304d9f564c)
+
+
+### 4.2.18 Tela - Listagem Fluxo
 
 ![Fluxo](img/fluxo.png)
 
-Tela - Cadastro/Edição de Fluxo
+Após o desenvolvimento, o resultado foi alterado.
+
+
+### 4.2.19 Tela - Cadastro/Edição de Fluxo
 
 ![Cadastro Fluxo](img/cadFluxo.png)
 
-Tela - Confirmação Cadastro/Edição
+Após o desenvolvimento, o resultado foi alterado.
 
-![Confrimação](img/confirmacao.png)
-
-Tela - Deseja Excluir
-
-![Excluir?](img/excluir.png)
-
-Tela - Confirmação Exclusão
-
-![Exclusão](img/exclusao.png)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t3-pmv-ads-2023-2-e2-proj-web-t3-g1-cadastroDeProcessos/assets/88147811/f722bf47-8bc5-4083-976f-766b95a9d6ee)
