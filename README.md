@@ -45,5 +45,6 @@ O cadastro de processos é um sistema com o foco para prefeituras e entidades p�
 # Apresentação
 <ol>
 <li><a href="presentation/2min.mp4"> Etapa 1 - Vídeo de 2 minutos</a></li>
+<li><a href="presentation/Pres.pptx"> Etapa 2 - Apresentação em Slides</a></li>
 </ol>
 
